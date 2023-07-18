@@ -39,8 +39,9 @@ class Solenoid():
     @property
     def pin(self):
         """Get or set the GPIO pin number. Setting the pin will configure the 
-        GPIO pin as an output automatically.
+        GPIO pin as an output automatically
         """
+        
         return self._pin
     
     @pin.setter

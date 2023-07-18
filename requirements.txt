@@ -1,0 +1,2 @@
+RPi.GPIO==0.7.0
+schedule==1.2.0
