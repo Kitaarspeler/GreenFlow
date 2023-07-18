@@ -9,6 +9,7 @@ from time import sleep
 
 def main():
     GPIO.setmode(GPIO.BCM)
+    GPIO.setwarnings(False)
     try:
         solenoid1 = Solenoid(4, False)
     except ValueError:
