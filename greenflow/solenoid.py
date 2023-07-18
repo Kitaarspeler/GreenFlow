@@ -55,7 +55,7 @@ class Solenoid():
     def toggle(self):
         """Toggles the state of the solenoid e.g. turns on if off and vice versa
 
-        Swaps the solenoid state and sets GPIO output to new state
+        Swaps the solenoid state and sets GPIO output to the new state
         """
         
         self.state = not self.state

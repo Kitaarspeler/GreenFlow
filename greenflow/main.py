@@ -14,8 +14,12 @@ def main():
         solenoid1 = Solenoid(4, False)
     except ValueError:
         sys.exit("GPIO pin number not valid")
-        
+
     GPIO.cleanup()
+
+
+
+
 
 if __name__ == "__main__":
     main()
