@@ -10,7 +10,7 @@ from time import sleep
 def main():
     GPIO.setmode(GPIO.BCM)
     try:
-        solenoid1 = Solenoid(11, False)
+        solenoid1 = Solenoid(4, False)
     except ValueError:
         sys.exit("GPIO pin number not valid")
 
