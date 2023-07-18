@@ -46,7 +46,7 @@ class Solenoid():
             raise ValueError("GPIO pin not valid")
         else:
             self._pin = pin
-            GPIO.setup(self.pin, GPIO.OUT)
+            GPIO.setup(self._pin, GPIO.OUT)
 
 
     def toggle(self):
