@@ -57,4 +57,5 @@ class Solenoid():
         
         self.state = not self.state
         GPIO.output(self.pin, self.state)
+        print(f"Solenoid at pin {self.pin} is now {self.state}")
 
