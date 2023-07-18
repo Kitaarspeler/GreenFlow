@@ -13,7 +13,7 @@ class Solenoid():
     Attributes
     ----------
     pin : int
-        the GPIO pin used to interact with the solenoid
+        a numbered GPIO pin used to interact with the solenoid
     state : bool
         the state of the solenoid (default is False, aka off)
 
@@ -38,6 +38,9 @@ class Solenoid():
 
     @property
     def pin(self):
+        """Get or set the GPIO pin number. Setting the pin will configure the 
+        GPIO pin as an output automatically.
+        """
         return self._pin
     
     @pin.setter
@@ -57,5 +60,4 @@ class Solenoid():
         
         self.state = not self.state
         GPIO.output(self.pin, self.state)
-        print(f"Solenoid at pin {self.pin} is now {self.state}")
 
