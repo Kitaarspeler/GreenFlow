@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
 
-from datetime import datetime
+import schedule
 import time
+
 
 
 class Timer():
@@ -39,8 +40,8 @@ class Timer():
 
         return self._length
     
-    @pin.setter
-    def pin(self, length):
+    @length.setter
+    def length(self, length):
         if length < 1:
             raise ValueError("Timer is too short")
         else:
