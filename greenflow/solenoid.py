@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+
+import RPi.GPIO as GPIO
+
+
 class Solenoid():
     """
     A class used to control a solenoid
@@ -24,12 +28,33 @@ class Solenoid():
         Parameters
         ----------
         pin : int
-        the GPIO pin used to interact with the solenoid
-    state : bool
-        the state of the solenoid (default is False, aka off)
+            the GPIO pin used to interact with the solenoid
+        state : bool
+            the state of the solenoid (default is False, aka off)
         """
 
         self.pin = pin
         self.state = state
 
+    @property
+    def pin(self):
+        return self._pin
     
+    @pin.setter
+    def pin(self, pin):
+        if pin not in range(1, 28): # 1 to 27
+            raise ValueError("GPIO pin not valid")
+        else:
+            self._pin = pin
+            GPIO.setup(self.pin, GPIO.OUT)
+
+
+    def toggle(self):
+        """Toggles the state of the solenoid e.g. turns on if off and vice versa
+
+        Swaps the solenoid state and sets GPIO output to new state
+        """
+        
+        self.state = not self.state
+        GPIO.output(self.pin, self.state)
+
