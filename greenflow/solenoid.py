@@ -19,8 +19,10 @@ class Solenoid():
 
     Methods
     -------
-    toggle()
-        Toggles the state of the solenoid e.g. turns on if off and vice versa
+    turn_on()
+        Turns the solenoid on
+    turn_off()
+        Turns the solenoid off
     """
 
     def __init__(self, pin, state=False):
@@ -53,12 +55,22 @@ class Solenoid():
             GPIO.setup(self._pin, GPIO.OUT)
 
 
-    def toggle(self):
-        """Toggles the state of the solenoid e.g. turns on if off and vice versa
+    def turn_on(self):
+        """Turns the solenoid on
 
-        Swaps the solenoid state and sets GPIO output to the new state
+        Also sets the solenoid state to on (True)
         """
         
-        self.state = not self.state
-        GPIO.output(self.pin, self.state)
+        self.state = True
+        GPIO.output(self.pin, True)
+
+
+    def turn_off(self):
+        """Turns the solenoid off
+
+        Also sets the solenoid state to off (False)
+        """
+        
+        self.state = False
+        GPIO.output(self.pin, False)
 
