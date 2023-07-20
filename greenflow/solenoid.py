@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-
-
 import RPi.GPIO as GPIO
 
 
@@ -48,7 +45,7 @@ class Solenoid():
     
     @pin.setter
     def pin(self, pin):
-        if pin not in range(1, 28): # 1 to 27
+        if pin not in range(2, 28): # 1 to 27
             raise ValueError("GPIO pin not valid")
         else:
             self._pin = pin
