@@ -11,9 +11,6 @@ from solenoid import Solenoid
 from flask import Flask, render_template
 
 
-app = Flask(__name__)
-
-
 def main():
     """Initialises GPIO pins, solenoids and schedules
 
@@ -29,6 +26,8 @@ def main():
             solenoids[i] = Solenoid(i + 1, False)
         except ValueError:
             sys.exit("Too many solenoids. Re-run program with 27 or fewer solenoids")
+
+    app = Flask(__name__)
 
 
 def get_num_solenoids():
@@ -55,9 +54,10 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(
+    main()
+    '''app.run(
         debug = True,
         host = "0.0.0.0",
         port = 80,
-        )
+        )'''
     GPIO.cleanup()
