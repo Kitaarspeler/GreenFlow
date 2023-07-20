@@ -43,7 +43,10 @@ def get_num_solenoids():
     num_solenoids = 0
     while True:
         if num_solenoids < 1 or num_solenoids > 27:
-            num_solenoids = input("Please enter the number of solenoids needed for this install: ")
+            try:
+                num_solenoids = int(input("Please enter the number of solenoids needed for this install: "))
+            except ValueError:
+                pass
         else:
             break
     return num_solenoids
