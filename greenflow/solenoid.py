@@ -35,6 +35,13 @@ class Solenoid():
         self.pin = pin
         self.state = state
 
+    def __str__(self):
+        """Returns f string giving GPIO pin number and solenoid state
+
+        """
+
+        return f"GPIO pin: {self.pin}, State: {self.state}"
+
     @property
     def pin(self):
         """Get or set the GPIO pin number. Setting the pin will configure the 

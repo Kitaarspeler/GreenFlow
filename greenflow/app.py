@@ -26,7 +26,7 @@ def main():
     num_solenoids = int(get_num_solenoids())
     for i in range(1, num_solenoids+1):
         try:
-            solenoids[i] = Solenoid(i + 1, False)
+            solenoids[i] = Solenoid(i + 1)
         except ValueError:
             sys.exit("Too many solenoids. Re-run program with 27 or fewer solenoids")
 
