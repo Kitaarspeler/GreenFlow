@@ -29,10 +29,9 @@ def main():
             solenoids[i] = Solenoid(i + 1, False)
         except ValueError:
             sys.exit("Too many solenoids. Re-run program with 27 or fewer solenoids")
-    GPIO.cleanup()
 
 
-def get_solenoids():
+def get_num_solenoids():
     """Gets and returns the number of solenoids needed for this install
     
     Returns
@@ -56,9 +55,9 @@ def index():
 
 
 if __name__ == "__main__":
-    main()
     app.run(
         debug = True,
         host = "0.0.0.0",
         port = 80,
         )
+    GPIO.cleanup()
