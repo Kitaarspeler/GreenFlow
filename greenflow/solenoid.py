@@ -58,7 +58,7 @@ class Solenoid():
     def turn_on(self):
         """Turns the solenoid on
 
-        Also sets the solenoid state to on (True)
+        Also sets the solenoid state to True
         """
         
         self.state = True
@@ -68,7 +68,7 @@ class Solenoid():
     def turn_off(self):
         """Turns the solenoid off
 
-        Also sets the solenoid state to off (False)
+        Also sets the solenoid state to False
         """
         
         self.state = False
