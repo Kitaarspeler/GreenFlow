@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 
 
-GPIO.setmode(BPIO.BCM)
+GPIO.setmode(GPIO.BCM)
 
 
 class Solenoid():
