@@ -1,6 +1,9 @@
 import RPi.GPIO as GPIO
 
 
+GPIO.setmode(BPIO.BCM)
+
+
 class Solenoid():
     """
     A class used to control a solenoid
@@ -52,7 +55,7 @@ class Solenoid():
     
     @pin.setter
     def pin(self, pin):
-        if pin not in range(2, 28): # 1 to 27
+        if pin not in range(2, 28): # 2 to 27
             raise ValueError("GPIO pin not valid")
         else:
             self._pin = pin

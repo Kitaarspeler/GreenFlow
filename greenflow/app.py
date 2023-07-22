@@ -30,7 +30,7 @@ def main():
         except ValueError:
             sys.exit("Too many solenoids. Re-run program with 27 or fewer solenoids")
 
-    print(solenoids)
+    print(**solenoids)
 
     app.run(
         debug = True,
