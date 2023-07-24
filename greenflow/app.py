@@ -8,10 +8,31 @@ on and off multiple hoses to water different parts of their garden.
 import sys
 import RPi.GPIO as GPIO
 from solenoid import Solenoid
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, url_for, session
+from flask_login import LoginManager, login_required
+import bcrypt
+from flask_mysqldb import MySQL
 
 
 app = Flask(__name__)
+app.secret_key = "akl;wejr,q2bjk35jh2wv35tugyaiu"
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'greenflowuser'
+app.config['MYSQL_PASSWORD'] = 'fasc1st-$hoot-c4rbine-WARINESS'
+app.config['MYSQL_DB'] = 'greenflow'
+mysql = MySQL(app)
+
+cursor = mysql.connection.cursor()
+cursor.execute("show tables")
+#cursor.execute("SELECT pass FROM users WHERE username = 'jull'")
+db_pass = cursor.fetchall()
+print(db_pass)
+
+
+"""
+login_manager = LoginManager()
+login_manager.init_app(app)
+"""
 
 
 def main():
@@ -46,6 +67,11 @@ def get_num_solenoids():
     -------
     int
         The number of solenoids needed for this implementation
+
+    Raises
+    ------
+    ValueError
+        If there are too many solenoids for the number of GPIO pins
     """
 
     num_solenoids = 0
@@ -60,9 +86,37 @@ def get_num_solenoids():
     return num_solenoids
 
 
+def is_authenticated(username, password):
+        encoded_pw = password.encode('utf-8')
+        hashed = bcrypt.hashpw(encoded_pw, bcrypt.gensalt())
+        if bcrypt.checkpw(b'asdf', hashed):
+            return True
+        else:
+            return False
+
+
 @app.route("/")
 def index():
     return render_template("index.html")
+
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
+        # Create variables for easy access
+        username = request.form['username']
+        password = request.form['password']
+        if is_authenticated(username, password):
+            return redirect(url_for("index"))
+        else:
+            return render_template("login.html")
+    else:
+        return render_template("login.html")
+    
+
+@app.route("/schedule")
+def schedule():
+    return render_template("schedule.html")
 
 
 if __name__ == "__main__":

@@ -5,8 +5,8 @@ body {
 
 /* Navigation Menu Bar */
 .navbar {
-    background-color: #66ff66;
-    color: #69ffff;
+    background-color: #666;
+    color: #ffffff;
 }
 
 .navbar-brand {
@@ -28,12 +28,14 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
+    text-align: center;
 }
 
 /* Home Page */
 .container h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .container p {
@@ -42,6 +44,15 @@ body {
 
 /* Other Pages */
 /* Add specific styles for Settings, Timers, and On-The-Fly pages here */
+
+/* Login Page */
+.login {
+    padding: 10px;
+}
+
+.login input {
+    margin: 20px;
+}
 
 /* Footer (optional) */
 .footer {
