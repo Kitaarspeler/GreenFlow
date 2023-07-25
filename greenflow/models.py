@@ -1,4 +1,4 @@
-class User(mysql):
+class User():
     """A user capable of everything needed.
 
     Attributes

@@ -6,28 +6,20 @@ on and off multiple hoses to water different parts of their garden.
 
 
 import sys
+import bcrypt
 import RPi.GPIO as GPIO
 from solenoid import Solenoid
 from flask import Flask, render_template, request, redirect, url_for, session
 from flask_login import LoginManager, login_required
-import bcrypt
-from flask_mysqldb import MySQL
+from database import Database
 
 
 app = Flask(__name__)
 app.secret_key = "akl;wejr,q2bjk35jh2wv35tugyaiu"
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'greenflowuser'
-app.config['MYSQL_PASSWORD'] = 'fasc1st-$hoot-c4rbine-WARINESS'
-app.config['MYSQL_DB'] = 'greenflow'
-mysql = MySQL(app)
+DBINFO = {"host": "localhost", "user": "greenflowuser", "password": "fasc1st-$hoot-c4rbine-WARINESS", "database": "greenflow"}
 
-cursor = mysql.connection.cursor()
-cursor.execute("show tables")
-#cursor.execute("SELECT pass FROM users WHERE username = 'jull'")
-db_pass = cursor.fetchall()
-print(db_pass)
-
+mydb = Database(DBINFO)
+mydb.write_password("jull", b"newpasswordinnit")
 
 """
 login_manager = LoginManager()
