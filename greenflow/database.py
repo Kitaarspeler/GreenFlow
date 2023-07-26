@@ -16,8 +16,10 @@ class Database:
     -------
     connect_to_db
         Connects to database with given information
-    get_table_info
-        Returns all database entries from the users table
+    get_password
+        Returns password for the given user
+    write_password
+        Writes new password to database
     """
 
     def __init__(self, dbinfo):
@@ -27,8 +29,8 @@ class Database:
         ----------
         dbinfo : list
             List of database parameters: host, user, pass, database
-
         """
+
         self.dbinfo = dbinfo
         self.connect_to_db()
 
@@ -57,20 +59,30 @@ class Database:
                 raise ValueError(err)
         self.cursor = self.mydb.cursor()    # Connects to database
 
-    def get_table_info(self):
-        """Returns all database entries from the users table
+    def get_password(self, username):
+        """Returns password for given user
 
+        Parameters
+        ----------
+        username : str
+            Username of user to get password for
+        
         Returns
         -------
         results : list
             A list of entries from the database
         """
 
-        self.cursor.execute("SELECT pass FROM users")
-        results = self.cursor.fetchall()
-        return(results)
+        sql = "SELECT hash, salt FROM users WHERE username = %s"
+        var = [username]
+        self.cursor.execute(sql, var)
+        try:
+            values = self.cursor.fetchall()
+        except ValueError:
+            return("no hash", "no salt")
+        return(values)
     
-    def write_password(self, username, new_pass):
+    def write_password(self, username, new_pass, salt):
         """Writes new password to database
         
         Parameters
@@ -80,8 +92,8 @@ class Database:
         new_pass : str
             New password, hashed and salted, to write to database
         """
-        sql = "UPDATE users SET pass = %s WHERE username = %s"
-        val = (new_pass, username)
+        sql = "UPDATE users SET hash = %s, salt = %s WHERE username = %s"
+        val = (new_pass, salt, username)
         self.cursor.execute(sql, val)
         self.mydb.commit()
         print("Write successful")

@@ -8,27 +8,18 @@ on and off multiple hoses to water different parts of their garden.
 import sys
 import bcrypt
 import RPi.GPIO as GPIO
-from solenoid import Solenoid
-from flask import Flask, render_template, request, redirect, url_for, session
-from flask_login import LoginManager, login_required
 from database import Database
+from solenoid import Solenoid
+from models import User
+from flask import Flask, render_template, request, redirect, url_for, session
 
 
 app = Flask(__name__)
 app.secret_key = "akl;wejr,q2bjk35jh2wv35tugyaiu"
-DBINFO = {"host": "localhost", "user": "greenflowuser", "password": "fasc1st-$hoot-c4rbine-WARINESS", "database": "greenflow"}
-
-mydb = Database(DBINFO)
-mydb.write_password("jull", b"newpasswordinnit")
-
-"""
-login_manager = LoginManager()
-login_manager.init_app(app)
-"""
 
 
 def main():
-    """Initialises GPIO pins, solenoids and schedules
+    """Initialises GPIO pins, solenoids, schedules and flask app
 
     """
     GPIO.setmode(GPIO.BCM)
@@ -36,19 +27,22 @@ def main():
 
     solenoids = {}
 
-    num_solenoids = int(get_num_solenoids())
-    for i in range(1, num_solenoids+1):
-        try:
-            solenoids[i] = Solenoid(i + 1)
-        except ValueError:
-            sys.exit("Too many solenoids. Re-run program with 27 or fewer solenoids")
+    for i in range(1, 5):
+        solenoids[i] = Solenoid(i + 1)
+        print(f"Solenoid {i}: {solenoids[i]}")
 
-    print(**solenoids)
+    DBINFO = {"host": "localhost", "user": "greenflowuser", "password": "fasc1st-$hoot-c4rbine-WARINESS", "database": "greenflow"}
+
+    salt = bcrypt.gensalt()
+
+    mydb = Database(DBINFO)
+    mydb.write_password("jull", b"hiimashasheepshagger", salt)
+    print(mydb.get_password("jull"))
 
     app.run(
         debug = True,
         host = "0.0.0.0",
-        port = 80,
+        port = 5000,
         )
 
 
