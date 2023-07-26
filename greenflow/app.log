@@ -1,0 +1,182 @@
+27-Jul-23 07:38:46 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+27-Jul-23 07:38:46 -  * Restarting with stat
+27-Jul-23 07:38:48 -  * Debugger is active!
+27-Jul-23 07:38:48 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:38:52 - 10.1.1.11 - - [27/Jul/2023 07:38:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+27-Jul-23 07:38:53 - 10.1.1.11 - - [27/Jul/2023 07:38:53] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+27-Jul-23 07:38:53 - 10.1.1.11 - - [27/Jul/2023 07:38:53] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+27-Jul-23 07:38:53 - 10.1.1.11 - - [27/Jul/2023 07:38:53] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+27-Jul-23 07:38:53 - 10.1.1.11 - - [27/Jul/2023 07:38:53] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+27-Jul-23 07:39:04 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:39:04 -  * Restarting with stat
+27-Jul-23 07:39:06 -  * Debugger is active!
+27-Jul-23 07:39:06 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:40:27 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:40:27 -  * Restarting with stat
+27-Jul-23 07:40:29 -  * Debugger is active!
+27-Jul-23 07:40:29 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:40:32 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:40:32 -  * Restarting with stat
+27-Jul-23 07:40:34 -  * Debugger is active!
+27-Jul-23 07:40:34 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:40:36 - 10.1.1.11 - - [27/Jul/2023 07:40:36] "GET / HTTP/1.1" 200 -
+27-Jul-23 07:40:36 - 10.1.1.11 - - [27/Jul/2023 07:40:36] "GET /static/style.css HTTP/1.1" 200 -
+27-Jul-23 07:40:37 - 10.1.1.11 - - [27/Jul/2023 07:40:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+27-Jul-23 07:40:39 - 10.1.1.11 - - [27/Jul/2023 07:40:39] "[32mGET /schedule HTTP/1.1[0m" 308 -
+27-Jul-23 07:40:39 - 10.1.1.11 - - [27/Jul/2023 07:40:39] "GET /schedule/ HTTP/1.1" 200 -
+27-Jul-23 07:40:40 - 10.1.1.11 - - [27/Jul/2023 07:40:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+27-Jul-23 07:40:41 - 10.1.1.11 - - [27/Jul/2023 07:40:41] "[33mGET /water HTTP/1.1[0m" 404 -
+27-Jul-23 07:40:47 - 10.1.1.11 - - [27/Jul/2023 07:40:47] "[32mGET /login HTTP/1.1[0m" 308 -
+27-Jul-23 07:40:47 - 10.1.1.11 - - [27/Jul/2023 07:40:47] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+27-Jul-23 07:40:47 - 10.1.1.11 - - [27/Jul/2023 07:40:47] "GET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+27-Jul-23 07:40:47 - 10.1.1.11 - - [27/Jul/2023 07:40:47] "GET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+27-Jul-23 07:40:48 - 10.1.1.11 - - [27/Jul/2023 07:40:48] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+27-Jul-23 07:41:01 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:41:01 -  * Restarting with stat
+27-Jul-23 07:41:04 -  * Debugger is active!
+27-Jul-23 07:41:04 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:41:12 - 10.1.1.11 - - [27/Jul/2023 07:41:12] "GET /login/ HTTP/1.1" 200 -
+27-Jul-23 07:41:12 - 10.1.1.11 - - [27/Jul/2023 07:41:12] "GET /static/style.css HTTP/1.1" 200 -
+27-Jul-23 07:41:13 - 10.1.1.11 - - [27/Jul/2023 07:41:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+27-Jul-23 07:41:17 - 10.1.1.11 - - [27/Jul/2023 07:41:17] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+27-Jul-23 07:41:18 - 10.1.1.11 - - [27/Jul/2023 07:41:18] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+27-Jul-23 07:41:18 - 10.1.1.11 - - [27/Jul/2023 07:41:18] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+27-Jul-23 07:41:18 - 10.1.1.11 - - [27/Jul/2023 07:41:18] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+27-Jul-23 07:41:30 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:41:30 -  * Restarting with stat
+27-Jul-23 07:41:32 -  * Debugger is active!
+27-Jul-23 07:41:32 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:41:35 - 10.1.1.11 - - [27/Jul/2023 07:41:35] "[31m[1mPOST /login HTTP/1.1[0m" 405 -
+27-Jul-23 07:41:35 - 10.1.1.11 - - [27/Jul/2023 07:41:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+27-Jul-23 07:41:38 - 10.1.1.11 - - [27/Jul/2023 07:41:38] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+27-Jul-23 07:41:38 - 10.1.1.11 - - [27/Jul/2023 07:41:38] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+27-Jul-23 07:41:38 - 10.1.1.11 - - [27/Jul/2023 07:41:38] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+27-Jul-23 07:41:38 - 10.1.1.11 - - [27/Jul/2023 07:41:38] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+27-Jul-23 07:44:47 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:44:48 -  * Restarting with stat
+27-Jul-23 07:44:49 -  * Debugger is active!
+27-Jul-23 07:44:49 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:44:55 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:44:55 -  * Restarting with stat
+27-Jul-23 07:44:57 -  * Debugger is active!
+27-Jul-23 07:44:57 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:45:01 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:45:01 -  * Restarting with stat
+27-Jul-23 07:45:03 -  * Debugger is active!
+27-Jul-23 07:45:03 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:45:07 - 10.1.1.11 - - [27/Jul/2023 07:45:07] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+27-Jul-23 07:45:07 - 10.1.1.11 - - [27/Jul/2023 07:45:07] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+27-Jul-23 07:45:07 - 10.1.1.11 - - [27/Jul/2023 07:45:07] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+27-Jul-23 07:45:07 - 10.1.1.11 - - [27/Jul/2023 07:45:07] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+27-Jul-23 07:45:18 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:45:18 -  * Restarting with stat
+27-Jul-23 07:45:20 -  * Debugger is active!
+27-Jul-23 07:45:20 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:45:25 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+27-Jul-23 07:45:25 -  * Restarting with stat
+27-Jul-23 07:45:27 -  * Debugger is active!
+27-Jul-23 07:45:27 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:45:29 - 10.1.1.11 - - [27/Jul/2023 07:45:29] "[32mGET /login HTTP/1.1[0m" 308 -
+27-Jul-23 07:45:29 - 10.1.1.11 - - [27/Jul/2023 07:45:29] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+27-Jul-23 07:45:30 - 10.1.1.11 - - [27/Jul/2023 07:45:30] "GET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+27-Jul-23 07:45:30 - 10.1.1.11 - - [27/Jul/2023 07:45:30] "GET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+27-Jul-23 07:45:30 - 10.1.1.11 - - [27/Jul/2023 07:45:30] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+27-Jul-23 07:45:30 - 10.1.1.11 - - [27/Jul/2023 07:45:30] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+27-Jul-23 07:45:42 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:45:43 -  * Restarting with stat
+27-Jul-23 07:45:44 -  * Debugger is active!
+27-Jul-23 07:45:44 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:45:50 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:45:50 -  * Restarting with stat
+27-Jul-23 07:45:52 -  * Debugger is active!
+27-Jul-23 07:45:52 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:45:54 - 10.1.1.11 - - [27/Jul/2023 07:45:54] "GET /login/ HTTP/1.1" 200 -
+27-Jul-23 07:45:54 - 10.1.1.11 - - [27/Jul/2023 07:45:54] "GET /static/style.css HTTP/1.1" 200 -
+27-Jul-23 07:45:56 - 10.1.1.11 - - [27/Jul/2023 07:45:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+27-Jul-23 07:45:58 - 10.1.1.11 - - [27/Jul/2023 07:45:58] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+27-Jul-23 07:45:59 - 10.1.1.11 - - [27/Jul/2023 07:45:59] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+27-Jul-23 07:45:59 - 10.1.1.11 - - [27/Jul/2023 07:45:59] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+27-Jul-23 07:45:59 - 10.1.1.11 - - [27/Jul/2023 07:45:59] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+27-Jul-23 07:47:45 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:47:45 -  * Restarting with stat
+27-Jul-23 07:47:47 -  * Debugger is active!
+27-Jul-23 07:47:47 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:47:49 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:47:49 -  * Restarting with stat
+27-Jul-23 07:47:51 -  * Debugger is active!
+27-Jul-23 07:47:51 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:47:52 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:47:53 -  * Restarting with stat
+27-Jul-23 07:47:54 -  * Debugger is active!
+27-Jul-23 07:47:54 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:48:00 - 10.1.1.11 - - [27/Jul/2023 07:48:00] "[32mGET /login HTTP/1.1[0m" 308 -
+27-Jul-23 07:48:00 - 10.1.1.11 - - [27/Jul/2023 07:48:00] "[35m[1mGET /login/ HTTP/1.1[0m" 500 -
+27-Jul-23 07:48:01 - 10.1.1.11 - - [27/Jul/2023 07:48:01] "[36mGET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+27-Jul-23 07:48:01 - 10.1.1.11 - - [27/Jul/2023 07:48:01] "[36mGET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+27-Jul-23 07:48:01 - 10.1.1.11 - - [27/Jul/2023 07:48:01] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+27-Jul-23 07:48:58 - 10.1.1.11 - - [27/Jul/2023 07:48:58] "GET /login/ HTTP/1.1" 200 -
+27-Jul-23 07:48:58 - 10.1.1.11 - - [27/Jul/2023 07:48:58] "GET /static/style.css HTTP/1.1" 200 -
+27-Jul-23 07:49:00 - 10.1.1.11 - - [27/Jul/2023 07:49:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+27-Jul-23 07:49:02 - 10.1.1.11 - - [27/Jul/2023 07:49:02] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+27-Jul-23 07:49:02 - 10.1.1.11 - - [27/Jul/2023 07:49:02] "[36mGET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+27-Jul-23 07:49:02 - 10.1.1.11 - - [27/Jul/2023 07:49:02] "[36mGET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+27-Jul-23 07:49:02 - 10.1.1.11 - - [27/Jul/2023 07:49:02] "[36mGET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+27-Jul-23 07:49:49 -  * Detected change in '/home/server/GreenFlow/greenflow/main.py', reloading
+27-Jul-23 07:49:49 -  * Restarting with stat
+27-Jul-23 07:49:51 -  * Debugger is active!
+27-Jul-23 07:49:51 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:49:52 -  * Detected change in '/home/server/GreenFlow/greenflow/main.py', reloading
+27-Jul-23 07:49:53 -  * Restarting with stat
+27-Jul-23 07:49:55 -  * Debugger is active!
+27-Jul-23 07:49:55 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:50:19 -  * Detected change in '/home/server/GreenFlow/greenflow/old/main.py', reloading
+27-Jul-23 07:50:19 -  * Restarting with stat
+27-Jul-23 07:50:21 -  * Debugger is active!
+27-Jul-23 07:50:21 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:50:28 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:50:28 -  * Restarting with stat
+27-Jul-23 07:50:30 -  * Debugger is active!
+27-Jul-23 07:50:30 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:50:42 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:50:42 -  * Restarting with stat
+27-Jul-23 07:50:44 -  * Debugger is active!
+27-Jul-23 07:50:44 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:50:48 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:50:49 -  * Restarting with stat
+27-Jul-23 07:50:50 -  * Debugger is active!
+27-Jul-23 07:50:50 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:50:54 - 10.1.1.11 - - [27/Jul/2023 07:50:54] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+27-Jul-23 07:50:54 - 10.1.1.11 - - [27/Jul/2023 07:50:54] "GET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+27-Jul-23 07:50:54 - 10.1.1.11 - - [27/Jul/2023 07:50:54] "GET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+27-Jul-23 07:50:54 - 10.1.1.11 - - [27/Jul/2023 07:50:54] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+27-Jul-23 07:50:54 - 10.1.1.11 - - [27/Jul/2023 07:50:54] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+27-Jul-23 07:51:05 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+27-Jul-23 07:51:05 -  * Restarting with stat
+27-Jul-23 07:51:07 -  * Debugger is active!
+27-Jul-23 07:51:07 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:51:09 - 10.1.1.11 - - [27/Jul/2023 07:51:09] "[35m[1mPOST /login/ HTTP/1.1[0m" 500 -
+27-Jul-23 07:51:09 - 10.1.1.11 - - [27/Jul/2023 07:51:09] "GET /login/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+27-Jul-23 07:51:09 - 10.1.1.11 - - [27/Jul/2023 07:51:09] "GET /login/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+27-Jul-23 07:51:09 - 10.1.1.11 - - [27/Jul/2023 07:51:09] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+27-Jul-23 07:51:09 - 10.1.1.11 - - [27/Jul/2023 07:51:09] "GET /login/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+27-Jul-23 07:51:23 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:51:24 -  * Restarting with stat
+27-Jul-23 07:51:25 -  * Debugger is active!
+27-Jul-23 07:51:25 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:51:30 - 10.1.1.11 - - [27/Jul/2023 07:51:30] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+27-Jul-23 07:51:30 - 10.1.1.11 - - [27/Jul/2023 07:51:30] "GET / HTTP/1.1" 200 -
+27-Jul-23 07:51:30 - 10.1.1.11 - - [27/Jul/2023 07:51:30] "GET /static/style.css HTTP/1.1" 200 -
+27-Jul-23 07:51:31 - 10.1.1.11 - - [27/Jul/2023 07:51:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+27-Jul-23 07:51:39 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+27-Jul-23 07:51:39 -  * Restarting with stat
+27-Jul-23 07:51:41 -  * Debugger is active!
+27-Jul-23 07:51:41 -  * Debugger PIN: 717-972-856
