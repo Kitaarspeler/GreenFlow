@@ -184,3 +184,26 @@
 27-Jul-23 07:54:43 -  * Restarting with stat
 27-Jul-23 07:54:45 -  * Debugger is active!
 27-Jul-23 07:54:45 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:58:26 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+27-Jul-23 07:58:26 -  * Restarting with stat
+27-Jul-23 07:58:27 -  * Debugger is active!
+27-Jul-23 07:58:27 -  * Debugger PIN: 717-972-856
+27-Jul-23 07:58:28 - 10.1.1.11 - - [27/Jul/2023 07:58:28] "[33mGET /is_authenticated HTTP/1.1[0m" 404 -
+27-Jul-23 07:58:29 - 10.1.1.11 - - [27/Jul/2023 07:58:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+28-Jul-23 06:46:12 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+28-Jul-23 06:46:12 -  * Restarting with stat
+28-Jul-23 06:46:15 -  * Debugger is active!
+28-Jul-23 06:46:15 -  * Debugger PIN: 131-027-666
+28-Jul-23 06:51:02 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+28-Jul-23 06:51:02 -  * Restarting with stat
+28-Jul-23 06:51:05 -  * Debugger is active!
+28-Jul-23 06:51:05 -  * Debugger PIN: 131-027-666

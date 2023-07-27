@@ -1,15 +1,38 @@
-import bcrypt
 import logging
 import RPi.GPIO as GPIO
-from database import Database
 from solenoid import Solenoid
 from models import User
 from flask import Flask, render_template, request, redirect, url_for, session
 from flask_classful import FlaskView, route
-
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import UserMixin, LoginManager, login_required, logout_user, current_user
+from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
-app.secret_key = "akl;wejr,q2bjk35jh2wv35tugyaiu"
+app.config["SECRET_KEY"] = "akl;wejr,q2bjk35jh2wv35tugyaiu"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://greenflowuser:fasc1st-$hoot-c4rbine-WARINESS@localhost/greenflow"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
+
+
+class Users(db.Model, UserMixin):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    user = db.Column(db.String(50), nullable=False, unique=True)
+    password_hash = db.Column(db.String(128), nullable=False)
+
+    @property
+    def password(self):
+        raise AttributeError("Password is not a readable attribute")
+    
+    @password.setter
+    def password(self, password):
+        self.password_hash = generate_password_hash(password)
+
+    def verify_password(self, password):
+        return check_password_hash(self.password_hash, password)
+
+    def __repr__(self):
+        return "<Name %r" % self.user
 
 
 class Interface(FlaskView):
@@ -19,24 +42,20 @@ class Interface(FlaskView):
         GPIO.setwarnings(False)
 
         solenoids = {}
-
         for i in range(1, 5):
             solenoids[i] = Solenoid(i + 1)
             print(f"Solenoid {i} created: {solenoids[i]}")
 
-        DBINFO = {"host": "localhost", "user": "greenflowuser", "password": "fasc1st-$hoot-c4rbine-WARINESS", "database": "greenflow"}
-        salt = bcrypt.gensalt()
-        mydb = Database(DBINFO)
+        #DBINFO = {"host": "localhost", "user": "greenflowuser", "password": "fasc1st-$hoot-c4rbine-WARINESS", "database": "greenflow"}
+        #mydb = Database(DBINFO)
         #mydb.write_password("jull", b"hiimashasheepshagger", salt)
         #print(mydb.get_password("jull"))
 
 
-    #@app.route("/")
     def index(self):
         return render_template("index.html")
 
     default_methods = ['GET', 'POST']
-    #@app.route("/login", methods=["GET", "POST"])
     def login(self):
         if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
             # Create variables for easy access
@@ -50,15 +69,12 @@ class Interface(FlaskView):
             return render_template("login.html")
         
 
-    #@app.route("/schedule")
     def schedule(self):
         return render_template("schedule.html")
     
 
     def is_authenticated(self, username, password):
-        encoded_pw = password.encode('utf-8')
-        hashed = bcrypt.hashpw(encoded_pw, bcrypt.gensalt())
-        if bcrypt.checkpw(b'asdf', hashed):
+        if True:
             return True
         else:
             return False
