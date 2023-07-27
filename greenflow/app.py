@@ -1,12 +1,14 @@
 import logging
+import mysql.connector
 import RPi.GPIO as GPIO
 from solenoid import Solenoid
-from models import User
+#from models import Users
 from flask import Flask, render_template, request, redirect, url_for, session
 from flask_classful import FlaskView, route
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, LoginManager, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
+
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "akl;wejr,q2bjk35jh2wv35tugyaiu"
@@ -17,7 +19,7 @@ db = SQLAlchemy(app)
 
 class Users(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    user = db.Column(db.String(50), nullable=False, unique=True)
+    username = db.Column(db.String(50), nullable=False, unique=True)
     password_hash = db.Column(db.String(128), nullable=False)
 
     @property
@@ -33,6 +35,13 @@ class Users(db.Model, UserMixin):
 
     def __repr__(self):
         return "<Name %r" % self.user
+
+
+# Adding user
+#hashed_pw = generate_password_hash("asdf")
+#user = Users(username="Jull", password_hash=hashed_pw)
+#db.session.add(user)
+#db.session.commit()
 
 
 class Interface(FlaskView):
@@ -73,8 +82,13 @@ class Interface(FlaskView):
         return render_template("schedule.html")
     
 
+    def settings(self):
+        return render_template("settings.html")
+    
+
     def is_authenticated(self, username, password):
-        if True:
+        user_to_check = Users.query.filter_by(username=username).first()
+        if check_password_hash(user_to_check.password_hash, password):
             return True
         else:
             return False
