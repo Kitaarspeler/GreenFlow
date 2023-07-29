@@ -17,6 +17,16 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 
+login_manager = LoginManager()
+login_manager.init_app(app)
+login_manager.login_view = 'Interface:login'
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return Users.query.get(int(user_id))
+
+
 class Users(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     username = db.Column(db.String(50), nullable=False, unique=True)
@@ -37,29 +47,14 @@ class Users(db.Model, UserMixin):
         return "<Name %r" % self.user
 
 
-# Adding user
-#hashed_pw = generate_password_hash("asdf")
-#user = Users(username="Jull", password_hash=hashed_pw)
-#db.session.add(user)
-#db.session.commit()
-
-
 class Interface(FlaskView):
     @classmethod
     def _initilization(self):
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
-
         solenoids = {}
         for i in range(1, 5):
             solenoids[i] = Solenoid(i + 1)
-            print(f"Solenoid {i} created: {solenoids[i]}")
-
-        #DBINFO = {"host": "localhost", "user": "greenflowuser", "password": "fasc1st-$hoot-c4rbine-WARINESS", "database": "greenflow"}
-        #mydb = Database(DBINFO)
-        #mydb.write_password("jull", b"hiimashasheepshagger", salt)
-        #print(mydb.get_password("jull"))
-
 
     def index(self):
         return render_template("index.html")
@@ -73,23 +68,30 @@ class Interface(FlaskView):
             if self.is_authenticated(username, password):
                 return redirect(url_for("Interface:index"))
             else:
-                return render_template("login.html")
+                flash("Wrong Password - Please try again.")
+                #return render_template("login.html")
         else:
             return render_template("login.html")
         
-
+    @login_required
+    def water(self):
+        return render_template("water.html")
+    
+    @login_required
     def schedule(self):
         return render_template("schedule.html")
     
-
+    @login_required
     def settings(self):
         return render_template("settings.html")
     
 
     def is_authenticated(self, username, password):
         user_to_check = Users.query.filter_by(username=username).first()
-        if check_password_hash(user_to_check.password_hash, password):
-            return True
+        if user_to_check != None:
+            if check_password_hash(user_to_check.password_hash, password):
+                login_user(user_to_check)
+                return True
         else:
             return False
 
