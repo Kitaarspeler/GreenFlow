@@ -3,10 +3,10 @@ import mysql.connector
 import RPi.GPIO as GPIO
 from solenoid import Solenoid
 #from models import Users
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for, session, flash
 from flask_classful import FlaskView, route
 from flask_sqlalchemy import SQLAlchemy
-from flask_login import UserMixin, LoginManager, login_required, logout_user, current_user
+from flask_login import UserMixin, LoginManager, login_required, login_user, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 
 
@@ -28,6 +28,17 @@ def load_user(user_id):
 
 
 class Users(db.Model, UserMixin):
+    """A user capable of logging in and out.
+
+    Attributes
+    ----------
+
+    username
+        username of user
+    password
+        encrypted password for the user
+    """
+
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     username = db.Column(db.String(50), nullable=False, unique=True)
     password_hash = db.Column(db.String(128), nullable=False)
@@ -56,9 +67,6 @@ class Interface(FlaskView):
         for i in range(1, 5):
             solenoids[i] = Solenoid(i + 1)
 
-    def index(self):
-        return render_template("index.html")
-
     default_methods = ['GET', 'POST']
     def login(self):
         if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
@@ -69,9 +77,13 @@ class Interface(FlaskView):
                 return redirect(url_for("Interface:index"))
             else:
                 flash("Wrong Password - Please try again.")
-                #return render_template("login.html")
+                return render_template("login.html")
         else:
             return render_template("login.html")
+
+    @login_required
+    def index(self):
+        return render_template("index.html")
         
     @login_required
     def water(self):
@@ -84,6 +96,11 @@ class Interface(FlaskView):
     @login_required
     def settings(self):
         return render_template("settings.html")
+    
+    @login_required
+    def logout(self):
+        logout_user()
+        return redirect(url_for("Interface:login"))
     
 
     def is_authenticated(self, username, password):

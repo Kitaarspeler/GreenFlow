@@ -15,6 +15,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
+                {% if current_user.is_authenticated %}
                 <li class="nav-item">
                     <a class="nav-link" href="/schedule">Schedule</a>
                 </li>
@@ -24,6 +25,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/settings">Settings</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout">Logout</a>
+                </li>
+                {% endif %}
             </ul>
         </div>
     </nav>
