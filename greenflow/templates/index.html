@@ -2,5 +2,7 @@
 
 {% block content %}
     <h1>{% block title %} Welcome to GreenFlow {% endblock %}</h1>
-    
+    {% for solenoid in solenoids %}
+    <p>Hose {{ solenoid.pin }} is {{ "on" if solenoid.state else "off" }}</p>
+    {% endfor %}
 {% endblock %}

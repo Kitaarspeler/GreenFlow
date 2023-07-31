@@ -63,9 +63,11 @@ class Interface(FlaskView):
     def _initilization(self):
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
-        solenoids = {}
+        self.solenoids = {}
         for i in range(1, 5):
-            solenoids[i] = Solenoid(i + 1)
+            self.solenoids[i] = Solenoid(i + 1)
+        for solenoid in self.solenoids:
+            print(solenoid)
 
     default_methods = ['GET', 'POST']
     def login(self):
@@ -83,7 +85,7 @@ class Interface(FlaskView):
 
     @login_required
     def index(self):
-        return render_template("index.html")
+        return render_template("index.html", solenoids=self.solenoids)
         
     @login_required
     def water(self):

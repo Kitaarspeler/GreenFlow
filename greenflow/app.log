@@ -603,3 +603,155 @@
 30-Jul-23 18:48:13 - 10.1.1.11 - - [30/Jul/2023 18:48:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 30-Jul-23 18:48:14 - 10.1.1.11 - - [30/Jul/2023 18:48:14] "GET /schedule/ HTTP/1.1" 200 -
 30-Jul-23 18:48:14 - 10.1.1.11 - - [30/Jul/2023 18:48:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+30-Jul-23 18:56:44 - 10.1.1.11 - - [30/Jul/2023 18:56:44] "GET / HTTP/1.1" 200 -
+30-Jul-23 18:56:44 - 10.1.1.11 - - [30/Jul/2023 18:56:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 10:15:54 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 10:15:54 -  * Restarting with stat
+31-Jul-23 10:18:47 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 10:18:47 -  * Restarting with stat
+31-Jul-23 10:18:49 -  * Debugger is active!
+31-Jul-23 10:18:49 -  * Debugger PIN: 126-612-670
+31-Jul-23 10:22:20 - 10.1.1.11 - - [31/Jul/2023 10:22:20] "GET / HTTP/1.1" 200 -
+31-Jul-23 10:22:20 - 10.1.1.11 - - [31/Jul/2023 10:22:20] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 10:22:48 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 10:22:48 -  * Restarting with stat
+31-Jul-23 10:22:51 -  * Debugger is active!
+31-Jul-23 10:22:51 -  * Debugger PIN: 126-612-670
+31-Jul-23 10:22:52 - 10.1.1.11 - - [31/Jul/2023 10:22:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+31-Jul-23 10:22:52 - 10.1.1.11 - - [31/Jul/2023 10:22:52] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+31-Jul-23 10:22:52 - 10.1.1.11 - - [31/Jul/2023 10:22:52] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+31-Jul-23 10:22:53 - 10.1.1.11 - - [31/Jul/2023 10:22:53] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+31-Jul-23 10:22:54 - 10.1.1.11 - - [31/Jul/2023 10:22:54] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+31-Jul-23 10:23:56 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 10:23:56 -  * Restarting with stat
+31-Jul-23 10:23:59 -  * Debugger is active!
+31-Jul-23 10:23:59 -  * Debugger PIN: 126-612-670
+31-Jul-23 10:24:15 - 10.1.1.11 - - [31/Jul/2023 10:24:15] "GET / HTTP/1.1" 200 -
+31-Jul-23 10:24:16 - 10.1.1.11 - - [31/Jul/2023 10:24:16] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 10:24:17 - 10.1.1.11 - - [31/Jul/2023 10:24:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 11:40:08 - 10.1.1.11 - - [31/Jul/2023 11:40:08] "GET / HTTP/1.1" 200 -
+31-Jul-23 11:40:09 - 10.1.1.11 - - [31/Jul/2023 11:40:09] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 11:40:11 - 10.1.1.11 - - [31/Jul/2023 11:40:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 11:40:13 - 10.1.1.11 - - [31/Jul/2023 11:40:13] "GET / HTTP/1.1" 200 -
+31-Jul-23 11:40:13 - 10.1.1.11 - - [31/Jul/2023 11:40:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 11:40:22 - 10.1.1.11 - - [31/Jul/2023 11:40:22] "GET / HTTP/1.1" 200 -
+31-Jul-23 11:40:23 - 10.1.1.11 - - [31/Jul/2023 11:40:23] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 11:40:24 - 10.1.1.11 - - [31/Jul/2023 11:40:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 11:42:29 - 10.1.1.11 - - [31/Jul/2023 11:42:29] "GET / HTTP/1.1" 200 -
+31-Jul-23 11:42:29 - 10.1.1.11 - - [31/Jul/2023 11:42:29] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 11:42:31 - 10.1.1.11 - - [31/Jul/2023 11:42:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 11:42:44 - 10.1.1.11 - - [31/Jul/2023 11:42:44] "GET / HTTP/1.1" 200 -
+31-Jul-23 11:42:44 - 10.1.1.11 - - [31/Jul/2023 11:42:44] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 11:42:46 - 10.1.1.11 - - [31/Jul/2023 11:42:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 11:45:54 - 10.1.1.11 - - [31/Jul/2023 11:45:54] "GET / HTTP/1.1" 200 -
+31-Jul-23 11:45:54 - 10.1.1.11 - - [31/Jul/2023 11:45:54] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 11:45:55 - 10.1.1.11 - - [31/Jul/2023 11:45:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 11:46:12 - 10.1.1.11 - - [31/Jul/2023 11:46:12] "GET / HTTP/1.1" 200 -
+31-Jul-23 11:46:12 - 10.1.1.11 - - [31/Jul/2023 11:46:12] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 11:46:14 - 10.1.1.11 - - [31/Jul/2023 11:46:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 11:46:25 - 10.1.1.11 - - [31/Jul/2023 11:46:25] "GET / HTTP/1.1" 200 -
+31-Jul-23 11:46:26 - 10.1.1.11 - - [31/Jul/2023 11:46:26] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 11:46:27 - 10.1.1.11 - - [31/Jul/2023 11:46:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 11:46:50 - 10.1.1.11 - - [31/Jul/2023 11:46:50] "GET / HTTP/1.1" 200 -
+31-Jul-23 11:46:50 - 10.1.1.11 - - [31/Jul/2023 11:46:50] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 11:46:52 - 10.1.1.11 - - [31/Jul/2023 11:46:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 11:47:08 - 10.1.1.11 - - [31/Jul/2023 11:47:08] "GET / HTTP/1.1" 200 -
+31-Jul-23 11:47:08 - 10.1.1.11 - - [31/Jul/2023 11:47:08] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 11:47:10 - 10.1.1.11 - - [31/Jul/2023 11:47:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 11:58:13 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 11:58:13 -  * Restarting with stat
+31-Jul-23 11:58:15 -  * Debugger is active!
+31-Jul-23 11:58:15 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:00:26 - 10.1.1.11 - - [31/Jul/2023 12:00:26] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:00:26 - 10.1.1.11 - - [31/Jul/2023 12:00:26] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 12:00:28 - 10.1.1.11 - - [31/Jul/2023 12:00:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 12:02:42 - 10.1.1.11 - - [31/Jul/2023 12:02:42] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:02:42 - 10.1.1.11 - - [31/Jul/2023 12:02:42] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 12:02:44 - 10.1.1.11 - - [31/Jul/2023 12:02:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 12:03:00 - 10.1.1.11 - - [31/Jul/2023 12:03:00] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:03:00 - 10.1.1.11 - - [31/Jul/2023 12:03:00] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 12:03:02 - 10.1.1.11 - - [31/Jul/2023 12:03:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 12:03:21 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 12:03:22 -  * Restarting with stat
+31-Jul-23 12:03:37 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 12:03:37 -  * Restarting with stat
+31-Jul-23 12:03:39 -  * Debugger is active!
+31-Jul-23 12:03:39 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:03:40 - 10.1.1.11 - - [31/Jul/2023 12:03:40] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:03:40 - 10.1.1.11 - - [31/Jul/2023 12:03:40] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 12:03:42 - 10.1.1.11 - - [31/Jul/2023 12:03:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 12:04:12 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 12:04:12 -  * Restarting with stat
+31-Jul-23 12:04:15 -  * Debugger is active!
+31-Jul-23 12:04:15 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:04:16 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 12:04:16 -  * Restarting with stat
+31-Jul-23 12:04:19 -  * Debugger is active!
+31-Jul-23 12:04:19 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:04:19 - 10.1.1.11 - - [31/Jul/2023 12:04:19] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:04:19 - 10.1.1.11 - - [31/Jul/2023 12:04:19] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 12:04:21 - 10.1.1.11 - - [31/Jul/2023 12:04:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 12:04:47 - 10.1.1.11 - - [31/Jul/2023 12:04:47] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:04:47 - 10.1.1.11 - - [31/Jul/2023 12:04:47] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 12:04:49 - 10.1.1.11 - - [31/Jul/2023 12:04:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 12:05:47 - 10.1.1.11 - - [31/Jul/2023 12:05:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+31-Jul-23 12:05:47 - 10.1.1.11 - - [31/Jul/2023 12:05:47] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+31-Jul-23 12:05:47 - 10.1.1.11 - - [31/Jul/2023 12:05:47] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+31-Jul-23 12:05:47 - 10.1.1.11 - - [31/Jul/2023 12:05:47] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+31-Jul-23 12:06:38 - 10.1.1.11 - - [31/Jul/2023 12:06:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+31-Jul-23 12:06:38 - 10.1.1.11 - - [31/Jul/2023 12:06:38] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+31-Jul-23 12:06:38 - 10.1.1.11 - - [31/Jul/2023 12:06:38] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+31-Jul-23 12:06:38 - 10.1.1.11 - - [31/Jul/2023 12:06:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+31-Jul-23 12:07:22 - 10.1.1.11 - - [31/Jul/2023 12:07:22] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:07:22 - 10.1.1.11 - - [31/Jul/2023 12:07:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 12:07:43 - 10.1.1.11 - - [31/Jul/2023 12:07:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+31-Jul-23 12:07:44 - 10.1.1.11 - - [31/Jul/2023 12:07:44] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+31-Jul-23 12:07:44 - 10.1.1.11 - - [31/Jul/2023 12:07:44] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+31-Jul-23 12:07:44 - 10.1.1.11 - - [31/Jul/2023 12:07:44] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+31-Jul-23 12:09:43 - 10.1.1.11 - - [31/Jul/2023 12:09:43] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:09:43 - 10.1.1.11 - - [31/Jul/2023 12:09:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 12:09:56 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 12:09:56 -  * Restarting with stat
+31-Jul-23 12:09:58 -  * Debugger is active!
+31-Jul-23 12:09:58 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:10:03 - 10.1.1.11 - - [31/Jul/2023 12:10:03] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:10:04 - 10.1.1.11 - - [31/Jul/2023 12:10:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 12:13:25 - 10.1.1.11 - - [31/Jul/2023 12:13:25] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:13:25 - 10.1.1.11 - - [31/Jul/2023 12:13:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 12:14:41 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 12:14:42 -  * Restarting with stat
+31-Jul-23 12:14:44 -  * Debugger is active!
+31-Jul-23 12:14:44 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:14:45 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 12:14:46 -  * Restarting with stat
+31-Jul-23 12:14:48 -  * Debugger is active!
+31-Jul-23 12:14:48 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:14:49 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 12:14:50 -  * Restarting with stat
+31-Jul-23 12:16:20 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 12:16:20 -  * Restarting with stat
+31-Jul-23 12:16:23 -  * Debugger is active!
+31-Jul-23 12:16:23 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:16:28 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 12:16:29 -  * Restarting with stat
