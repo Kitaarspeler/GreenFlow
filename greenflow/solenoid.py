@@ -94,5 +94,4 @@ class Solenoid():
         
         self.state = False
         GPIO.output(self.pin, False)
-        print(f"{self.name} = {self.state}")
 

@@ -1429,3 +1429,29 @@
 03-Aug-23 07:48:15 - 192.168.1.1 - - [03/Aug/2023 07:48:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 03-Aug-23 07:48:17 - 192.168.1.1 - - [03/Aug/2023 07:48:17] "GET / HTTP/1.1" 200 -
 03-Aug-23 07:48:17 - 192.168.1.1 - - [03/Aug/2023 07:48:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 08:05:09 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+03-Aug-23 08:05:09 -  * Restarting with stat
+03-Aug-23 08:05:12 -  * Debugger is active!
+03-Aug-23 08:05:12 -  * Debugger PIN: 641-001-671
+03-Aug-23 08:05:26 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+03-Aug-23 08:05:26 -  * Restarting with stat
+03-Aug-23 08:05:29 -  * Debugger is active!
+03-Aug-23 08:05:29 -  * Debugger PIN: 641-001-671
+03-Aug-23 08:05:31 - 192.168.1.1 - - [03/Aug/2023 08:05:31] "GET / HTTP/1.1" 200 -
+03-Aug-23 08:05:31 - 192.168.1.1 - - [03/Aug/2023 08:05:31] "GET /static/style.css HTTP/1.1" 200 -
+03-Aug-23 08:05:34 - 192.168.1.1 - - [03/Aug/2023 08:05:34] "[32mGET /toggle_solenoid/0/ HTTP/1.1[0m" 302 -
+03-Aug-23 08:05:34 - 192.168.1.1 - - [03/Aug/2023 08:05:34] "GET / HTTP/1.1" 200 -
+03-Aug-23 08:05:34 - 192.168.1.1 - - [03/Aug/2023 08:05:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 08:05:35 - 192.168.1.1 - - [03/Aug/2023 08:05:35] "[32mGET /toggle_solenoid/0/ HTTP/1.1[0m" 302 -
+03-Aug-23 08:05:35 - 192.168.1.1 - - [03/Aug/2023 08:05:35] "GET / HTTP/1.1" 200 -
+03-Aug-23 08:05:36 - 192.168.1.1 - - [03/Aug/2023 08:05:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 08:05:46 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 08:05:46 -  * Restarting with stat
+03-Aug-23 08:05:49 -  * Debugger is active!
+03-Aug-23 08:05:49 -  * Debugger PIN: 641-001-671
