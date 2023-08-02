@@ -1,5 +1,5 @@
-class User():
-    """A user capable of everything needed.
+class Users(db.Model, UserMixin):
+    """A user capable of logging in and out.
 
     Attributes
     ----------
@@ -10,19 +10,20 @@ class User():
         encrypted password for the user
     """
 
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    username = db.Column(db.String(50), nullable=False, unique=True)
+    password_hash = db.Column(db.String(128), nullable=False)
 
-    def is_active(self):
-        """True, as all users are active."""
-        return True
+    @property
+    def password(self):
+        raise AttributeError("Password is not a readable attribute")
+    
+    @password.setter
+    def password(self, password):
+        self.password_hash = generate_password_hash(password)
 
-    def get_id(self):
-        """Return the username to satisfy Flask-Login's requirements."""
-        return self.username
+    def verify_password(self, password):
+        return check_password_hash(self.password_hash, password)
 
-    def is_authenticated(self):
-        """Return True if the user is authenticated."""
-        return self.authenticated
-
-    def is_anonymous(self):
-        """False, as anonymous users aren't supported."""
-        return False
+    def __repr__(self):
+        return "<Name %r" % self.user

@@ -31,14 +31,24 @@ body {
     text-align: center;
 }
 
+.container_dark {
+    margin: 5px;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    background-color: #a0a0a0;
+    text-align: center;
+}
+
 /* Home Page */
 .container h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
 .container p {
+    margin-top: 10px;
     font-size: 18px;
 }
 
