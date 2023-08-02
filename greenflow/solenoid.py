@@ -20,13 +20,15 @@ class Solenoid():
 
     Methods
     -------
+    toggle_state()
+        Switches state attribute and sets GPIO pin output
     turn_on()
         Turns the solenoid on
     turn_off()
         Turns the solenoid off
     """
 
-    def __init__(self, pin, state=False):
+    def __init__(self, id, pin, name="", state=False):
         """
         Parameters
         ----------
@@ -35,9 +37,11 @@ class Solenoid():
         state : bool
             the state of the solenoid (default is False, aka off)
         """
-
+        
+        self.id = id
         self.pin = pin
         self.state = state
+        self.name = name
 
     def __str__(self):
         """Returns f string giving GPIO pin number and solenoid state
@@ -63,6 +67,15 @@ class Solenoid():
             GPIO.setup(self._pin, GPIO.OUT)
 
 
+    def toggle_state(self):
+        """Switches state attribute and sets GPIO pin output
+        
+        """
+
+        self.state = not self.state
+        GPIO.output(self.pin, self.state)
+
+
     def turn_on(self):
         """Turns the solenoid on
 
@@ -81,4 +94,5 @@ class Solenoid():
         
         self.state = False
         GPIO.output(self.pin, False)
+        print(f"{self.name} = {self.state}")
 

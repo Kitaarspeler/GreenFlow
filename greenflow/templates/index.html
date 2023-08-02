@@ -2,7 +2,15 @@
 
 {% block content %}
     <h1>{% block title %} Welcome to GreenFlow {% endblock %}</h1>
+    
+    <div class="row">
     {% for solenoid in solenoids %}
-    <p>Hose {{ solenoid.pin }} is {{ "on" if solenoid.state else "off" }}</p>
+        <div class="col-sm container_dark">
+            <p>{{ solenoid.name }} is {{ "on" if solenoid.state else "off" }}</p>
+            <a class="btn btn-primary" href="/toggle_solenoid/{{ solenoid.id }}">{{ "Turn off" if solenoid.state else "Turn on" }}</a><br><br>
+        </div>
     {% endfor %}
+    </div>
 {% endblock %}
+
+

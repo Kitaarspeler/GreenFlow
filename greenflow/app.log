@@ -755,3 +755,677 @@
 31-Jul-23 12:16:23 -  * Debugger PIN: 694-802-132
 31-Jul-23 12:16:28 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
 31-Jul-23 12:16:29 -  * Restarting with stat
+31-Jul-23 12:24:11 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 12:24:11 -  * Restarting with stat
+31-Jul-23 12:24:13 -  * Debugger is active!
+31-Jul-23 12:24:13 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:24:18 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 12:24:19 -  * Restarting with stat
+31-Jul-23 12:24:24 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 12:24:24 -  * Restarting with stat
+31-Jul-23 12:24:26 -  * Debugger is active!
+31-Jul-23 12:24:26 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:24:39 - 10.1.1.11 - - [31/Jul/2023 12:24:39] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:24:40 - 10.1.1.11 - - [31/Jul/2023 12:24:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 12:25:12 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+31-Jul-23 12:25:13 -  * Restarting with stat
+31-Jul-23 12:25:55 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 12:25:55 -  * Restarting with stat
+31-Jul-23 12:25:58 -  * Debugger is active!
+31-Jul-23 12:25:58 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:26:01 - 10.1.1.11 - - [31/Jul/2023 12:26:01] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:26:02 - 10.1.1.11 - - [31/Jul/2023 12:26:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 12:26:15 - 10.1.1.11 - - [31/Jul/2023 12:26:15] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:26:16 - 10.1.1.11 - - [31/Jul/2023 12:26:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 12:26:27 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 12:26:28 -  * Restarting with stat
+31-Jul-23 12:26:30 -  * Debugger is active!
+31-Jul-23 12:26:30 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:26:34 - 10.1.1.11 - - [31/Jul/2023 12:26:34] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:26:34 - 10.1.1.11 - - [31/Jul/2023 12:26:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 12:26:43 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 12:26:44 -  * Restarting with stat
+31-Jul-23 12:26:48 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 12:26:48 -  * Restarting with stat
+31-Jul-23 12:26:50 -  * Debugger is active!
+31-Jul-23 12:26:50 -  * Debugger PIN: 694-802-132
+31-Jul-23 12:26:51 - 10.1.1.11 - - [31/Jul/2023 12:26:51] "GET / HTTP/1.1" 200 -
+31-Jul-23 12:26:51 - 10.1.1.11 - - [31/Jul/2023 12:26:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 13:07:09 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 13:07:09 -  * Restarting with stat
+31-Jul-23 13:07:11 -  * Debugger is active!
+31-Jul-23 13:07:11 -  * Debugger PIN: 979-102-577
+31-Jul-23 13:07:14 - 10.1.1.11 - - [31/Jul/2023 13:07:14] "GET / HTTP/1.1" 200 -
+31-Jul-23 13:07:15 - 10.1.1.11 - - [31/Jul/2023 13:07:15] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 13:07:16 - 10.1.1.11 - - [31/Jul/2023 13:07:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 13:38:40 - 10.1.1.11 - - [31/Jul/2023 13:38:40] "GET / HTTP/1.1" 200 -
+31-Jul-23 13:38:41 - 10.1.1.11 - - [31/Jul/2023 13:38:41] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 13:39:31 - 10.1.1.11 - - [31/Jul/2023 13:39:31] "GET / HTTP/1.1" 200 -
+31-Jul-23 13:39:31 - 10.1.1.11 - - [31/Jul/2023 13:39:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 13:39:35 - 10.1.1.11 - - [31/Jul/2023 13:39:35] "GET / HTTP/1.1" 200 -
+31-Jul-23 13:39:35 - 10.1.1.11 - - [31/Jul/2023 13:39:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 13:39:37 - 10.1.1.11 - - [31/Jul/2023 13:39:37] "GET / HTTP/1.1" 200 -
+31-Jul-23 13:39:37 - 10.1.1.11 - - [31/Jul/2023 13:39:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 13:39:52 - 10.1.1.11 - - [31/Jul/2023 13:39:52] "GET / HTTP/1.1" 200 -
+31-Jul-23 13:39:52 - 10.1.1.11 - - [31/Jul/2023 13:39:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 13:40:00 - 10.1.1.11 - - [31/Jul/2023 13:40:00] "GET / HTTP/1.1" 200 -
+31-Jul-23 13:40:00 - 10.1.1.11 - - [31/Jul/2023 13:40:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 13:40:15 - 10.1.1.11 - - [31/Jul/2023 13:40:15] "GET / HTTP/1.1" 200 -
+31-Jul-23 13:40:15 - 10.1.1.11 - - [31/Jul/2023 13:40:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 14:08:59 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 14:08:59 -  * Restarting with stat
+31-Jul-23 14:09:01 -  * Debugger is active!
+31-Jul-23 14:09:01 -  * Debugger PIN: 979-102-577
+31-Jul-23 14:09:58 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 14:09:58 -  * Restarting with stat
+31-Jul-23 14:11:40 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 14:11:40 -  * Restarting with stat
+31-Jul-23 14:11:42 -  * Debugger is active!
+31-Jul-23 14:11:42 -  * Debugger PIN: 979-102-577
+31-Jul-23 14:11:44 - 10.1.1.11 - - [31/Jul/2023 14:11:44] "[32mGET / HTTP/1.1[0m" 302 -
+31-Jul-23 14:11:44 - 10.1.1.11 - - [31/Jul/2023 14:11:44] "GET /login/?next=%2F HTTP/1.1" 200 -
+31-Jul-23 14:11:44 - 10.1.1.11 - - [31/Jul/2023 14:11:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 14:11:49 - 10.1.1.11 - - [31/Jul/2023 14:11:49] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+31-Jul-23 14:11:49 - 10.1.1.11 - - [31/Jul/2023 14:11:49] "GET / HTTP/1.1" 200 -
+31-Jul-23 14:11:50 - 10.1.1.11 - - [31/Jul/2023 14:11:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 14:11:52 - 10.1.1.11 - - [31/Jul/2023 14:11:52] "GET / HTTP/1.1" 200 -
+31-Jul-23 14:11:52 - 10.1.1.11 - - [31/Jul/2023 14:11:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 14:11:54 - 10.1.1.11 - - [31/Jul/2023 14:11:54] "GET / HTTP/1.1" 200 -
+31-Jul-23 14:11:54 - 10.1.1.11 - - [31/Jul/2023 14:11:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 14:11:55 - 10.1.1.11 - - [31/Jul/2023 14:11:55] "GET / HTTP/1.1" 200 -
+31-Jul-23 14:11:55 - 10.1.1.11 - - [31/Jul/2023 14:11:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 14:11:56 - 10.1.1.11 - - [31/Jul/2023 14:11:56] "GET / HTTP/1.1" 200 -
+31-Jul-23 14:11:56 - 10.1.1.11 - - [31/Jul/2023 14:11:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 14:51:38 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 14:51:38 -  * Restarting with stat
+31-Jul-23 14:51:41 -  * Debugger is active!
+31-Jul-23 14:51:41 -  * Debugger PIN: 129-525-376
+31-Jul-23 14:52:02 - 10.1.1.11 - - [31/Jul/2023 14:52:02] "[35m[1mGET / HTTP/1.1[0m" 500 -
+31-Jul-23 14:52:02 - 10.1.1.11 - - [31/Jul/2023 14:52:02] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+31-Jul-23 14:52:03 - 10.1.1.11 - - [31/Jul/2023 14:52:03] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+31-Jul-23 14:52:03 - 10.1.1.11 - - [31/Jul/2023 14:52:03] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+31-Jul-23 18:15:47 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 18:15:47 -  * Restarting with stat
+31-Jul-23 18:15:49 -  * Debugger is active!
+31-Jul-23 18:15:49 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:16:50 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:16:50 -  * Restarting with stat
+31-Jul-23 18:19:18 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 18:19:18 -  * Restarting with stat
+31-Jul-23 18:19:20 -  * Debugger is active!
+31-Jul-23 18:19:20 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:19:23 - 10.1.1.11 - - [31/Jul/2023 18:19:23] "GET / HTTP/1.1" 200 -
+31-Jul-23 18:19:23 - 10.1.1.11 - - [31/Jul/2023 18:19:23] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 18:19:25 - 10.1.1.11 - - [31/Jul/2023 18:19:25] "[35m[1mGET /toggle_solenoid/ HTTP/1.1[0m" 201 -
+31-Jul-23 18:19:50 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+31-Jul-23 18:19:51 -  * Restarting with stat
+31-Jul-23 18:19:53 -  * Debugger is active!
+31-Jul-23 18:19:53 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:19:53 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+31-Jul-23 18:19:53 -  * Restarting with stat
+31-Jul-23 18:23:02 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 18:23:02 -  * Restarting with stat
+31-Jul-23 18:23:05 -  * Debugger is active!
+31-Jul-23 18:23:05 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:23:19 - 10.1.1.11 - - [31/Jul/2023 18:23:19] "GET / HTTP/1.1" 200 -
+31-Jul-23 18:23:19 - 10.1.1.11 - - [31/Jul/2023 18:23:19] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 18:23:21 - 10.1.1.11 - - [31/Jul/2023 18:23:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 18:23:44 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+31-Jul-23 18:23:45 -  * Restarting with stat
+31-Jul-23 18:23:57 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 18:23:57 -  * Restarting with stat
+31-Jul-23 18:23:59 -  * Debugger is active!
+31-Jul-23 18:23:59 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:25:15 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:25:16 -  * Restarting with stat
+31-Jul-23 18:25:18 -  * Debugger is active!
+31-Jul-23 18:25:18 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:25:18 - 10.1.1.11 - - [31/Jul/2023 18:25:18] "GET / HTTP/1.1" 200 -
+31-Jul-23 18:25:19 - 10.1.1.11 - - [31/Jul/2023 18:25:19] "GET /static/style.css HTTP/1.1" 200 -
+31-Jul-23 18:25:20 - 10.1.1.11 - - [31/Jul/2023 18:25:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+31-Jul-23 18:26:48 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:26:49 -  * Restarting with stat
+31-Jul-23 18:26:51 -  * Debugger is active!
+31-Jul-23 18:26:51 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:28:14 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:28:15 -  * Restarting with stat
+31-Jul-23 18:28:17 -  * Debugger is active!
+31-Jul-23 18:28:17 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:28:33 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:28:33 -  * Restarting with stat
+31-Jul-23 18:28:35 -  * Debugger is active!
+31-Jul-23 18:28:35 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:28:36 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:28:37 -  * Restarting with stat
+31-Jul-23 18:28:39 -  * Debugger is active!
+31-Jul-23 18:28:39 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:28:47 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 18:28:47 -  * Restarting with stat
+31-Jul-23 18:28:50 -  * Debugger is active!
+31-Jul-23 18:28:50 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:29:25 - 10.1.1.11 - - [31/Jul/2023 18:29:25] "GET / HTTP/1.1" 200 -
+31-Jul-23 18:29:25 - 10.1.1.11 - - [31/Jul/2023 18:29:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 18:33:36 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:33:36 -  * Restarting with stat
+31-Jul-23 18:33:38 -  * Debugger is active!
+31-Jul-23 18:33:38 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:40:26 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:40:27 -  * Restarting with stat
+31-Jul-23 18:40:29 -  * Debugger is active!
+31-Jul-23 18:40:29 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:40:30 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:40:31 -  * Restarting with stat
+31-Jul-23 18:41:22 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 18:41:22 -  * Restarting with stat
+31-Jul-23 18:41:24 -  * Debugger is active!
+31-Jul-23 18:41:24 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:41:31 - 10.1.1.11 - - [31/Jul/2023 18:41:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+31-Jul-23 18:41:32 - 10.1.1.11 - - [31/Jul/2023 18:41:32] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+31-Jul-23 18:41:32 - 10.1.1.11 - - [31/Jul/2023 18:41:32] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+31-Jul-23 18:41:32 - 10.1.1.11 - - [31/Jul/2023 18:41:32] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+31-Jul-23 18:41:32 - 10.1.1.11 - - [31/Jul/2023 18:41:32] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+31-Jul-23 18:42:26 - 10.1.1.11 - - [31/Jul/2023 18:42:26] "GET / HTTP/1.1" 200 -
+31-Jul-23 18:42:27 - 10.1.1.11 - - [31/Jul/2023 18:42:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 18:42:28 - 10.1.1.11 - - [31/Jul/2023 18:42:28] "[35m[1mGET /toggle_solenoid/1 HTTP/1.1[0m" 500 -
+31-Jul-23 18:42:28 - 10.1.1.11 - - [31/Jul/2023 18:42:28] "GET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+31-Jul-23 18:42:28 - 10.1.1.11 - - [31/Jul/2023 18:42:28] "GET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+31-Jul-23 18:42:29 - 10.1.1.11 - - [31/Jul/2023 18:42:29] "GET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+31-Jul-23 18:42:39 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:42:39 -  * Restarting with stat
+31-Jul-23 18:43:00 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 18:43:00 -  * Restarting with stat
+31-Jul-23 18:43:02 -  * Debugger is active!
+31-Jul-23 18:43:02 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:43:03 - 10.1.1.11 - - [31/Jul/2023 18:43:03] "GET / HTTP/1.1" 200 -
+31-Jul-23 18:43:03 - 10.1.1.11 - - [31/Jul/2023 18:43:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 18:43:04 - 10.1.1.11 - - [31/Jul/2023 18:43:04] "[35m[1mGET /toggle_solenoid/1 HTTP/1.1[0m" 500 -
+31-Jul-23 18:43:05 - 10.1.1.11 - - [31/Jul/2023 18:43:05] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+31-Jul-23 18:43:05 - 10.1.1.11 - - [31/Jul/2023 18:43:05] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+31-Jul-23 18:43:05 - 10.1.1.11 - - [31/Jul/2023 18:43:05] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+31-Jul-23 18:43:05 - 10.1.1.11 - - [31/Jul/2023 18:43:05] "GET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+31-Jul-23 18:43:23 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:43:24 -  * Restarting with stat
+31-Jul-23 18:43:26 -  * Debugger is active!
+31-Jul-23 18:43:26 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:44:51 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:44:51 -  * Restarting with stat
+31-Jul-23 18:44:53 -  * Debugger is active!
+31-Jul-23 18:44:53 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:48:03 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:48:03 -  * Restarting with stat
+31-Jul-23 18:48:05 -  * Debugger is active!
+31-Jul-23 18:48:05 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:48:08 - 10.1.1.11 - - [31/Jul/2023 18:48:08] "[35m[1mGET /toggle_solenoid/1 HTTP/1.1[0m" 500 -
+31-Jul-23 18:48:08 - 10.1.1.11 - - [31/Jul/2023 18:48:08] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+31-Jul-23 18:48:08 - 10.1.1.11 - - [31/Jul/2023 18:48:08] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+31-Jul-23 18:48:09 - 10.1.1.11 - - [31/Jul/2023 18:48:09] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+31-Jul-23 18:48:14 - 10.1.1.11 - - [31/Jul/2023 18:48:14] "GET / HTTP/1.1" 200 -
+31-Jul-23 18:48:14 - 10.1.1.11 - - [31/Jul/2023 18:48:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+31-Jul-23 18:48:15 - 10.1.1.11 - - [31/Jul/2023 18:48:15] "[35m[1mGET /toggle_solenoid/1 HTTP/1.1[0m" 500 -
+31-Jul-23 18:48:16 - 10.1.1.11 - - [31/Jul/2023 18:48:16] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+31-Jul-23 18:48:16 - 10.1.1.11 - - [31/Jul/2023 18:48:16] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+31-Jul-23 18:48:16 - 10.1.1.11 - - [31/Jul/2023 18:48:16] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+31-Jul-23 18:48:16 - 10.1.1.11 - - [31/Jul/2023 18:48:16] "GET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+31-Jul-23 18:48:21 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+31-Jul-23 18:48:21 -  * Restarting with stat
+31-Jul-23 18:48:24 -  * Debugger is active!
+31-Jul-23 18:48:24 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:49:04 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:49:05 -  * Restarting with stat
+31-Jul-23 18:49:07 -  * Debugger is active!
+31-Jul-23 18:49:07 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:49:16 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:49:16 -  * Restarting with stat
+31-Jul-23 18:49:19 -  * Debugger is active!
+31-Jul-23 18:49:19 -  * Debugger PIN: 286-371-919
+31-Jul-23 18:50:07 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+31-Jul-23 18:50:07 -  * Restarting with stat
+31-Jul-23 18:50:10 -  * Debugger is active!
+31-Jul-23 18:50:10 -  * Debugger PIN: 286-371-919
+01-Aug-23 15:57:38 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+01-Aug-23 15:57:38 -  * Restarting with stat
+01-Aug-23 15:57:40 -  * Debugger is active!
+01-Aug-23 15:57:40 -  * Debugger PIN: 308-769-405
+01-Aug-23 15:57:42 - 10.1.1.11 - - [01/Aug/2023 15:57:42] "[35m[1mGET /toggle_solenoid/1 HTTP/1.1[0m" 500 -
+01-Aug-23 15:57:43 - 10.1.1.11 - - [01/Aug/2023 15:57:43] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+01-Aug-23 15:57:43 - 10.1.1.11 - - [01/Aug/2023 15:57:43] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+01-Aug-23 15:57:43 - 10.1.1.11 - - [01/Aug/2023 15:57:43] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+01-Aug-23 15:58:49 - 10.1.1.11 - - [01/Aug/2023 15:58:49] "[35m[1mGET /toggle_solenoid/1 HTTP/1.1[0m" 500 -
+01-Aug-23 15:58:50 - 10.1.1.11 - - [01/Aug/2023 15:58:50] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+01-Aug-23 15:58:50 - 10.1.1.11 - - [01/Aug/2023 15:58:50] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+01-Aug-23 15:58:50 - 10.1.1.11 - - [01/Aug/2023 15:58:50] "[36mGET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+01-Aug-23 15:59:07 - 10.1.1.11 - - [01/Aug/2023 15:59:07] "GET / HTTP/1.1" 200 -
+01-Aug-23 15:59:08 - 10.1.1.11 - - [01/Aug/2023 15:59:08] "GET /static/style.css HTTP/1.1" 200 -
+01-Aug-23 15:59:22 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+01-Aug-23 15:59:22 -  * Restarting with stat
+01-Aug-23 15:59:25 -  * Debugger is active!
+01-Aug-23 15:59:25 -  * Debugger PIN: 308-769-405
+01-Aug-23 15:59:25 - 10.1.1.11 - - [01/Aug/2023 15:59:25] "GET / HTTP/1.1" 200 -
+01-Aug-23 15:59:25 - 10.1.1.11 - - [01/Aug/2023 15:59:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 15:59:51 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 15:59:52 -  * Restarting with stat
+01-Aug-23 15:59:54 -  * Debugger is active!
+01-Aug-23 15:59:54 -  * Debugger PIN: 308-769-405
+01-Aug-23 15:59:57 - 10.1.1.11 - - [01/Aug/2023 15:59:57] "GET / HTTP/1.1" 200 -
+01-Aug-23 15:59:57 - 10.1.1.11 - - [01/Aug/2023 15:59:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:00:18 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:00:19 -  * Restarting with stat
+01-Aug-23 16:00:39 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+01-Aug-23 16:00:39 -  * Restarting with stat
+01-Aug-23 16:00:41 -  * Debugger is active!
+01-Aug-23 16:00:41 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:00:45 - 10.1.1.11 - - [01/Aug/2023 16:00:45] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:00:46 - 10.1.1.11 - - [01/Aug/2023 16:00:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:01:02 - 10.1.1.11 - - [01/Aug/2023 16:01:02] "[35m[1mGET /Interface:toggle_solenoid/1 HTTP/1.1[0m" 500 -
+01-Aug-23 16:01:03 - 10.1.1.11 - - [01/Aug/2023 16:01:03] "GET /Interface:toggle_solenoid/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+01-Aug-23 16:01:03 - 10.1.1.11 - - [01/Aug/2023 16:01:03] "GET /Interface:toggle_solenoid/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+01-Aug-23 16:01:04 - 10.1.1.11 - - [01/Aug/2023 16:01:04] "GET /Interface:toggle_solenoid/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+01-Aug-23 16:01:21 - 10.1.1.11 - - [01/Aug/2023 16:01:21] "[35m[1mGET /Interface:toggle_solenoid/1 HTTP/1.1[0m" 500 -
+01-Aug-23 16:01:22 - 10.1.1.11 - - [01/Aug/2023 16:01:22] "[36mGET /Interface:toggle_solenoid/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:01:22 - 10.1.1.11 - - [01/Aug/2023 16:01:22] "[36mGET /Interface:toggle_solenoid/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+01-Aug-23 16:01:22 - 10.1.1.11 - - [01/Aug/2023 16:01:22] "[36mGET /Interface:toggle_solenoid/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+01-Aug-23 16:01:29 - 10.1.1.11 - - [01/Aug/2023 16:01:29] "[32mGET /toggle_solenoid/1 HTTP/1.1[0m" 308 -
+01-Aug-23 16:01:30 - 10.1.1.11 - - [01/Aug/2023 16:01:30] "[35m[1mGET /toggle_solenoid/1/ HTTP/1.1[0m" 201 -
+01-Aug-23 16:01:36 - 10.1.1.11 - - [01/Aug/2023 16:01:36] "[35m[1mGET /toggle_solenoid/1/ HTTP/1.1[0m" 201 -
+01-Aug-23 16:01:40 - 10.1.1.11 - - [01/Aug/2023 16:01:40] "[32mGET /toggle_solenoid/2 HTTP/1.1[0m" 308 -
+01-Aug-23 16:01:40 - 10.1.1.11 - - [01/Aug/2023 16:01:40] "[35m[1mGET /toggle_solenoid/2/ HTTP/1.1[0m" 201 -
+01-Aug-23 16:01:49 - 10.1.1.11 - - [01/Aug/2023 16:01:49] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:01:49 - 10.1.1.11 - - [01/Aug/2023 16:01:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:01:51 - 10.1.1.11 - - [01/Aug/2023 16:01:51] "[35m[1mGET /toggle_solenoid/1/ HTTP/1.1[0m" 201 -
+01-Aug-23 16:02:01 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:02:02 -  * Restarting with stat
+01-Aug-23 16:02:04 -  * Debugger is active!
+01-Aug-23 16:02:04 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:05:23 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:05:24 -  * Restarting with stat
+01-Aug-23 16:06:58 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+01-Aug-23 16:06:58 -  * Restarting with stat
+01-Aug-23 16:07:00 -  * Debugger is active!
+01-Aug-23 16:07:00 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:07:00 - 10.1.1.11 - - [01/Aug/2023 16:07:00] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:07:01 - 10.1.1.11 - - [01/Aug/2023 16:07:01] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:07:01 - 10.1.1.11 - - [01/Aug/2023 16:07:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:07:09 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:07:10 -  * Restarting with stat
+01-Aug-23 16:07:12 -  * Debugger is active!
+01-Aug-23 16:07:12 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:07:13 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:07:14 -  * Restarting with stat
+01-Aug-23 16:08:54 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+01-Aug-23 16:08:54 -  * Restarting with stat
+01-Aug-23 16:08:56 -  * Debugger is active!
+01-Aug-23 16:08:56 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:08:58 - 10.1.1.11 - - [01/Aug/2023 16:08:58] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:08:58 - 10.1.1.11 - - [01/Aug/2023 16:08:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:09:00 - 10.1.1.11 - - [01/Aug/2023 16:09:00] "[35m[1mGET /toggle_solenoid/1/ HTTP/1.1[0m" 500 -
+01-Aug-23 16:09:00 - 10.1.1.11 - - [01/Aug/2023 16:09:00] "GET /toggle_solenoid/1/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+01-Aug-23 16:09:00 - 10.1.1.11 - - [01/Aug/2023 16:09:00] "GET /toggle_solenoid/1/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+01-Aug-23 16:09:00 - 10.1.1.11 - - [01/Aug/2023 16:09:00] "GET /toggle_solenoid/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+01-Aug-23 16:09:00 - 10.1.1.11 - - [01/Aug/2023 16:09:00] "GET /toggle_solenoid/1/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+01-Aug-23 16:09:13 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:09:13 -  * Restarting with stat
+01-Aug-23 16:09:40 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+01-Aug-23 16:09:40 -  * Restarting with stat
+01-Aug-23 16:09:42 -  * Debugger is active!
+01-Aug-23 16:09:42 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:09:54 - 10.1.1.11 - - [01/Aug/2023 16:09:54] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:09:54 - 10.1.1.11 - - [01/Aug/2023 16:09:54] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:09:54 - 10.1.1.11 - - [01/Aug/2023 16:09:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:09:59 - 10.1.1.11 - - [01/Aug/2023 16:09:59] "[32mGET /toggle_solenoid/2/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:09:59 - 10.1.1.11 - - [01/Aug/2023 16:09:59] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:09:59 - 10.1.1.11 - - [01/Aug/2023 16:09:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:10:04 - 10.1.1.11 - - [01/Aug/2023 16:10:04] "[32mGET /toggle_solenoid/4 HTTP/1.1[0m" 308 -
+01-Aug-23 16:10:05 - 10.1.1.11 - - [01/Aug/2023 16:10:05] "[35m[1mGET /toggle_solenoid/4/ HTTP/1.1[0m" 500 -
+01-Aug-23 16:10:05 - 10.1.1.11 - - [01/Aug/2023 16:10:05] "GET /toggle_solenoid/4/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+01-Aug-23 16:10:05 - 10.1.1.11 - - [01/Aug/2023 16:10:05] "GET /toggle_solenoid/4/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+01-Aug-23 16:10:06 - 10.1.1.11 - - [01/Aug/2023 16:10:06] "GET /toggle_solenoid/4/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+01-Aug-23 16:10:06 - 10.1.1.11 - - [01/Aug/2023 16:10:06] "GET /toggle_solenoid/4/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+01-Aug-23 16:10:18 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:10:18 -  * Restarting with stat
+01-Aug-23 16:10:20 -  * Debugger is active!
+01-Aug-23 16:10:20 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:10:24 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:10:24 -  * Restarting with stat
+01-Aug-23 16:11:10 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+01-Aug-23 16:11:10 -  * Restarting with stat
+01-Aug-23 16:11:12 -  * Debugger is active!
+01-Aug-23 16:11:12 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:11:20 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:11:21 -  * Restarting with stat
+01-Aug-23 16:11:23 -  * Debugger is active!
+01-Aug-23 16:11:23 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:11:24 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:11:25 -  * Restarting with stat
+01-Aug-23 16:11:50 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+01-Aug-23 16:11:50 -  * Restarting with stat
+01-Aug-23 16:11:53 -  * Debugger is active!
+01-Aug-23 16:11:53 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:12:37 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:12:37 -  * Restarting with stat
+01-Aug-23 16:12:39 -  * Debugger is active!
+01-Aug-23 16:12:39 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:12:51 - 10.1.1.11 - - [01/Aug/2023 16:12:51] "[35m[1mGET /toggle_solenoid/4/ HTTP/1.1[0m" 500 -
+01-Aug-23 16:12:52 - 10.1.1.11 - - [01/Aug/2023 16:12:52] "[36mGET /toggle_solenoid/4/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:12:52 - 10.1.1.11 - - [01/Aug/2023 16:12:52] "[36mGET /toggle_solenoid/4/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+01-Aug-23 16:12:53 - 10.1.1.11 - - [01/Aug/2023 16:12:53] "[36mGET /toggle_solenoid/4/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+01-Aug-23 16:12:53 - 10.1.1.11 - - [01/Aug/2023 16:12:53] "GET /toggle_solenoid/4/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+01-Aug-23 16:12:56 - 10.1.1.11 - - [01/Aug/2023 16:12:56] "[32mGET /toggle_solenoid/3 HTTP/1.1[0m" 308 -
+01-Aug-23 16:12:56 - 10.1.1.11 - - [01/Aug/2023 16:12:56] "[32mGET /toggle_solenoid/3/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:12:56 - 10.1.1.11 - - [01/Aug/2023 16:12:56] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:12:57 - 10.1.1.11 - - [01/Aug/2023 16:12:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:13:03 - 10.1.1.11 - - [01/Aug/2023 16:13:03] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:13:04 - 10.1.1.11 - - [01/Aug/2023 16:13:04] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:13:04 - 10.1.1.11 - - [01/Aug/2023 16:13:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:13:09 - 10.1.1.11 - - [01/Aug/2023 16:13:09] "[32mGET /toggle_solenoid/0 HTTP/1.1[0m" 308 -
+01-Aug-23 16:13:10 - 10.1.1.11 - - [01/Aug/2023 16:13:10] "[32mGET /toggle_solenoid/0/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:13:10 - 10.1.1.11 - - [01/Aug/2023 16:13:10] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:13:10 - 10.1.1.11 - - [01/Aug/2023 16:13:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:14:25 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:14:25 -  * Restarting with stat
+01-Aug-23 16:14:50 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+01-Aug-23 16:14:50 -  * Restarting with stat
+01-Aug-23 16:14:52 -  * Debugger is active!
+01-Aug-23 16:14:52 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:14:53 - 10.1.1.11 - - [01/Aug/2023 16:14:53] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:14:53 - 10.1.1.11 - - [01/Aug/2023 16:14:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:14:58 - 10.1.1.11 - - [01/Aug/2023 16:14:58] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:14:58 - 10.1.1.11 - - [01/Aug/2023 16:14:58] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:14:58 - 10.1.1.11 - - [01/Aug/2023 16:14:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:15:09 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:15:10 -  * Restarting with stat
+01-Aug-23 16:15:12 -  * Debugger is active!
+01-Aug-23 16:15:12 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:15:13 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:15:14 -  * Restarting with stat
+01-Aug-23 16:15:16 -  * Debugger is active!
+01-Aug-23 16:15:16 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:15:16 - 10.1.1.11 - - [01/Aug/2023 16:15:16] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:15:17 - 10.1.1.11 - - [01/Aug/2023 16:15:17] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:15:17 - 10.1.1.11 - - [01/Aug/2023 16:15:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:15:19 - 10.1.1.11 - - [01/Aug/2023 16:15:19] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:15:19 - 10.1.1.11 - - [01/Aug/2023 16:15:19] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:15:19 - 10.1.1.11 - - [01/Aug/2023 16:15:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:15:21 - 10.1.1.11 - - [01/Aug/2023 16:15:21] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:15:21 - 10.1.1.11 - - [01/Aug/2023 16:15:21] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:15:22 - 10.1.1.11 - - [01/Aug/2023 16:15:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:16:08 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:16:08 -  * Restarting with stat
+01-Aug-23 16:16:32 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+01-Aug-23 16:16:32 -  * Restarting with stat
+01-Aug-23 16:16:34 -  * Debugger is active!
+01-Aug-23 16:16:34 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:16:38 - 10.1.1.11 - - [01/Aug/2023 16:16:38] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:16:39 - 10.1.1.11 - - [01/Aug/2023 16:16:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:16:41 - 10.1.1.11 - - [01/Aug/2023 16:16:41] "[32mGET /toggle_solenoid/0/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:16:41 - 10.1.1.11 - - [01/Aug/2023 16:16:41] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:16:41 - 10.1.1.11 - - [01/Aug/2023 16:16:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:16:42 - 10.1.1.11 - - [01/Aug/2023 16:16:42] "[32mGET /toggle_solenoid/0/ HTTP/1.1[0m" 302 -
+01-Aug-23 16:16:42 - 10.1.1.11 - - [01/Aug/2023 16:16:42] "GET / HTTP/1.1" 200 -
+01-Aug-23 16:16:43 - 10.1.1.11 - - [01/Aug/2023 16:16:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+01-Aug-23 16:17:04 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:17:04 -  * Restarting with stat
+01-Aug-23 16:17:07 -  * Debugger is active!
+01-Aug-23 16:17:07 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:18:14 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:18:14 -  * Restarting with stat
+01-Aug-23 16:18:16 -  * Debugger is active!
+01-Aug-23 16:18:16 -  * Debugger PIN: 308-769-405
+01-Aug-23 16:18:20 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+01-Aug-23 16:18:20 -  * Restarting with stat
+03-Aug-23 06:32:52 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+03-Aug-23 06:32:52 -  * Restarting with stat
+03-Aug-23 06:32:54 -  * Debugger is active!
+03-Aug-23 06:32:54 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:32:54 - 192.168.1.1 - - [03/Aug/2023 06:32:54] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:32:55 - 192.168.1.1 - - [03/Aug/2023 06:32:55] "GET /static/style.css HTTP/1.1" 200 -
+03-Aug-23 06:32:56 - 192.168.1.1 - - [03/Aug/2023 06:32:56] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+03-Aug-23 06:32:56 - 192.168.1.1 - - [03/Aug/2023 06:32:56] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:32:56 - 192.168.1.1 - - [03/Aug/2023 06:32:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 06:32:58 - 192.168.1.1 - - [03/Aug/2023 06:32:58] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+03-Aug-23 06:32:58 - 192.168.1.1 - - [03/Aug/2023 06:32:58] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:32:58 - 192.168.1.1 - - [03/Aug/2023 06:32:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 06:33:46 - 192.168.1.1 - - [03/Aug/2023 06:33:46] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+03-Aug-23 06:33:46 - 192.168.1.1 - - [03/Aug/2023 06:33:46] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:33:46 - 192.168.1.1 - - [03/Aug/2023 06:33:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 06:33:49 - 192.168.1.1 - - [03/Aug/2023 06:33:49] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+03-Aug-23 06:33:49 - 192.168.1.1 - - [03/Aug/2023 06:33:49] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:33:49 - 192.168.1.1 - - [03/Aug/2023 06:33:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 06:33:52 - 192.168.1.1 - - [03/Aug/2023 06:33:52] "[32mGET /toggle_solenoid/3/ HTTP/1.1[0m" 302 -
+03-Aug-23 06:33:52 - 192.168.1.1 - - [03/Aug/2023 06:33:52] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:33:52 - 192.168.1.1 - - [03/Aug/2023 06:33:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 06:33:52 - 192.168.1.1 - - [03/Aug/2023 06:33:52] "[32mGET /toggle_solenoid/3/ HTTP/1.1[0m" 302 -
+03-Aug-23 06:33:52 - 192.168.1.1 - - [03/Aug/2023 06:33:52] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:33:53 - 192.168.1.1 - - [03/Aug/2023 06:33:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 06:34:07 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:34:07 -  * Restarting with stat
+03-Aug-23 06:34:10 -  * Debugger is active!
+03-Aug-23 06:34:10 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:34:10 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:34:10 -  * Restarting with stat
+03-Aug-23 06:34:12 -  * Debugger is active!
+03-Aug-23 06:34:12 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:34:17 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:34:17 -  * Restarting with stat
+03-Aug-23 06:34:20 -  * Debugger is active!
+03-Aug-23 06:34:20 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:34:21 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:34:21 -  * Restarting with stat
+03-Aug-23 06:34:24 -  * Debugger is active!
+03-Aug-23 06:34:24 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:34:24 - 192.168.1.1 - - [03/Aug/2023 06:34:24] "[32mGET /toggle_solenoid/2/ HTTP/1.1[0m" 302 -
+03-Aug-23 06:34:24 - 192.168.1.1 - - [03/Aug/2023 06:34:24] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:34:24 - 192.168.1.1 - - [03/Aug/2023 06:34:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 06:34:25 - 192.168.1.1 - - [03/Aug/2023 06:34:25] "[32mGET /toggle_solenoid/2/ HTTP/1.1[0m" 302 -
+03-Aug-23 06:34:25 - 192.168.1.1 - - [03/Aug/2023 06:34:25] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:34:25 - 192.168.1.1 - - [03/Aug/2023 06:34:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 06:34:28 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:34:29 -  * Restarting with stat
+03-Aug-23 06:34:31 -  * Debugger is active!
+03-Aug-23 06:34:31 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:34:58 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:34:59 -  * Restarting with stat
+03-Aug-23 06:35:01 -  * Debugger is active!
+03-Aug-23 06:35:01 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:35:03 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:35:04 -  * Restarting with stat
+03-Aug-23 06:35:06 -  * Debugger is active!
+03-Aug-23 06:35:06 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:35:08 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:35:09 -  * Restarting with stat
+03-Aug-23 06:35:11 -  * Debugger is active!
+03-Aug-23 06:35:11 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:35:18 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:35:18 -  * Restarting with stat
+03-Aug-23 06:35:20 -  * Debugger is active!
+03-Aug-23 06:35:20 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:35:24 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:35:24 -  * Restarting with stat
+03-Aug-23 06:35:27 -  * Debugger is active!
+03-Aug-23 06:35:27 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:35:30 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:35:30 -  * Restarting with stat
+03-Aug-23 06:35:33 -  * Debugger is active!
+03-Aug-23 06:35:33 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:35:36 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:35:37 -  * Restarting with stat
+03-Aug-23 06:35:39 -  * Debugger is active!
+03-Aug-23 06:35:39 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:35:47 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:35:47 -  * Restarting with stat
+03-Aug-23 06:35:49 -  * Debugger is active!
+03-Aug-23 06:35:49 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:36:08 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+03-Aug-23 06:36:08 -  * Restarting with stat
+03-Aug-23 06:36:11 -  * Debugger is active!
+03-Aug-23 06:36:11 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:36:16 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+03-Aug-23 06:36:17 -  * Restarting with stat
+03-Aug-23 06:36:49 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+03-Aug-23 06:36:49 -  * Restarting with stat
+03-Aug-23 06:36:51 -  * Debugger is active!
+03-Aug-23 06:36:51 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:37:01 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:37:01 -  * Restarting with stat
+03-Aug-23 06:37:22 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+03-Aug-23 06:37:22 -  * Restarting with stat
+03-Aug-23 06:37:24 -  * Debugger is active!
+03-Aug-23 06:37:24 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:37:29 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:37:29 -  * Restarting with stat
+03-Aug-23 06:37:35 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+03-Aug-23 06:37:35 -  * Restarting with stat
+03-Aug-23 06:37:37 -  * Debugger is active!
+03-Aug-23 06:37:37 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:37:47 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:37:48 -  * Restarting with stat
+03-Aug-23 06:37:50 -  * Debugger is active!
+03-Aug-23 06:37:50 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:44:12 -  * Detected change in '/home/server/GreenFlow/greenflow/solenoid.py', reloading
+03-Aug-23 06:44:13 -  * Restarting with stat
+03-Aug-23 06:44:15 -  * Debugger is active!
+03-Aug-23 06:44:15 -  * Debugger PIN: 306-478-312
+03-Aug-23 06:48:06 - 192.168.1.1 - - [03/Aug/2023 06:48:06] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:48:06 - 192.168.1.1 - - [03/Aug/2023 06:48:06] "GET /static/style.css HTTP/1.1" 200 -
+03-Aug-23 06:48:35 - 192.168.1.1 - - [03/Aug/2023 06:48:35] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:48:35 - 192.168.1.1 - - [03/Aug/2023 06:48:35] "GET /static/style.css HTTP/1.1" 200 -
+03-Aug-23 06:48:49 - 192.168.1.1 - - [03/Aug/2023 06:48:49] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:48:49 - 192.168.1.1 - - [03/Aug/2023 06:48:49] "GET /static/style.css HTTP/1.1" 200 -
+03-Aug-23 06:49:03 - 192.168.1.1 - - [03/Aug/2023 06:49:03] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:49:03 - 192.168.1.1 - - [03/Aug/2023 06:49:03] "GET /static/style.css HTTP/1.1" 200 -
+03-Aug-23 06:49:14 - 192.168.1.1 - - [03/Aug/2023 06:49:14] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:49:14 - 192.168.1.1 - - [03/Aug/2023 06:49:14] "GET /static/style.css HTTP/1.1" 200 -
+03-Aug-23 06:49:23 - 192.168.1.1 - - [03/Aug/2023 06:49:23] "GET / HTTP/1.1" 200 -
+03-Aug-23 06:49:23 - 192.168.1.1 - - [03/Aug/2023 06:49:23] "GET /static/style.css HTTP/1.1" 200 -
+03-Aug-23 07:28:57 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+03-Aug-23 07:28:57 -  * Restarting with stat
+03-Aug-23 07:29:00 -  * Debugger is active!
+03-Aug-23 07:29:00 -  * Debugger PIN: 599-794-989
+03-Aug-23 07:29:01 - 192.168.1.1 - - [03/Aug/2023 07:29:01] "GET / HTTP/1.1" 200 -
+03-Aug-23 07:29:01 - 192.168.1.1 - - [03/Aug/2023 07:29:01] "GET /static/style.css HTTP/1.1" 200 -
+03-Aug-23 07:34:37 - 192.168.1.1 - - [03/Aug/2023 07:34:37] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+03-Aug-23 07:34:37 - 192.168.1.1 - - [03/Aug/2023 07:34:37] "GET / HTTP/1.1" 200 -
+03-Aug-23 07:34:37 - 192.168.1.1 - - [03/Aug/2023 07:34:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 07:34:39 - 192.168.1.1 - - [03/Aug/2023 07:34:39] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+03-Aug-23 07:34:39 - 192.168.1.1 - - [03/Aug/2023 07:34:39] "GET / HTTP/1.1" 200 -
+03-Aug-23 07:34:40 - 192.168.1.1 - - [03/Aug/2023 07:34:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 07:47:00 - 192.168.1.1 - - [03/Aug/2023 07:47:00] "[32mGET / HTTP/1.1[0m" 302 -
+03-Aug-23 07:47:00 - 192.168.1.1 - - [03/Aug/2023 07:47:00] "GET /login/?next=%2F HTTP/1.1" 200 -
+03-Aug-23 07:47:00 - 192.168.1.1 - - [03/Aug/2023 07:47:00] "GET /static/style.css HTTP/1.1" 200 -
+03-Aug-23 07:47:01 - 192.168.1.1 - - [03/Aug/2023 07:47:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+03-Aug-23 07:47:07 - 192.168.1.1 - - [03/Aug/2023 07:47:07] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+03-Aug-23 07:47:07 - 192.168.1.1 - - [03/Aug/2023 07:47:07] "GET / HTTP/1.1" 200 -
+03-Aug-23 07:47:07 - 192.168.1.1 - - [03/Aug/2023 07:47:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 07:47:10 - 192.168.1.1 - - [03/Aug/2023 07:47:10] "[32mGET /toggle_solenoid/0 HTTP/1.1[0m" 308 -
+03-Aug-23 07:47:10 - 192.168.1.1 - - [03/Aug/2023 07:47:10] "[32mGET /toggle_solenoid/0/ HTTP/1.1[0m" 302 -
+03-Aug-23 07:47:10 - 192.168.1.1 - - [03/Aug/2023 07:47:10] "GET / HTTP/1.1" 200 -
+03-Aug-23 07:47:10 - 192.168.1.1 - - [03/Aug/2023 07:47:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 07:47:11 - 192.168.1.1 - - [03/Aug/2023 07:47:11] "[32mGET /toggle_solenoid/0/ HTTP/1.1[0m" 302 -
+03-Aug-23 07:47:11 - 192.168.1.1 - - [03/Aug/2023 07:47:11] "GET / HTTP/1.1" 200 -
+03-Aug-23 07:47:11 - 192.168.1.1 - - [03/Aug/2023 07:47:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 07:48:05 - 192.168.1.1 - - [03/Aug/2023 07:48:05] "GET / HTTP/1.1" 200 -
+03-Aug-23 07:48:05 - 192.168.1.1 - - [03/Aug/2023 07:48:05] "GET /static/style.css HTTP/1.1" 200 -
+03-Aug-23 07:48:10 - 192.168.1.1 - - [03/Aug/2023 07:48:10] "[32mGET /logout HTTP/1.1[0m" 308 -
+03-Aug-23 07:48:10 - 192.168.1.1 - - [03/Aug/2023 07:48:10] "[32mGET /logout/ HTTP/1.1[0m" 302 -
+03-Aug-23 07:48:10 - 192.168.1.1 - - [03/Aug/2023 07:48:10] "GET /login/ HTTP/1.1" 200 -
+03-Aug-23 07:48:10 - 192.168.1.1 - - [03/Aug/2023 07:48:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 07:48:15 - 192.168.1.1 - - [03/Aug/2023 07:48:15] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+03-Aug-23 07:48:15 - 192.168.1.1 - - [03/Aug/2023 07:48:15] "GET / HTTP/1.1" 200 -
+03-Aug-23 07:48:15 - 192.168.1.1 - - [03/Aug/2023 07:48:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+03-Aug-23 07:48:17 - 192.168.1.1 - - [03/Aug/2023 07:48:17] "GET / HTTP/1.1" 200 -
+03-Aug-23 07:48:17 - 192.168.1.1 - - [03/Aug/2023 07:48:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

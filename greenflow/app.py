@@ -63,11 +63,11 @@ class Interface(FlaskView):
     def _initilization(self):
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
-        self.solenoids = {}
-        for i in range(1, 5):
-            self.solenoids[i] = Solenoid(i + 1)
-        for solenoid in self.solenoids:
-            print(solenoid)
+        self.solenoids = []
+        for i in range(0, 4):
+            self.solenoids.append(Solenoid(i, i + 2, f"Hose {i + 1}"))
+            self.solenoids[i].turn_off()
+            
 
     default_methods = ['GET', 'POST']
     def login(self):
@@ -104,7 +104,12 @@ class Interface(FlaskView):
         logout_user()
         return redirect(url_for("Interface:login"))
     
-
+    @login_required
+    @app.route("/Interface:toggle_solenoid/<int:id>")
+    def toggle_solenoid(self, id):
+        self.solenoids[int(id)].toggle_state()
+        return redirect(url_for("Interface:index"))
+    
     def is_authenticated(self, username, password):
         user_to_check = Users.query.filter_by(username=username).first()
         if user_to_check != None:
@@ -113,6 +118,13 @@ class Interface(FlaskView):
                 return True
         else:
             return False
+        
+    def add_user_to_db(self, username, password):
+        user_to_check = Users.query.filter_by(username="Jull").first()
+        if user_to_check != None:
+            user = Users(username=username, password_hash=generate_password_hash(password))
+            db.session.add(user)
+            db.session.commit()
 
 
 Interface._initilization()
