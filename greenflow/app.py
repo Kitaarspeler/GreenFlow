@@ -1,3 +1,4 @@
+import sys
 import logging
 import mysql.connector
 import RPi.GPIO as GPIO
@@ -33,9 +34,11 @@ class Users(db.Model, UserMixin):
     Attributes
     ----------
 
+    id
+        identifier for each user
     username
         username of user
-    password
+    password_hash
         encrypted password for the user
     """
 
@@ -55,10 +58,39 @@ class Users(db.Model, UserMixin):
         return check_password_hash(self.password_hash, password)
 
     def __repr__(self):
-        return "<Name %r" % self.user
+        return f"<Name {self.user}"
+    
+
+class Solenoids(db.Model):
+    """A solenoid capable of turning off and on, with a GPIO pin and a name
+    
+    Attributes
+    ----------
+
+    id
+        identifier for each solenoid
+    pin
+        GPIO pin to interact with the solenoid
+    state
+        whether the solenoid is on or off (True or False)
+    name
+        identifier given by the user
+    """
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    pin = db.Column(db.Integer, nullable=False, unique=True)
+    state = db.Column(db.Boolean, nullable=False)
+    name = db.Column(db.String(50), nullable=False)
+
+    def __repr__(self):
+        return f"Soleoid on pin {self.pin}"
 
 
 class Interface(FlaskView):
+    """Flask web interface to interact with the garden watering system
+    
+    """
+
     @classmethod
     def _initilization(self):
         GPIO.setmode(GPIO.BCM)
@@ -67,11 +99,10 @@ class Interface(FlaskView):
         for i in range(0, 4):
             self.solenoids.append(Solenoid(i, i + 2, f"Hose {i + 1}"))
             self.solenoids[i].turn_off()
-            
+
     default_methods = ['GET', 'POST']
     def login(self):
         if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
-            # Create variables for easy access
             username = request.form['username']
             password = request.form['password']
             if self.is_authenticated(username, password):
@@ -83,20 +114,20 @@ class Interface(FlaskView):
 
     @login_required
     def index(self):
-        session["_user_id"]
+        #session["_user_id"]
         return render_template("index.html", solenoids=self.solenoids)
-        
+
     @login_required
     def water(self):
         return render_template("water.html")
-    
+
     @login_required
     def schedule(self):
         return render_template("schedule.html", solenoids=self.solenoids)
-    
+
     @login_required
     def settings(self):
-        return render_template("settings.html")
+        return render_template("settings.html", solenoids=self.solenoids)
     
     @login_required
     def logout(self):
@@ -118,12 +149,35 @@ class Interface(FlaskView):
         else:
             return False
         
+    @login_required
     def add_user_to_db(self, username, password):
         user_to_check = Users.query.filter_by(username="Jull").first()
         if user_to_check != None:
             user = Users(username=username, password_hash=generate_password_hash(password))
             db.session.add(user)
             db.session.commit()
+
+    @login_required
+    def update_solenoid_names(self):
+        if request.method == 'POST' and ('0' in request.form or '1' in request.form or '2' in request.form or '3' in request.form):
+            if request.form['0'] != "":
+                update_0 = Solenoids.query.get_or_404(0)
+                update_0.name = request.form['0']
+            if request.form['1'] != "":
+                update_1 = Solenoids.query.get_or_404(1)
+                update_1.name = request.form['1']
+            if request.form['2'] != "":
+                update_2 = Solenoids.query.get_or_404(2)
+                update_2.name = request.form['2']
+            if request.form['3'] != "":
+                update_3 = Solenoids.query.get_or_404(3)
+                update_3.name = request.form['3']
+            try:
+                db.session.commit()
+            except:
+                logging.error("Solenoid update failed")
+                print("Solenoid update failed")
+        return redirect(url_for("Interface:settings"))
 
 
 Interface._initilization()

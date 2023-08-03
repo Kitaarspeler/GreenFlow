@@ -82,6 +82,17 @@ body {
     width: 5rem;
 }
 
+/* Settings Page */
+.update-solenoid-names {
+    padding: 3px;
+}
+
+.settings-submit {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px;
+}
+
 /* Footer (optional) */
 .footer {
     text-align: center;
