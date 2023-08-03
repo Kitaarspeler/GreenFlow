@@ -3,4 +3,38 @@
 {% block content %}
     <h1>{% block title %} Schedules {% endblock %}</h1>
     
+    <div class="schedule container-dark">
+        <div class="drop-down">
+            <p class="drop-title">Turn on:</p>
+            <select name="solenoid" id="solenoid_choice">
+                {% for solenoid in solenoids %}
+                    <option value="{{ solenoid.id }}">{{ solenoid.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="drop-down">
+            <p class="drop-title">Every:</p>
+            <div class="inline-row">
+                <select name="how_often" id="how_often">
+                    <option value="hour">Hour</option>
+                    <option value="xhours">X Hours</option>
+                    <option value="day">Day</option>
+                    <option value="xdays">X Days</option>
+                    <option value="week">Week</option>
+                </select>
+            </div>
+            <div class="inline-row">
+                <input type="number" name="rate" placeholder="0" id="rate_num">
+            </div>
+        </div>
+        <div class="drop-down">
+            <p class="drop-title">For:</p>
+            <div class="inline-row">
+                <input type="number" name="length" placeholder="0" id="length">
+            </div>
+            <div class="inline-row">
+                <p>minutes</p>
+            </div>
+        </div>
+    </div>
 {% endblock %}

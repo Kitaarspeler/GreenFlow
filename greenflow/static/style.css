@@ -31,7 +31,7 @@ body {
     text-align: center;
 }
 
-.container_dark {
+.container-dark {
     margin: 5px;
     border: 1px solid #7a7a7a;
     border-radius: 5px;
@@ -62,6 +62,24 @@ body {
 
 .login input {
     margin: 20px;
+}
+
+/* Schedule Page */
+.drop-title {
+    padding-top: 5px;
+}
+
+.drop-down {
+    margin: 20px;
+    text-align: center;
+}
+
+.inline-row {
+    display: inline-block;
+}
+
+.schedule input{
+    width: 5rem;
 }
 
 /* Footer (optional) */

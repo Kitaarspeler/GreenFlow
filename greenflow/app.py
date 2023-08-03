@@ -3,7 +3,7 @@ import mysql.connector
 import RPi.GPIO as GPIO
 from solenoid import Solenoid
 #from models import Users
-from flask import Flask, render_template, request, redirect, url_for, session, flash
+from flask import Flask, render_template, request, redirect, url_for, session
 from flask_classful import FlaskView, route
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, LoginManager, login_required, login_user, logout_user, current_user
@@ -68,7 +68,6 @@ class Interface(FlaskView):
             self.solenoids.append(Solenoid(i, i + 2, f"Hose {i + 1}"))
             self.solenoids[i].turn_off()
             
-
     default_methods = ['GET', 'POST']
     def login(self):
         if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
@@ -78,13 +77,13 @@ class Interface(FlaskView):
             if self.is_authenticated(username, password):
                 return redirect(url_for("Interface:index"))
             else:
-                flash("Wrong Password - Please try again.")
                 return render_template("login.html")
         else:
             return render_template("login.html")
 
     @login_required
     def index(self):
+        session["_user_id"]
         return render_template("index.html", solenoids=self.solenoids)
         
     @login_required
@@ -93,7 +92,7 @@ class Interface(FlaskView):
     
     @login_required
     def schedule(self):
-        return render_template("schedule.html")
+        return render_template("schedule.html", solenoids=self.solenoids)
     
     @login_required
     def settings(self):
@@ -132,10 +131,20 @@ Interface.register(app, route_base='/')
 logging.basicConfig(level=logging.DEBUG, filename='app.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 
+def main():
+    try:
+        app.run(
+            debug = True,
+            host = "0.0.0.0",
+            port = 5000,
+            )
+    except (KeyboardInterrupt,EOFError):
+        GPIO.cleanup()
+        logging.info("Program ended by user")
+        print("Program ended by user")
+        sys.exit()
+
+
 if __name__ == "__main__":
-    app.run(
-        debug = True,
-        host = "0.0.0.0",
-        port = 5000,
-        )
+    main()
     GPIO.cleanup()

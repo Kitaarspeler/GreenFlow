@@ -5,12 +5,10 @@
     
     <div class="row">
     {% for solenoid in solenoids %}
-        <div class="col-sm container_dark">
+        <div class="col-sm container-dark">
             <p>{{ solenoid.name }} is {{ "on" if solenoid.state else "off" }}</p>
             <a class="btn btn-primary" href="/toggle_solenoid/{{ solenoid.id }}">{{ "Turn off" if solenoid.state else "Turn on" }}</a><br><br>
         </div>
     {% endfor %}
     </div>
 {% endblock %}
-
-
