@@ -93,6 +93,11 @@ class Interface(FlaskView):
 
     @classmethod
     def _initilization(self):
+        """
+        
+        """
+        
+        print("Flask Web server (re)starting")
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
 
@@ -103,10 +108,13 @@ class Interface(FlaskView):
                 db.session.add(solenoid)
                 db.session.commit()
             solenoid = Solenoids.query.filter_by(pin=i+1).first()
-            print(solenoid.id, solenoid.pin, solenoid.state, solenoid.name)
 
     default_methods = ['GET', 'POST']
     def login(self):
+        """
+        
+        """
+        
         if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
             username = request.form['username']
             password = request.form['password']
@@ -118,8 +126,7 @@ class Interface(FlaskView):
             return render_template("login.html")
 
     @login_required
-    def index(self):
-        #session["_user_id"]
+    def index(self):        # session["_user_id"] for access
         return render_template("index.html", solenoids=Solenoids.query.all())
 
     @login_required
@@ -181,10 +188,11 @@ class Interface(FlaskView):
     @login_required
     @app.route("/Interface:update_solenoid_names")
     def update_solenoid_names(self):
-        """
+        """Update solenoid names to keep easily recognisable
         
         """
-        
+
+        """
         if request.method == 'POST' and (request.form['1'] != "" or request.form['2'] != "" or request.form['3'] != "" or request.form['4'] != ""):
             if request.form['1'] != "":
                 update_0 = Solenoids.query.get_or_404('1')
@@ -198,6 +206,12 @@ class Interface(FlaskView):
             if request.form['4'] != "":
                 update_3 = Solenoids.query.get_or_404('4')
                 update_3.name = request.form['4']
+            """
+        
+        #print(request.form["solenoid"], request.form["new_name"])
+        if request.method == "POST" and request.form["new_name"] != "":
+            to_update = Solenoids.query.get_or_404(request.form["id"])
+            to_update.name = request.form["new_name"]
             try:
                 db.session.commit()
                 flash("Name update successful")

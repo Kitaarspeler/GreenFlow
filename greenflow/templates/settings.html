@@ -13,10 +13,15 @@
     {% endfor %}
     <div class="update-solenoid-names">
         <form action="{{ url_for('Interface:update_solenoid_names') }}" method="post">
-            {% for solenoid in solenoids %}
-                <p class="drop-title">New name for {{ solenoid.name }}: </p>
-                <input type="text" name="{{ solenoid.id }}" placeholder="{{ solenoid.name }}" id="{{ solenoid.id }}">
-            {% endfor %}
+            <div class="drop-down">
+                <p class="drop-title">Rename garden section:</p>
+                <select name="id" id="solenoid_choice">
+                    {% for solenoid in solenoids %}
+                        <option value="{{ solenoid.id }}">{{ solenoid.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <input type="text" name="new_name" placeholder="e.g. Veges" id="new_name">
         <br><input class="settings-submit" type="submit" value="Set">
         </form>
     </div>
