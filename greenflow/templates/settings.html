@@ -11,18 +11,8 @@
             </button>
         </div>
     {% endfor %}
-    <div class="update-solenoid-names">
-        <form action="{{ url_for('Interface:update_solenoid_names') }}" method="post">
-            <div class="drop-down">
-                <p class="drop-title">Rename garden section:</p>
-                <select name="id" id="solenoid_choice">
-                    {% for solenoid in solenoids %}
-                        <option value="{{ solenoid.id }}">{{ solenoid.name }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-            <input type="text" name="new_name" placeholder="e.g. Veges" id="new_name">
-        <br><input class="settings-submit" type="submit" value="Set">
-        </form>
+    <div class="buttons">
+        <a class="btn btn-dark" href="{{ url_for('Interface:rename') }}">Rename garden section</a><br><br>
+        <a class="btn btn-dark" href="{{ url_for('Interface:change_password') }}">Change password</a><br><br>
     </div>
 {% endblock %}

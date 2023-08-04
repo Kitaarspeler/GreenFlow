@@ -3364,3 +3364,124 @@
 04-Aug-23 16:17:29 - 192.168.1.1 - - [04/Aug/2023 16:17:29] "[32mPOST /update_solenoid_names/ HTTP/1.1[0m" 302 -
 04-Aug-23 16:17:29 - 192.168.1.1 - - [04/Aug/2023 16:17:29] "GET /settings/ HTTP/1.1" 200 -
 04-Aug-23 16:17:29 - 192.168.1.1 - - [04/Aug/2023 16:17:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 16:22:13 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+04-Aug-23 16:22:13 -  * Restarting with stat
+04-Aug-23 17:45:58 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+04-Aug-23 17:45:58 -  * Restarting with stat
+04-Aug-23 17:46:00 -  * Debugger is active!
+04-Aug-23 17:46:00 -  * Debugger PIN: 863-407-664
+04-Aug-23 17:46:01 - 192.168.1.1 - - [04/Aug/2023 17:46:01] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:46:01 - 192.168.1.1 - - [04/Aug/2023 17:46:01] "GET /static/style.css HTTP/1.1" 200 -
+04-Aug-23 17:46:03 - 192.168.1.1 - - [04/Aug/2023 17:46:03] "[33mGET /settings/rename HTTP/1.1[0m" 404 -
+04-Aug-23 17:46:25 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+04-Aug-23 17:46:25 -  * Restarting with stat
+04-Aug-23 17:46:28 -  * Debugger is active!
+04-Aug-23 17:46:28 -  * Debugger PIN: 863-407-664
+04-Aug-23 17:46:32 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+04-Aug-23 17:46:33 -  * Restarting with stat
+04-Aug-23 17:46:35 -  * Debugger is active!
+04-Aug-23 17:46:35 -  * Debugger PIN: 863-407-664
+04-Aug-23 17:46:36 - 192.168.1.1 - - [04/Aug/2023 17:46:36] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:46:36 - 192.168.1.1 - - [04/Aug/2023 17:46:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:46:38 - 192.168.1.1 - - [04/Aug/2023 17:46:38] "[33mGET /settings/rename HTTP/1.1[0m" 404 -
+04-Aug-23 17:48:02 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+04-Aug-23 17:48:03 -  * Restarting with stat
+04-Aug-23 17:48:05 -  * Debugger is active!
+04-Aug-23 17:48:05 -  * Debugger PIN: 863-407-664
+04-Aug-23 17:48:06 - 192.168.1.1 - - [04/Aug/2023 17:48:06] "[33mGET /settings/rename HTTP/1.1[0m" 404 -
+04-Aug-23 17:52:07 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+04-Aug-23 17:52:07 -  * Restarting with stat
+04-Aug-23 17:52:10 -  * Debugger is active!
+04-Aug-23 17:52:10 -  * Debugger PIN: 863-407-664
+04-Aug-23 17:52:50 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+04-Aug-23 17:52:50 -  * Restarting with stat
+04-Aug-23 17:52:53 -  * Debugger is active!
+04-Aug-23 17:52:53 -  * Debugger PIN: 863-407-664
+04-Aug-23 17:52:53 - 192.168.1.1 - - [04/Aug/2023 17:52:53] "[33mGET /settings/rename HTTP/1.1[0m" 404 -
+04-Aug-23 17:52:57 - 192.168.1.1 - - [04/Aug/2023 17:52:57] "[33mGET /settings/rename HTTP/1.1[0m" 404 -
+04-Aug-23 17:53:11 - 192.168.1.1 - - [04/Aug/2023 17:53:11] "[33mGET /settings/rename/ HTTP/1.1[0m" 404 -
+04-Aug-23 17:53:17 - 192.168.1.1 - - [04/Aug/2023 17:53:17] "[33mGET /settings/rename HTTP/1.1[0m" 404 -
+04-Aug-23 17:53:35 - 192.168.1.1 - - [04/Aug/2023 17:53:35] "[35m[1mGET /settings/ HTTP/1.1[0m" 500 -
+04-Aug-23 17:53:35 - 192.168.1.1 - - [04/Aug/2023 17:53:35] "[36mGET /settings/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+04-Aug-23 17:53:35 - 192.168.1.1 - - [04/Aug/2023 17:53:35] "GET /settings/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+04-Aug-23 17:53:35 - 192.168.1.1 - - [04/Aug/2023 17:53:35] "GET /settings/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+04-Aug-23 17:53:47 - 192.168.1.1 - - [04/Aug/2023 17:53:47] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:53:47 - 192.168.1.1 - - [04/Aug/2023 17:53:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:54:02 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+04-Aug-23 17:54:02 -  * Restarting with stat
+04-Aug-23 17:54:05 -  * Debugger is active!
+04-Aug-23 17:54:05 -  * Debugger PIN: 863-407-664
+04-Aug-23 17:54:05 - 192.168.1.1 - - [04/Aug/2023 17:54:05] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:54:05 - 192.168.1.1 - - [04/Aug/2023 17:54:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:54:06 - 192.168.1.1 - - [04/Aug/2023 17:54:06] "GET /rename/ HTTP/1.1" 200 -
+04-Aug-23 17:54:07 - 192.168.1.1 - - [04/Aug/2023 17:54:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:54:28 - 192.168.1.1 - - [04/Aug/2023 17:54:28] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:54:29 - 192.168.1.1 - - [04/Aug/2023 17:54:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:56:11 - 192.168.1.1 - - [04/Aug/2023 17:56:11] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:56:11 - 192.168.1.1 - - [04/Aug/2023 17:56:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:56:18 - 192.168.1.1 - - [04/Aug/2023 17:56:18] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:56:18 - 192.168.1.1 - - [04/Aug/2023 17:56:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:56:21 - 192.168.1.1 - - [04/Aug/2023 17:56:21] "GET /rename/ HTTP/1.1" 200 -
+04-Aug-23 17:56:21 - 192.168.1.1 - - [04/Aug/2023 17:56:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:57:16 - 192.168.1.1 - - [04/Aug/2023 17:57:16] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:57:16 - 192.168.1.1 - - [04/Aug/2023 17:57:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:57:31 - 192.168.1.1 - - [04/Aug/2023 17:57:31] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:57:31 - 192.168.1.1 - - [04/Aug/2023 17:57:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:57:48 - 192.168.1.1 - - [04/Aug/2023 17:57:48] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:57:48 - 192.168.1.1 - - [04/Aug/2023 17:57:48] "GET /static/style.css HTTP/1.1" 200 -
+04-Aug-23 17:57:52 - 192.168.1.1 - - [04/Aug/2023 17:57:52] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:57:52 - 192.168.1.1 - - [04/Aug/2023 17:57:52] "GET /static/style.css HTTP/1.1" 200 -
+04-Aug-23 17:57:55 - 192.168.1.1 - - [04/Aug/2023 17:57:55] "GET /rename/ HTTP/1.1" 200 -
+04-Aug-23 17:57:55 - 192.168.1.1 - - [04/Aug/2023 17:57:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:58:04 - 192.168.1.1 - - [04/Aug/2023 17:58:04] "POST /rename/ HTTP/1.1" 200 -
+04-Aug-23 17:58:04 - 192.168.1.1 - - [04/Aug/2023 17:58:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:58:40 - 192.168.1.1 - - [04/Aug/2023 17:58:40] "GET /rename/ HTTP/1.1" 200 -
+04-Aug-23 17:58:41 - 192.168.1.1 - - [04/Aug/2023 17:58:41] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:58:43 - 192.168.1.1 - - [04/Aug/2023 17:58:43] "GET /rename/ HTTP/1.1" 200 -
+04-Aug-23 17:58:44 - 192.168.1.1 - - [04/Aug/2023 17:58:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:58:50 - 192.168.1.1 - - [04/Aug/2023 17:58:50] "GET / HTTP/1.1" 200 -
+04-Aug-23 17:58:51 - 192.168.1.1 - - [04/Aug/2023 17:58:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:59:09 - 192.168.1.1 - - [04/Aug/2023 17:59:09] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:59:09 - 192.168.1.1 - - [04/Aug/2023 17:59:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 17:59:12 - 192.168.1.1 - - [04/Aug/2023 17:59:12] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 17:59:13 - 192.168.1.1 - - [04/Aug/2023 17:59:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 18:00:38 - 192.168.1.1 - - [04/Aug/2023 18:00:38] "[35m[1mGET /settings/ HTTP/1.1[0m" 500 -
+04-Aug-23 18:00:38 - 192.168.1.1 - - [04/Aug/2023 18:00:38] "[36mGET /settings/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+04-Aug-23 18:00:38 - 192.168.1.1 - - [04/Aug/2023 18:00:38] "[36mGET /settings/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+04-Aug-23 18:00:38 - 192.168.1.1 - - [04/Aug/2023 18:00:38] "[36mGET /settings/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+04-Aug-23 18:00:46 - 192.168.1.1 - - [04/Aug/2023 18:00:46] "[35m[1mGET /settings/ HTTP/1.1[0m" 500 -
+04-Aug-23 18:00:46 - 192.168.1.1 - - [04/Aug/2023 18:00:46] "[36mGET /settings/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+04-Aug-23 18:00:46 - 192.168.1.1 - - [04/Aug/2023 18:00:46] "[36mGET /settings/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+04-Aug-23 18:00:47 - 192.168.1.1 - - [04/Aug/2023 18:00:47] "[36mGET /settings/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+04-Aug-23 18:01:13 - 192.168.1.1 - - [04/Aug/2023 18:01:13] "[35m[1mGET /settings/ HTTP/1.1[0m" 500 -
+04-Aug-23 18:01:14 - 192.168.1.1 - - [04/Aug/2023 18:01:14] "[36mGET /settings/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+04-Aug-23 18:01:14 - 192.168.1.1 - - [04/Aug/2023 18:01:14] "[36mGET /settings/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+04-Aug-23 18:01:14 - 192.168.1.1 - - [04/Aug/2023 18:01:14] "[36mGET /settings/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+04-Aug-23 18:01:22 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+04-Aug-23 18:01:22 -  * Restarting with stat
+04-Aug-23 18:01:25 -  * Debugger is active!
+04-Aug-23 18:01:25 -  * Debugger PIN: 863-407-664
+04-Aug-23 18:01:27 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+04-Aug-23 18:01:28 -  * Restarting with stat
+04-Aug-23 18:02:19 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+04-Aug-23 18:02:19 -  * Restarting with stat
+04-Aug-23 18:02:22 -  * Debugger is active!
+04-Aug-23 18:02:22 -  * Debugger PIN: 863-407-664
+04-Aug-23 18:02:22 - 192.168.1.1 - - [04/Aug/2023 18:02:22] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 18:02:22 - 192.168.1.1 - - [04/Aug/2023 18:02:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 18:02:37 - 192.168.1.1 - - [04/Aug/2023 18:02:37] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 18:02:37 - 192.168.1.1 - - [04/Aug/2023 18:02:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 18:02:41 - 192.168.1.1 - - [04/Aug/2023 18:02:41] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 18:02:41 - 192.168.1.1 - - [04/Aug/2023 18:02:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 18:03:02 - 192.168.1.1 - - [04/Aug/2023 18:03:02] "GET /settings/ HTTP/1.1" 200 -
+04-Aug-23 18:03:02 - 192.168.1.1 - - [04/Aug/2023 18:03:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+04-Aug-23 18:03:05 - 192.168.1.1 - - [04/Aug/2023 18:03:05] "[35m[1mGET /change_password/ HTTP/1.1[0m" 500 -
+04-Aug-23 18:03:06 - 192.168.1.1 - - [04/Aug/2023 18:03:06] "GET /change_password/?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+04-Aug-23 18:03:06 - 192.168.1.1 - - [04/Aug/2023 18:03:06] "GET /change_password/?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+04-Aug-23 18:03:06 - 192.168.1.1 - - [04/Aug/2023 18:03:06] "GET /change_password/?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -

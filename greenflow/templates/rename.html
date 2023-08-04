@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Settings {% endblock %}</h1>
+
+    {% for msg in get_flashed_messages() %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{ msg }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+    <div class="update-solenoid-names">
+        <form action="{{ url_for('Interface:rename') }}" method="post">
+            <div class="drop-down">
+                <p class="drop-title">Rename garden section:</p>
+                <select name="id" id="solenoid_choice">
+                    {% for solenoid in solenoids %}
+                        <option value="{{ solenoid.id }}">{{ solenoid.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <input type="text" name="new_name" placeholder="e.g. Veges" id="new_name">
+        <br><input class="settings-submit" type="submit" value="Set">
+        </form>
+    </div>
+{% endblock %}

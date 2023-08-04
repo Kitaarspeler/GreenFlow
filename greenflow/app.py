@@ -142,6 +142,10 @@ class Interface(FlaskView):
         return render_template("settings.html", solenoids=Solenoids.query.all())
     
     @login_required
+    def rename(self):
+        ...
+    
+    @login_required
     def logout(self):
         """
         
@@ -186,29 +190,11 @@ class Interface(FlaskView):
             db.session.commit()
 
     @login_required
-    @app.route("/Interface:update_solenoid_names")
-    def update_solenoid_names(self):
+    def rename(self):
         """Update solenoid names to keep easily recognisable
         
         """
 
-        """
-        if request.method == 'POST' and (request.form['1'] != "" or request.form['2'] != "" or request.form['3'] != "" or request.form['4'] != ""):
-            if request.form['1'] != "":
-                update_0 = Solenoids.query.get_or_404('1')
-                update_0.name = request.form['1']
-            if request.form['2'] != "":
-                update_1 = Solenoids.query.get_or_404('2')
-                update_1.name = request.form['2']
-            if request.form['3'] != "":
-                update_2 = Solenoids.query.get_or_404('3')
-                update_2.name = request.form['3']
-            if request.form['4'] != "":
-                update_3 = Solenoids.query.get_or_404('4')
-                update_3.name = request.form['4']
-            """
-        
-        #print(request.form["solenoid"], request.form["new_name"])
         if request.method == "POST" and request.form["new_name"] != "":
             to_update = Solenoids.query.get_or_404(request.form["id"])
             to_update.name = request.form["new_name"]
@@ -218,7 +204,11 @@ class Interface(FlaskView):
             except:
                 logging.error("Solenoid update failed")
                 flash("Name Update Failed")
-        return redirect(url_for("Interface:settings"))
+        return render_template("rename.html", solenoids=Solenoids.query.all())
+    
+    @login_required
+    def change_password(self):
+        ...
 
 
 Interface._initilization()
