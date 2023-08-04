@@ -88,6 +88,7 @@ body {
 }
 
 .settings-submit {
+    display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
     margin: 20px;

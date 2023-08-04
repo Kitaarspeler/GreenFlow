@@ -3,14 +3,21 @@
 {% block content %}
     <h1>{% block title %} Settings {% endblock %}</h1>
 
+    {% for msg in get_flashed_messages() %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{ msg }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
     <div class="update-solenoid-names">
         <form action="{{ url_for('Interface:update_solenoid_names') }}" method="post">
             {% for solenoid in solenoids %}
                 <p class="drop-title">New name for {{ solenoid.name }}: </p>
                 <input type="text" name="{{ solenoid.id }}" placeholder="{{ solenoid.name }}" id="{{ solenoid.id }}">
-                <div class="msg">{{ msg }}</div>
             {% endfor %}
-            <input class="settings-submit" type="submit" value="Set">
+        <br><input class="settings-submit" type="submit" value="Set">
         </form>
     </div>
 {% endblock %}

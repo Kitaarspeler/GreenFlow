@@ -3,6 +3,14 @@
 {% block content %}
     <h1>{% block title %} Welcome to GreenFlow {% endblock %}</h1>
     
+    {% for msg in get_flashed_messages() %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{ msg }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
     <div class="row">
     {% for solenoid in solenoids %}
         <div class="col-sm container-dark">

@@ -3,6 +3,17 @@
 {% block content %}
     <h1>{% block title %} Schedules {% endblock %}</h1>
     
+    {% for msg in get_flashed_messages() %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{ msg }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+
+    <!-- SET DROPDOWN FOR SOLENOID TO CHANGE, WITH ONE BOX TO PUT NAME IN -->
+
     <div class="schedule container-dark">
         <div class="drop-down">
             <p class="drop-title">Turn on:</p>
