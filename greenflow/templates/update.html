@@ -13,16 +13,29 @@
                 </button>
             </div>
         {% endfor %}
+        
+        <p class="container-dark">Updating user: {{ user.username }}</p><br>
         <div class="update-users">
-            <form action="{{ url_for('Interface:update') }}" method="post">
-                <p class="">Update username:</p>
-                <input type="text" name="new_name" id="new_name"><br><br>
-                <p class="">Update password:</p>
-                <input type="password" name="new_pass" id="new_pass"><br>
-                <p class="">Confirm password:</p>
-                <input type="password" name="new_pass_2" id="new_pass_2"><br>
+            {% if which == "user" %}
+            <form action="{{ url_for('Interface:update_user') }}" method="post">
+                <div class="container-dark">
+                    <p class="">Update username:</p>
+                    <input type="text" name="new_name" id="new_name"><br><br>
+                </div>
                 <input class="settings-submit" type="submit" value="Set">
             </form>
+            {% endif %}
+            {% if which == "pass" %}
+            <form action="{{ url_for('Interface:update_pass') }}" method="post">
+                <div class="container-dark">
+                    <p class="">Update password:</p>
+                    <input type="password" name="new_pass" id="new_pass"><br>
+                    <p class="">Confirm password:</p>
+                    <input type="password" name="new_pass_2" id="new_pass_2"><br><br>
+                </div>
+                <input class="settings-submit" type="submit" value="Set">
+            </form>
+            {% endif %}
         </div>
     </div>
 {% endblock %}

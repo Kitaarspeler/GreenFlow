@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 import logging
 import mysql.connector
@@ -151,10 +153,6 @@ class Interface(FlaskView):
         return render_template("settings.html", solenoids=Solenoids.query.all())
     
     @login_required
-    def rename(self):
-        ...
-    
-    @login_required
     def logout(self):
         """
         
@@ -223,12 +221,41 @@ class Interface(FlaskView):
         return render_template("rename.html", solenoids=Solenoids.query.all())
     
     @login_required
-    def update(self):
-        """Update user profile
+    def update_user(self):
+        """Update username
         
         """
         
-        return render_template("update.html", users=Users.query.all())
+        uid = session["_user_id"]
+        if request.method == "POST" :
+            if request.form["new_name"] != "":
+                to_update = Users.query.get(uid)
+                to_update.username = request.form["new_name"]
+                try:
+                    db.session.commit()
+                    flash("Username update successful")
+                except:
+                    logging.error("Username update failed")
+                    flash("Username update failed")
+        return render_template("update.html", user=Users.query.get(uid), which="user")
+    
+    @login_required
+    def update_pass(self):
+        """Update password
+        
+        """
+        
+        uid = session["_user_id"]
+        if request.method == "POST" :
+            if request.form["new_pass"] != "" and request.form["new_pass_2"] != "":
+                if request.form["new_pass"] == request.form["new_pass_2"]:
+                    if validate(new_pass):
+                        ...
+                                
+        return render_template("update.html", user=Users.query.get(uid), which="pass")
+
+    def validate(self, new_pass):
+        ...
 
 
 Interface._initilization()
