@@ -2,8 +2,6 @@ import sys
 import logging
 import mysql.connector
 import RPi.GPIO as GPIO
-from solenoid import Solenoid
-#from models import Users
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from flask_classful import FlaskView, route
 from flask_sqlalchemy import SQLAlchemy
@@ -59,7 +57,8 @@ class Users(db.Model, UserMixin):
 
     def __repr__(self):
         return f"<Name {self.user}"
-    
+
+
 
 class Solenoids(db.Model):
     """A solenoid capable of turning off and on, with a GPIO pin and a name
@@ -84,6 +83,15 @@ class Solenoids(db.Model):
 
     def __repr__(self):
         return f"Solenoid on pin {self.pin} is {self.state} with name {self.name}"
+    
+    def toggle_state(self):
+        """Switches state attribute and sets GPIO pin output
+        
+        """
+
+        self.state = not self.state
+        GPIO.output(self.pin, self.state)
+
 
 
 class Interface(FlaskView):
@@ -108,6 +116,7 @@ class Interface(FlaskView):
                 db.session.add(solenoid)
                 db.session.commit()
             solenoid = Solenoids.query.filter_by(pin=i+1).first()
+            GPIO.setup(i+1, GPIO.OUT)
 
     default_methods = ['GET', 'POST']
     def login(self):
@@ -157,11 +166,18 @@ class Interface(FlaskView):
     @login_required
     @app.route("/Interface:toggle_solenoid/<int:id>")
     def toggle_solenoid(self, id):
-        """
-                FIX SOLENOID TOGGLE
-        """
+        """Toggle solenoid state and update GPIO pin
         
-        self.solenoids[int(id)].toggle_state()
+        """
+
+        to_update = Solenoids.query.get_or_404(id)
+        to_update.toggle_state()
+        try:
+            db.session.commit()
+            flash(f"{to_update.name} turned {'on' if to_update.state else 'off'}")
+        except:
+            logging.error("Solenoid name update failed")
+            flash("Name update failed")
         return redirect(url_for("Interface:index"))
     
     def is_authenticated(self, username, password):
@@ -202,13 +218,17 @@ class Interface(FlaskView):
                 db.session.commit()
                 flash("Name update successful")
             except:
-                logging.error("Solenoid update failed")
-                flash("Name Update Failed")
+                logging.error("Solenoid name update failed")
+                flash("Name update failed")
         return render_template("rename.html", solenoids=Solenoids.query.all())
     
     @login_required
-    def change_password(self):
-        ...
+    def update(self):
+        """Update user profile
+        
+        """
+        
+        return render_template("update.html", users=Users.query.all())
 
 
 Interface._initilization()
