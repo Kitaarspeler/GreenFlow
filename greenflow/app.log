@@ -4907,3 +4907,7 @@
 06-Aug-23 12:05:48 -  * Restarting with stat
 06-Aug-23 12:05:50 -  * Debugger is active!
 06-Aug-23 12:05:50 -  * Debugger PIN: 658-577-653
+06-Aug-23 12:06:31 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 12:06:31 -  * Restarting with stat
+06-Aug-23 12:06:34 -  * Debugger is active!
+06-Aug-23 12:06:34 -  * Debugger PIN: 658-577-653
