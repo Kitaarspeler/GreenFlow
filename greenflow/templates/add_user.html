@@ -14,14 +14,13 @@
     {% endfor %}
     <div class="login">
         <form action="{{ url_for('Interface:add_user') }}" method="post">
-            <label for="username">
-                <i class="fas fa-user"></i>
-            </label>
-            <input type="text" name="username" placeholder="Username" id="username" required>
-            <label for="password">
-                <i class="fas fa-lock"></i>
-            </label>
+            <i>Admin:</i>
+            <input type="checkbox" name="is_admin" id="is_admin"><br>
+            <i>Username: </i>
+            <input type="text" name="username" placeholder="Username" id="username" required><br>
+            <i>Password:</i>
             <input type="password" name="password" placeholder="Password" id="password" required><br>
+            <i>Confirm password:</i>
             <input type="password" name="password_2" placeholder="Confirm Password" id="password_2" required><br>
             <input type="submit" value="Login">
         </form>

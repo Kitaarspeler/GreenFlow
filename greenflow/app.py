@@ -5,6 +5,7 @@ import logging
 import mysql.connector
 import RPi.GPIO as GPIO
 from flask import Flask, render_template, request, redirect, url_for, session, flash
+from flask_migrate import Migrate
 from flask_classful import FlaskView, route
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, LoginManager, login_required, login_user, logout_user, current_user
@@ -16,6 +17,7 @@ app.config["SECRET_KEY"] = "akl;wejr,q2bjk35jh2wv35tugyaiu"
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://greenflowuser:fasc1st-$hoot-c4rbine-WARINESS@localhost/greenflow"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -39,6 +41,8 @@ class Users(db.Model, UserMixin):
         username of user
     password_hash
         encrypted password for the user
+    is_admin
+        whether the user is an admin
 
     Methods
     -------
@@ -50,6 +54,7 @@ class Users(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     username = db.Column(db.String(50), nullable=False, unique=True)
     password_hash = db.Column(db.String(128), nullable=False)
+    is_admin = db.Column(db.Boolean, nullable=False)
 
     @property
     def password(self):
@@ -59,12 +64,11 @@ class Users(db.Model, UserMixin):
     def password(self, password):
         self.password_hash = generate_password_hash(password)
 
-    def verify_password(self, password):
+    def verify_password(self, password, pw_to_check):
         """Checks given password against password hash from database
         
         """
-        
-        return check_password_hash(self.password_hash, password)
+        return check_password_hash(pw_to_check, password)
 
     def __repr__(self):
         """Returns f string giving username for identification
@@ -134,20 +138,27 @@ class Interface(FlaskView):
             solenoid = Solenoids.query.filter_by(pin=i+1).first()
             GPIO.setup(i+1, GPIO.OUT)
 
-    default_methods = ['GET', 'POST']
+    default_methods = ["GET", "POST"]
     def login(self):
         """
         
         """
         
-        if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
+        user_to_add = Users.query.all()
+        if not user_to_add:
+            self.add_to_db("admin", "admin", True)
+        if request.method == "POST" and "username" in request.form and "password" in request.form:
             username = request.form['username']
             password = request.form['password']
-            if self.is_authenticated(username, password):
-                return redirect(url_for("Interface:index"))
-            else:
-                flash("Username or password is incorrect!")
-                return render_template("login.html")
+            #if self.is_authenticated(username, password):
+            user = Users.query.filter_by(username=request.form["username"]).first()
+            if user:
+                if check_password_hash(user.password_hash, request.form["password"]):
+                    login_user(user)
+                    return redirect(url_for("Interface:index"))
+                else:
+                    flash("Username or password is incorrect!")
+                    return render_template("login.html")
         else:
             return render_template("login.html")
 
@@ -200,7 +211,7 @@ class Interface(FlaskView):
         
         user_to_check = Users.query.filter_by(username=username).first()
         if user_to_check != None:
-            if user_to_check.verify_password(password):
+            if user_to_check.verify_password(password, user_to_check.password_hash):
                 login_user(user_to_check)
                 return True
         else:
@@ -208,24 +219,37 @@ class Interface(FlaskView):
         
     @login_required
     def add_user(self):
-        """Adds new user to database                          $$$$$$        $$$$$$
+        """Collects user info and send to database
 
         """
+
         if request.method == 'POST' and 'username' in request.form and 'password' in request.form and 'password_2' in request.form:
             if request.form['password'] == request.form['password_2']:
                 user_to_check = Users.query.filter_by(username=request.form['username']).first()
                 if user_to_check == None:
                     if self.validate(request.form['password']):
-                        user = Users(username=request.form['username'], password=generate_password_hash(request.form['password']))
-                        try:
-                            db.session.add(user)
-                            db.session.commit()
-                            flash("User added successfully!")
+                        try: 
+                            _ = request.form["is_admin"]
+                            is_admin = True
                         except:
-                            flash("User add failed")
+                            is_admin = False
+                        self.add_to_db(request.form["username"], request.form["password"], is_admin)
                 else:
                     flash("User already exists!")
         return render_template("add_user.html")
+    
+    def add_to_db(self, username, password, is_admin):
+        """Adds new user to database
+
+        """
+
+        user = Users(username=username, password=password, is_admin=is_admin)
+        try:
+            db.session.add(user)
+            db.session.commit()
+            flash("User added successfully!")
+        except:
+            flash("User add failed")
 
     @login_required
     def rename(self):
