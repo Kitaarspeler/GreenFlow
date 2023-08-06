@@ -58,7 +58,7 @@ class Users(db.Model, UserMixin):
         return check_password_hash(self.password_hash, password)
 
     def __repr__(self):
-        return f"<Name {self.user}"
+        return f"User: {self.username}"
 
 
 
@@ -179,7 +179,7 @@ class Interface(FlaskView):
         return redirect(url_for("Interface:index"))
     
     def is_authenticated(self, username, password):
-        """
+        """Confirms if username and password are correct, and returns boolean
         
         """
         
@@ -193,15 +193,16 @@ class Interface(FlaskView):
         
     @login_required
     def add_user_to_db(self, username, password):
-        """
+        """Adds new user to database
         
         """
         
-        user_to_check = Users.query.filter_by(username="Jull").first()
+        user_to_check = Users.query.filter_by(username=username).first()
         if user_to_check != None:
-            user = Users(username=username, password_hash=generate_password_hash(password))
-            db.session.add(user)
-            db.session.commit()
+            if self.validate(password):
+                user = Users(username=username, password=generate_password_hash(password))
+                db.session.add(user)
+                db.session.commit()
 
     @login_required
     def rename(self):
@@ -241,21 +242,53 @@ class Interface(FlaskView):
     
     @login_required
     def update_pass(self):
-        """Update password
+        """Validate and update password
         
         """
         
         uid = session["_user_id"]
-        if request.method == "POST" :
+        if request.method == "POST":
             if request.form["new_pass"] != "" and request.form["new_pass_2"] != "":
                 if request.form["new_pass"] == request.form["new_pass_2"]:
-                    if validate(new_pass):
-                        ...
-                                
+                    if self.validate(request.form["new_pass"]):
+                        to_update = Users.query.filter_by(id=session["_user_id"]).first()
+                        if to_update != None:
+                            to_update = Users.query.get(uid)
+                            to_update.password_hash = generate_password_hash(request.form["new_pass"])
+                            try:
+                                db.session.commit()
+                                flash("Password update successful")
+                            except:
+                                logging.error("Password update failed")
+                                flash("Password update failed")
+                    else:
+                        flash("Password is not valid!")
+                else:
+                    flash("Passwords do not match!")
+            else:
+                flash("You must confirm your password!")
         return render_template("update.html", user=Users.query.get(uid), which="pass")
 
     def validate(self, new_pass):
-        ...
+        """Validate password
+        
+        """
+        
+        special = "!@#$%^&*?_-"
+        cap, low, num, spec = False, False, False, False
+        for l in new_pass:
+            if l.isupper():
+                cap = True
+            elif l.islower():
+                low = True
+            elif l.isdigit():
+                num = True
+            elif l in special:
+                spec = True
+        if len(new_pass) > 9 and cap and low and num and spec:
+            return True
+        else:
+            return False
 
 
 Interface._initilization()
