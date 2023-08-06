@@ -1,0 +1,631 @@
+06-Aug-23 15:23:30 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:23:31 -  * Restarting with stat
+06-Aug-23 15:23:33 -  * Debugger is active!
+06-Aug-23 15:23:33 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:23:53 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:23:54 -  * Restarting with stat
+06-Aug-23 15:23:56 -  * Debugger is active!
+06-Aug-23 15:23:56 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:25:18 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:25:18 -  * Restarting with stat
+06-Aug-23 15:25:21 -  * Debugger is active!
+06-Aug-23 15:25:21 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:25:22 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:25:22 -  * Restarting with stat
+06-Aug-23 15:25:25 -  * Debugger is active!
+06-Aug-23 15:25:25 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:25:31 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:25:31 -  * Restarting with stat
+06-Aug-23 15:25:34 -  * Debugger is active!
+06-Aug-23 15:25:34 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:25:36 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:25:36 -  * Restarting with stat
+06-Aug-23 15:25:39 -  * Debugger is active!
+06-Aug-23 15:25:39 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:25:40 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:25:41 -  * Restarting with stat
+06-Aug-23 15:25:43 -  * Debugger is active!
+06-Aug-23 15:25:43 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:26:04 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:26:05 -  * Restarting with stat
+06-Aug-23 15:26:07 -  * Debugger is active!
+06-Aug-23 15:26:07 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:26:09 - 192.168.1.1 - - [06/Aug/2023 15:26:09] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:26:09 - 192.168.1.1 - - [06/Aug/2023 15:26:09] "GET /static/style.css HTTP/1.1" 200 -
+06-Aug-23 15:26:10 - 192.168.1.1 - - [06/Aug/2023 15:26:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+06-Aug-23 15:26:24 - 192.168.1.1 - - [06/Aug/2023 15:26:24] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:26:24 - 192.168.1.1 - - [06/Aug/2023 15:26:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:27:14 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:27:15 -  * Restarting with stat
+06-Aug-23 15:27:23 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+06-Aug-23 15:27:23 -  * Restarting with stat
+06-Aug-23 15:27:26 -  * Debugger is active!
+06-Aug-23 15:27:26 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:27:39 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:27:40 -  * Restarting with stat
+06-Aug-23 15:27:42 -  * Debugger is active!
+06-Aug-23 15:27:42 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:27:55 - 192.168.1.1 - - [06/Aug/2023 15:27:55] "[32mGET /logout HTTP/1.1[0m" 308 -
+06-Aug-23 15:27:55 - 192.168.1.1 - - [06/Aug/2023 15:27:55] "[32mGET /logout/ HTTP/1.1[0m" 302 -
+06-Aug-23 15:27:55 - 192.168.1.1 - - [06/Aug/2023 15:27:55] "GET /login/ HTTP/1.1" 200 -
+06-Aug-23 15:27:55 - 192.168.1.1 - - [06/Aug/2023 15:27:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:28:02 - 192.168.1.1 - - [06/Aug/2023 15:28:02] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+06-Aug-23 15:28:02 - 192.168.1.1 - - [06/Aug/2023 15:28:02] "GET / HTTP/1.1" 200 -
+06-Aug-23 15:28:02 - 192.168.1.1 - - [06/Aug/2023 15:28:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:28:07 - 192.168.1.1 - - [06/Aug/2023 15:28:07] "[32mGET /settings HTTP/1.1[0m" 308 -
+06-Aug-23 15:28:07 - 192.168.1.1 - - [06/Aug/2023 15:28:07] "GET /settings/ HTTP/1.1" 200 -
+06-Aug-23 15:28:08 - 192.168.1.1 - - [06/Aug/2023 15:28:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:28:13 - 192.168.1.1 - - [06/Aug/2023 15:28:13] "GET /update_user/ HTTP/1.1" 200 -
+06-Aug-23 15:28:13 - 192.168.1.1 - - [06/Aug/2023 15:28:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:28:31 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:28:31 -  * Restarting with stat
+06-Aug-23 15:28:34 -  * Debugger is active!
+06-Aug-23 15:28:34 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:28:42 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:28:42 -  * Restarting with stat
+06-Aug-23 15:28:45 -  * Debugger is active!
+06-Aug-23 15:28:45 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:28:52 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:28:52 -  * Restarting with stat
+06-Aug-23 15:28:55 -  * Debugger is active!
+06-Aug-23 15:28:55 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:28:58 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:28:59 -  * Restarting with stat
+06-Aug-23 15:29:01 -  * Debugger is active!
+06-Aug-23 15:29:01 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:29:29 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:29:29 -  * Restarting with stat
+06-Aug-23 15:29:32 -  * Debugger is active!
+06-Aug-23 15:29:32 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:29:37 - 192.168.1.1 - - [06/Aug/2023 15:29:37] "[32mGET /logout/ HTTP/1.1[0m" 302 -
+06-Aug-23 15:29:37 - 192.168.1.1 - - [06/Aug/2023 15:29:37] "GET /login/ HTTP/1.1" 200 -
+06-Aug-23 15:29:37 - 192.168.1.1 - - [06/Aug/2023 15:29:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:29:46 - 192.168.1.1 - - [06/Aug/2023 15:29:46] "POST /login/ HTTP/1.1" 200 -
+06-Aug-23 15:29:46 - 192.168.1.1 - - [06/Aug/2023 15:29:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:30:12 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:30:13 -  * Restarting with stat
+06-Aug-23 15:30:16 -  * Debugger is active!
+06-Aug-23 15:30:16 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:30:36 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:30:36 -  * Restarting with stat
+06-Aug-23 15:30:39 -  * Debugger is active!
+06-Aug-23 15:30:39 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:30:54 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:30:55 -  * Restarting with stat
+06-Aug-23 15:30:57 -  * Debugger is active!
+06-Aug-23 15:30:57 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:30:58 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:30:59 -  * Restarting with stat
+06-Aug-23 15:31:01 -  * Debugger is active!
+06-Aug-23 15:31:01 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:31:04 - 192.168.1.1 - - [06/Aug/2023 15:31:04] "POST /login/ HTTP/1.1" 200 -
+06-Aug-23 15:31:04 - 192.168.1.1 - - [06/Aug/2023 15:31:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:31:17 - 192.168.1.1 - - [06/Aug/2023 15:31:17] "POST /login/ HTTP/1.1" 200 -
+06-Aug-23 15:31:17 - 192.168.1.1 - - [06/Aug/2023 15:31:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:31:23 - 192.168.1.1 - - [06/Aug/2023 15:31:23] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+06-Aug-23 15:31:23 - 192.168.1.1 - - [06/Aug/2023 15:31:23] "GET / HTTP/1.1" 200 -
+06-Aug-23 15:31:23 - 192.168.1.1 - - [06/Aug/2023 15:31:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:31:26 - 192.168.1.1 - - [06/Aug/2023 15:31:26] "GET /settings/ HTTP/1.1" 200 -
+06-Aug-23 15:31:26 - 192.168.1.1 - - [06/Aug/2023 15:31:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:31:27 - 192.168.1.1 - - [06/Aug/2023 15:31:27] "GET /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:31:27 - 192.168.1.1 - - [06/Aug/2023 15:31:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:31:37 - 192.168.1.1 - - [06/Aug/2023 15:31:37] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:31:37 - 192.168.1.1 - - [06/Aug/2023 15:31:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:31:53 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:31:54 -  * Restarting with stat
+06-Aug-23 15:31:56 -  * Debugger is active!
+06-Aug-23 15:31:56 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:31:59 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:31:59 -  * Restarting with stat
+06-Aug-23 15:32:02 -  * Debugger is active!
+06-Aug-23 15:32:02 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:32:13 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:32:13 -  * Restarting with stat
+06-Aug-23 15:32:16 -  * Debugger is active!
+06-Aug-23 15:32:16 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:32:19 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:32:20 -  * Restarting with stat
+06-Aug-23 15:32:23 -  * Debugger is active!
+06-Aug-23 15:32:23 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:32:29 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:32:30 -  * Restarting with stat
+06-Aug-23 15:32:32 -  * Debugger is active!
+06-Aug-23 15:32:32 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:32:36 - 192.168.1.1 - - [06/Aug/2023 15:32:36] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:32:36 - 192.168.1.1 - - [06/Aug/2023 15:32:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:32:42 - 192.168.1.1 - - [06/Aug/2023 15:32:42] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:32:42 - 192.168.1.1 - - [06/Aug/2023 15:32:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:32:51 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:32:52 -  * Restarting with stat
+06-Aug-23 15:32:54 -  * Debugger is active!
+06-Aug-23 15:32:54 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:32:59 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:32:59 -  * Restarting with stat
+06-Aug-23 15:33:02 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+06-Aug-23 15:33:03 -  * Restarting with stat
+06-Aug-23 15:33:05 -  * Debugger is active!
+06-Aug-23 15:33:05 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:33:07 - 192.168.1.1 - - [06/Aug/2023 15:33:07] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:33:07 - 192.168.1.1 - - [06/Aug/2023 15:33:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:33:12 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:33:12 -  * Restarting with stat
+06-Aug-23 15:33:15 -  * Debugger is active!
+06-Aug-23 15:33:15 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:33:16 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:33:17 -  * Restarting with stat
+06-Aug-23 15:33:19 -  * Debugger is active!
+06-Aug-23 15:33:19 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:33:22 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:33:22 -  * Restarting with stat
+06-Aug-23 15:33:25 -  * Debugger is active!
+06-Aug-23 15:33:25 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:33:28 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:33:29 -  * Restarting with stat
+06-Aug-23 15:33:31 -  * Debugger is active!
+06-Aug-23 15:33:31 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:33:42 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:33:43 -  * Restarting with stat
+06-Aug-23 15:33:45 -  * Debugger is active!
+06-Aug-23 15:33:45 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:33:50 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:33:50 -  * Restarting with stat
+06-Aug-23 15:33:53 -  * Debugger is active!
+06-Aug-23 15:33:53 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:33:55 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:33:56 -  * Restarting with stat
+06-Aug-23 15:33:58 -  * Debugger is active!
+06-Aug-23 15:33:58 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:34:00 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:34:00 -  * Restarting with stat
+06-Aug-23 15:34:03 -  * Debugger is active!
+06-Aug-23 15:34:03 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:34:04 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:34:04 -  * Restarting with stat
+06-Aug-23 15:34:07 -  * Debugger is active!
+06-Aug-23 15:34:07 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:34:10 - 192.168.1.1 - - [06/Aug/2023 15:34:10] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:34:10 - 192.168.1.1 - - [06/Aug/2023 15:34:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:34:25 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:34:25 -  * Restarting with stat
+06-Aug-23 15:34:28 -  * Debugger is active!
+06-Aug-23 15:34:28 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:34:28 - 192.168.1.1 - - [06/Aug/2023 15:34:28] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:34:28 - 192.168.1.1 - - [06/Aug/2023 15:34:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:34:33 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:34:34 -  * Restarting with stat
+06-Aug-23 15:34:36 -  * Debugger is active!
+06-Aug-23 15:34:36 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:34:37 - 192.168.1.1 - - [06/Aug/2023 15:34:37] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:34:37 - 192.168.1.1 - - [06/Aug/2023 15:34:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:34:47 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:34:48 -  * Restarting with stat
+06-Aug-23 15:34:50 -  * Debugger is active!
+06-Aug-23 15:34:50 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:34:51 - 192.168.1.1 - - [06/Aug/2023 15:34:51] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:34:51 - 192.168.1.1 - - [06/Aug/2023 15:34:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:34:56 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:34:57 -  * Restarting with stat
+06-Aug-23 15:34:59 -  * Debugger is active!
+06-Aug-23 15:34:59 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:34:59 - 192.168.1.1 - - [06/Aug/2023 15:34:59] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:35:00 - 192.168.1.1 - - [06/Aug/2023 15:35:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:35:15 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:35:15 -  * Restarting with stat
+06-Aug-23 15:35:18 -  * Debugger is active!
+06-Aug-23 15:35:18 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:35:18 - 192.168.1.1 - - [06/Aug/2023 15:35:18] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:35:18 - 192.168.1.1 - - [06/Aug/2023 15:35:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 15:35:58 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:35:58 -  * Restarting with stat
+06-Aug-23 15:36:01 -  * Debugger is active!
+06-Aug-23 15:36:01 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:36:05 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:36:06 -  * Restarting with stat
+06-Aug-23 15:36:08 -  * Debugger is active!
+06-Aug-23 15:36:08 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:36:10 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:36:10 -  * Restarting with stat
+06-Aug-23 15:36:13 -  * Debugger is active!
+06-Aug-23 15:36:13 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:36:27 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:36:27 -  * Restarting with stat
+06-Aug-23 15:36:30 -  * Debugger is active!
+06-Aug-23 15:36:30 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:36:47 -  * Detected change in '/home/server/GreenFlow/greenflow/models.py', reloading
+06-Aug-23 15:36:47 -  * Restarting with stat
+06-Aug-23 15:36:50 -  * Debugger is active!
+06-Aug-23 15:36:50 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:37:57 -  * Detected change in '/home/server/GreenFlow/greenflow/models.py', reloading
+06-Aug-23 15:37:57 -  * Restarting with stat
+06-Aug-23 15:38:00 -  * Debugger is active!
+06-Aug-23 15:38:00 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:38:09 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:38:09 -  * Restarting with stat
+06-Aug-23 15:44:36 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+06-Aug-23 15:44:36 -  * Restarting with stat
+06-Aug-23 15:44:38 -  * Debugger is active!
+06-Aug-23 15:44:38 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:44:41 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:44:41 -  * Restarting with stat
+06-Aug-23 15:55:12 -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+06-Aug-23 15:55:37 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+06-Aug-23 15:55:37 -  * Restarting with stat
+06-Aug-23 15:55:39 -  * Debugger is active!
+06-Aug-23 15:55:39 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:55:47 - 192.168.1.1 - - [06/Aug/2023 15:55:47] "POST /update_pass/ HTTP/1.1" 200 -
+06-Aug-23 15:55:47 - 192.168.1.1 - - [06/Aug/2023 15:55:47] "GET /static/style.css HTTP/1.1" 200 -
+06-Aug-23 15:57:54 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:57:55 -  * Restarting with stat
+06-Aug-23 15:57:57 -  * Debugger is active!
+06-Aug-23 15:57:57 -  * Debugger PIN: 658-577-653
+06-Aug-23 15:58:53 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 15:58:54 -  * Restarting with stat
+06-Aug-23 15:58:57 -  * Debugger is active!
+06-Aug-23 15:58:57 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:06:23 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:06:23 -  * Restarting with stat
+06-Aug-23 16:06:26 -  * Debugger is active!
+06-Aug-23 16:06:26 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:06:27 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:06:28 -  * Restarting with stat
+06-Aug-23 16:06:30 -  * Debugger is active!
+06-Aug-23 16:06:30 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:06:37 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:06:38 -  * Restarting with stat
+06-Aug-23 16:06:40 -  * Debugger is active!
+06-Aug-23 16:06:40 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:07:02 - 192.168.1.1 - - [06/Aug/2023 16:07:02] "GET /settings/ HTTP/1.1" 200 -
+06-Aug-23 16:07:02 - 192.168.1.1 - - [06/Aug/2023 16:07:02] "GET /static/style.css HTTP/1.1" 200 -
+06-Aug-23 16:07:03 - 192.168.1.1 - - [06/Aug/2023 16:07:03] "GET /update_user/ HTTP/1.1" 200 -
+06-Aug-23 16:07:03 - 192.168.1.1 - - [06/Aug/2023 16:07:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 16:07:09 - 192.168.1.1 - - [06/Aug/2023 16:07:09] "GET /settings/ HTTP/1.1" 200 -
+06-Aug-23 16:07:09 - 192.168.1.1 - - [06/Aug/2023 16:07:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 16:18:53 - 192.168.1.1 - - [06/Aug/2023 16:18:53] "[32mGET /logout/ HTTP/1.1[0m" 302 -
+06-Aug-23 16:18:54 - 192.168.1.1 - - [06/Aug/2023 16:18:54] "GET /login/ HTTP/1.1" 200 -
+06-Aug-23 16:18:54 - 192.168.1.1 - - [06/Aug/2023 16:18:54] "GET /static/style.css HTTP/1.1" 200 -
+06-Aug-23 16:18:56 - 192.168.1.1 - - [06/Aug/2023 16:18:56] "[32mGET /settings/ HTTP/1.1[0m" 302 -
+06-Aug-23 16:18:57 - 192.168.1.1 - - [06/Aug/2023 16:18:57] "GET /login/?next=%2Fsettings%2F HTTP/1.1" 200 -
+06-Aug-23 16:18:57 - 192.168.1.1 - - [06/Aug/2023 16:18:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 16:19:08 - 192.168.1.1 - - [06/Aug/2023 16:19:08] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+06-Aug-23 16:19:08 - 192.168.1.1 - - [06/Aug/2023 16:19:08] "GET / HTTP/1.1" 200 -
+06-Aug-23 16:19:09 - 192.168.1.1 - - [06/Aug/2023 16:19:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 16:21:52 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:21:52 -  * Restarting with stat
+06-Aug-23 16:21:55 -  * Debugger is active!
+06-Aug-23 16:21:55 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:22:05 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:22:05 -  * Restarting with stat
+06-Aug-23 16:22:08 -  * Debugger is active!
+06-Aug-23 16:22:08 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:22:20 -  * Detected change in '/home/server/GreenFlow/greenflow/schedules.py', reloading
+06-Aug-23 16:22:21 -  * Restarting with stat
+06-Aug-23 16:22:23 -  * Debugger is active!
+06-Aug-23 16:22:23 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:22:39 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:22:39 -  * Restarting with stat
+06-Aug-23 16:22:42 -  * Debugger is active!
+06-Aug-23 16:22:42 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:22:44 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:22:45 -  * Restarting with stat
+06-Aug-23 16:22:47 -  * Debugger is active!
+06-Aug-23 16:22:47 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:22:49 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:22:49 -  * Restarting with stat
+06-Aug-23 16:22:52 -  * Debugger is active!
+06-Aug-23 16:22:52 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:22:55 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:22:55 -  * Restarting with stat
+06-Aug-23 16:22:58 -  * Debugger is active!
+06-Aug-23 16:22:58 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:22:59 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:23:00 -  * Restarting with stat
+06-Aug-23 16:23:02 -  * Debugger is active!
+06-Aug-23 16:23:02 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:24:23 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:24:23 -  * Restarting with stat
+06-Aug-23 16:24:26 -  * Debugger is active!
+06-Aug-23 16:24:26 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:24:30 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:24:31 -  * Restarting with stat
+06-Aug-23 16:24:33 -  * Debugger is active!
+06-Aug-23 16:24:33 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:24:34 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:24:35 -  * Restarting with stat
+06-Aug-23 16:24:38 -  * Debugger is active!
+06-Aug-23 16:24:38 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:24:57 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:24:58 -  * Restarting with stat
+06-Aug-23 16:25:01 -  * Debugger is active!
+06-Aug-23 16:25:01 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:25:16 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:25:17 -  * Restarting with stat
+06-Aug-23 16:25:19 -  * Debugger is active!
+06-Aug-23 16:25:19 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:25:24 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:25:24 -  * Restarting with stat
+06-Aug-23 16:25:27 -  * Debugger is active!
+06-Aug-23 16:25:27 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:25:42 -  * Detected change in '/home/server/GreenFlow/greenflow/schedules.py', reloading
+06-Aug-23 16:25:43 -  * Restarting with stat
+06-Aug-23 16:25:45 -  * Debugger is active!
+06-Aug-23 16:25:45 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:26:17 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:26:18 -  * Restarting with stat
+06-Aug-23 16:26:20 -  * Debugger is active!
+06-Aug-23 16:26:20 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:26:40 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:26:41 -  * Restarting with stat
+06-Aug-23 16:26:43 -  * Debugger is active!
+06-Aug-23 16:26:43 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:26:52 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:26:53 -  * Restarting with stat
+06-Aug-23 16:26:55 -  * Debugger is active!
+06-Aug-23 16:26:55 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:36:53 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:36:53 -  * Restarting with stat
+06-Aug-23 16:36:56 -  * Debugger is active!
+06-Aug-23 16:36:56 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:36:57 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:36:57 -  * Restarting with stat
+06-Aug-23 16:37:00 -  * Debugger is active!
+06-Aug-23 16:37:00 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:38:53 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:38:54 -  * Restarting with stat
+06-Aug-23 16:38:56 -  * Debugger is active!
+06-Aug-23 16:38:56 -  * Debugger PIN: 658-577-653
+06-Aug-23 16:47:23 - 192.168.1.1 - - [06/Aug/2023 16:47:23] "[33mGET /add_user_to_db HTTP/1.1[0m" 404 -
+06-Aug-23 16:47:55 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 16:47:55 -  * Restarting with stat
+06-Aug-23 16:47:58 -  * Debugger is active!
+06-Aug-23 16:47:58 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:10:04 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:10:05 -  * Restarting with stat
+06-Aug-23 17:10:07 -  * Debugger is active!
+06-Aug-23 17:10:07 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:10:11 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:10:11 -  * Restarting with stat
+06-Aug-23 17:10:14 -  * Debugger is active!
+06-Aug-23 17:10:14 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:11:57 - 192.168.1.1 - - [06/Aug/2023 17:11:57] "GET / HTTP/1.1" 200 -
+06-Aug-23 17:11:57 - 192.168.1.1 - - [06/Aug/2023 17:11:57] "GET /static/style.css HTTP/1.1" 200 -
+06-Aug-23 17:11:59 - 192.168.1.1 - - [06/Aug/2023 17:11:59] "GET /settings/ HTTP/1.1" 200 -
+06-Aug-23 17:12:00 - 192.168.1.1 - - [06/Aug/2023 17:12:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:12:02 - 192.168.1.1 - - [06/Aug/2023 17:12:02] "GET /update_user/ HTTP/1.1" 200 -
+06-Aug-23 17:12:02 - 192.168.1.1 - - [06/Aug/2023 17:12:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:12:04 - 192.168.1.1 - - [06/Aug/2023 17:12:04] "GET /settings/ HTTP/1.1" 200 -
+06-Aug-23 17:12:04 - 192.168.1.1 - - [06/Aug/2023 17:12:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:12:07 - 192.168.1.1 - - [06/Aug/2023 17:12:07] "GET /update_user/ HTTP/1.1" 200 -
+06-Aug-23 17:12:07 - 192.168.1.1 - - [06/Aug/2023 17:12:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:12:09 - 192.168.1.1 - - [06/Aug/2023 17:12:09] "GET /settings/ HTTP/1.1" 200 -
+06-Aug-23 17:12:09 - 192.168.1.1 - - [06/Aug/2023 17:12:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:12:11 - 192.168.1.1 - - [06/Aug/2023 17:12:11] "GET /update_user/ HTTP/1.1" 200 -
+06-Aug-23 17:12:11 - 192.168.1.1 - - [06/Aug/2023 17:12:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:12:34 - 192.168.1.1 - - [06/Aug/2023 17:12:34] "GET /update_user/ HTTP/1.1" 200 -
+06-Aug-23 17:12:35 - 192.168.1.1 - - [06/Aug/2023 17:12:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:12:41 - 192.168.1.1 - - [06/Aug/2023 17:12:41] "GET /update_user/ HTTP/1.1" 200 -
+06-Aug-23 17:12:41 - 192.168.1.1 - - [06/Aug/2023 17:12:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:12:45 - 192.168.1.1 - - [06/Aug/2023 17:12:45] "GET /update_user/ HTTP/1.1" 200 -
+06-Aug-23 17:12:45 - 192.168.1.1 - - [06/Aug/2023 17:12:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:12:55 - 192.168.1.1 - - [06/Aug/2023 17:12:55] "GET /update_user/ HTTP/1.1" 200 -
+06-Aug-23 17:12:56 - 192.168.1.1 - - [06/Aug/2023 17:12:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:12:59 - 192.168.1.1 - - [06/Aug/2023 17:12:59] "GET /settings/ HTTP/1.1" 200 -
+06-Aug-23 17:12:59 - 192.168.1.1 - - [06/Aug/2023 17:12:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:13:01 - 192.168.1.1 - - [06/Aug/2023 17:13:01] "GET /update_user/ HTTP/1.1" 200 -
+06-Aug-23 17:13:01 - 192.168.1.1 - - [06/Aug/2023 17:13:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:13:04 - 192.168.1.1 - - [06/Aug/2023 17:13:04] "GET /settings/ HTTP/1.1" 200 -
+06-Aug-23 17:13:04 - 192.168.1.1 - - [06/Aug/2023 17:13:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 17:15:14 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:15:15 -  * Restarting with stat
+06-Aug-23 17:15:17 -  * Debugger is active!
+06-Aug-23 17:15:17 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:15:37 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:15:38 -  * Restarting with stat
+06-Aug-23 17:15:46 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+06-Aug-23 17:15:46 -  * Restarting with stat
+06-Aug-23 17:15:48 -  * Debugger is active!
+06-Aug-23 17:15:48 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:15:50 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:15:50 -  * Restarting with stat
+06-Aug-23 17:15:53 -  * Debugger is active!
+06-Aug-23 17:15:53 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:16:00 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:16:01 -  * Restarting with stat
+06-Aug-23 17:16:04 -  * Debugger is active!
+06-Aug-23 17:16:04 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:17:04 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:17:04 -  * Restarting with stat
+06-Aug-23 17:17:07 -  * Debugger is active!
+06-Aug-23 17:17:07 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:17:17 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:17:18 -  * Restarting with stat
+06-Aug-23 17:17:20 -  * Debugger is active!
+06-Aug-23 17:17:20 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:17:24 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:17:24 -  * Restarting with stat
+06-Aug-23 17:17:27 -  * Debugger is active!
+06-Aug-23 17:17:27 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:17:30 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:17:31 -  * Restarting with stat
+06-Aug-23 17:17:33 -  * Debugger is active!
+06-Aug-23 17:17:33 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:17:34 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:17:35 -  * Restarting with stat
+06-Aug-23 17:17:38 -  * Debugger is active!
+06-Aug-23 17:17:38 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:17:38 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:17:38 -  * Restarting with stat
+06-Aug-23 17:20:18 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+06-Aug-23 17:20:18 -  * Restarting with stat
+06-Aug-23 17:20:21 -  * Debugger is active!
+06-Aug-23 17:20:21 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:20:24 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:20:25 -  * Restarting with stat
+06-Aug-23 17:20:27 -  * Debugger is active!
+06-Aug-23 17:20:27 -  * Debugger PIN: 658-577-653
+06-Aug-23 17:20:32 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 17:20:32 -  * Restarting with stat
+06-Aug-23 17:20:35 -  * Debugger is active!
+06-Aug-23 17:20:35 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:56:17 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:56:18 -  * Restarting with stat
+06-Aug-23 19:56:20 -  * Debugger is active!
+06-Aug-23 19:56:20 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:56:22 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:56:22 -  * Restarting with stat
+06-Aug-23 19:56:25 -  * Debugger is active!
+06-Aug-23 19:56:25 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:56:33 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:56:33 -  * Restarting with stat
+06-Aug-23 19:56:36 -  * Debugger is active!
+06-Aug-23 19:56:36 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:56:47 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:56:47 -  * Restarting with stat
+06-Aug-23 19:56:51 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+06-Aug-23 19:56:51 -  * Restarting with stat
+06-Aug-23 19:56:54 -  * Debugger is active!
+06-Aug-23 19:56:54 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:57:15 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:57:15 -  * Restarting with stat
+06-Aug-23 19:57:18 -  * Debugger is active!
+06-Aug-23 19:57:18 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:57:20 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:57:21 -  * Restarting with stat
+06-Aug-23 19:57:23 -  * Debugger is active!
+06-Aug-23 19:57:23 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:57:26 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:57:26 -  * Restarting with stat
+06-Aug-23 19:57:29 -  * Debugger is active!
+06-Aug-23 19:57:29 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:57:35 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:57:36 -  * Restarting with stat
+06-Aug-23 19:57:38 -  * Debugger is active!
+06-Aug-23 19:57:38 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:58:10 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:58:11 -  * Restarting with stat
+06-Aug-23 19:58:13 -  * Debugger is active!
+06-Aug-23 19:58:13 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:58:18 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:58:18 -  * Restarting with stat
+06-Aug-23 19:58:21 -  * Debugger is active!
+06-Aug-23 19:58:21 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:58:22 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:58:23 -  * Restarting with stat
+06-Aug-23 19:58:25 -  * Debugger is active!
+06-Aug-23 19:58:25 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:59:21 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:59:22 -  * Restarting with stat
+06-Aug-23 19:59:25 -  * Debugger is active!
+06-Aug-23 19:59:25 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:59:43 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:59:44 -  * Restarting with stat
+06-Aug-23 19:59:46 -  * Debugger is active!
+06-Aug-23 19:59:46 -  * Debugger PIN: 658-577-653
+06-Aug-23 19:59:56 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 19:59:57 -  * Restarting with stat
+06-Aug-23 19:59:59 -  * Debugger is active!
+06-Aug-23 19:59:59 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:00:07 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 20:00:08 -  * Restarting with stat
+06-Aug-23 20:00:10 -  * Debugger is active!
+06-Aug-23 20:00:10 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:00:14 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 20:00:14 -  * Restarting with stat
+06-Aug-23 20:00:17 -  * Debugger is active!
+06-Aug-23 20:00:17 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:00:19 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 20:00:20 -  * Restarting with stat
+06-Aug-23 20:00:22 -  * Debugger is active!
+06-Aug-23 20:00:22 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:00:25 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 20:00:25 -  * Restarting with stat
+06-Aug-23 20:00:28 -  * Debugger is active!
+06-Aug-23 20:00:28 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:00:29 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 20:00:30 -  * Restarting with stat
+06-Aug-23 20:00:32 -  * Debugger is active!
+06-Aug-23 20:00:32 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:00:34 - 192.168.1.1 - - [06/Aug/2023 20:00:34] "GET /settings/ HTTP/1.1" 200 -
+06-Aug-23 20:00:35 - 192.168.1.1 - - [06/Aug/2023 20:00:35] "GET /static/style.css HTTP/1.1" 200 -
+06-Aug-23 20:00:40 - 192.168.1.1 - - [06/Aug/2023 20:00:40] "[32mGET /add_user HTTP/1.1[0m" 308 -
+06-Aug-23 20:00:40 - 192.168.1.1 - - [06/Aug/2023 20:00:40] "GET /add_user/ HTTP/1.1" 200 -
+06-Aug-23 20:00:41 - 192.168.1.1 - - [06/Aug/2023 20:00:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 20:00:51 - 192.168.1.1 - - [06/Aug/2023 20:00:51] "POST /add_user/ HTTP/1.1" 200 -
+06-Aug-23 20:00:51 - 192.168.1.1 - - [06/Aug/2023 20:00:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 20:01:04 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 20:01:04 -  * Restarting with stat
+06-Aug-23 20:01:07 -  * Debugger is active!
+06-Aug-23 20:01:07 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:01:09 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 20:01:10 -  * Restarting with stat
+06-Aug-23 20:01:13 -  * Debugger is active!
+06-Aug-23 20:01:13 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:01:14 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 20:01:14 -  * Restarting with stat
+06-Aug-23 20:02:00 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+06-Aug-23 20:02:00 -  * Restarting with stat
+06-Aug-23 20:02:02 -  * Debugger is active!
+06-Aug-23 20:02:02 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:02:02 - 192.168.1.1 - - [06/Aug/2023 20:02:02] "[32mGET /logout/ HTTP/1.1[0m" 302 -
+06-Aug-23 20:02:02 - 192.168.1.1 - - [06/Aug/2023 20:02:02] "GET /login/ HTTP/1.1" 200 -
+06-Aug-23 20:02:03 - 192.168.1.1 - - [06/Aug/2023 20:02:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 20:02:10 - 192.168.1.1 - - [06/Aug/2023 20:02:10] "POST /login/ HTTP/1.1" 200 -
+06-Aug-23 20:02:10 - 192.168.1.1 - - [06/Aug/2023 20:02:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 20:02:15 - 192.168.1.1 - - [06/Aug/2023 20:02:15] "POST /login/ HTTP/1.1" 200 -
+06-Aug-23 20:02:15 - 192.168.1.1 - - [06/Aug/2023 20:02:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 20:02:21 - 192.168.1.1 - - [06/Aug/2023 20:02:21] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+06-Aug-23 20:02:21 - 192.168.1.1 - - [06/Aug/2023 20:02:21] "GET / HTTP/1.1" 200 -
+06-Aug-23 20:02:21 - 192.168.1.1 - - [06/Aug/2023 20:02:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 20:03:05 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 20:03:05 -  * Restarting with stat
+06-Aug-23 20:03:08 -  * Debugger is active!
+06-Aug-23 20:03:08 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:03:18 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 20:03:18 -  * Restarting with stat
+06-Aug-23 20:03:21 -  * Debugger is active!
+06-Aug-23 20:03:21 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:03:26 - 192.168.1.1 - - [06/Aug/2023 20:03:26] "GET /add_user/ HTTP/1.1" 200 -
+06-Aug-23 20:03:26 - 192.168.1.1 - - [06/Aug/2023 20:03:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 20:03:38 - 192.168.1.1 - - [06/Aug/2023 20:03:38] "POST /add_user/ HTTP/1.1" 200 -
+06-Aug-23 20:03:38 - 192.168.1.1 - - [06/Aug/2023 20:03:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 20:04:16 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+06-Aug-23 20:04:17 -  * Restarting with stat
+06-Aug-23 20:04:27 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+06-Aug-23 20:04:27 -  * Restarting with stat
+06-Aug-23 20:04:30 -  * Debugger is active!
+06-Aug-23 20:04:30 -  * Debugger PIN: 658-577-653
+06-Aug-23 20:04:45 - 192.168.1.1 - - [06/Aug/2023 20:04:45] "POST /add_user/ HTTP/1.1" 200 -
+06-Aug-23 20:04:45 - 192.168.1.1 - - [06/Aug/2023 20:04:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 20:04:53 - 192.168.1.1 - - [06/Aug/2023 20:04:53] "[32mGET /logout/ HTTP/1.1[0m" 302 -
+06-Aug-23 20:04:53 - 192.168.1.1 - - [06/Aug/2023 20:04:53] "GET /login/ HTTP/1.1" 200 -
+06-Aug-23 20:04:53 - 192.168.1.1 - - [06/Aug/2023 20:04:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 20:04:59 - 192.168.1.1 - - [06/Aug/2023 20:04:59] "POST /login/ HTTP/1.1" 200 -
+06-Aug-23 20:05:00 - 192.168.1.1 - - [06/Aug/2023 20:05:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+06-Aug-23 20:05:06 - 192.168.1.1 - - [06/Aug/2023 20:05:06] "POST /login/ HTTP/1.1" 200 -
+06-Aug-23 20:05:06 - 192.168.1.1 - - [06/Aug/2023 20:05:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

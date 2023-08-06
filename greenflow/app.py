@@ -17,15 +17,14 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://greenflowuser:fasc1st-$
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'Interface:login'
 
-
 @login_manager.user_loader
 def load_user(user_id):
     return Users.query.get(int(user_id))
+
 
 
 class Users(db.Model, UserMixin):
@@ -40,6 +39,12 @@ class Users(db.Model, UserMixin):
         username of user
     password_hash
         encrypted password for the user
+
+    Methods
+    -------
+
+    verify_password
+        Checks given password against password hash from database
     """
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
@@ -55,9 +60,17 @@ class Users(db.Model, UserMixin):
         self.password_hash = generate_password_hash(password)
 
     def verify_password(self, password):
+        """Checks given password against password hash from database
+        
+        """
+        
         return check_password_hash(self.password_hash, password)
 
     def __repr__(self):
+        """Returns f string giving username for identification
+        
+        """
+        
         return f"User: {self.username}"
 
 
@@ -103,8 +116,9 @@ class Interface(FlaskView):
 
     @classmethod
     def _initilization(self):
-        """
-        
+        """Sets up Flask web interface
+
+        Sets GPIO pin numbering system and solenoids
         """
         
         print("Flask Web server (re)starting")
@@ -132,12 +146,13 @@ class Interface(FlaskView):
             if self.is_authenticated(username, password):
                 return redirect(url_for("Interface:index"))
             else:
+                flash("Username or password is incorrect!")
                 return render_template("login.html")
         else:
             return render_template("login.html")
 
     @login_required
-    def index(self):        # session["_user_id"] for access
+    def index(self):
         return render_template("index.html", solenoids=Solenoids.query.all())
 
     @login_required
@@ -185,24 +200,32 @@ class Interface(FlaskView):
         
         user_to_check = Users.query.filter_by(username=username).first()
         if user_to_check != None:
-            if check_password_hash(user_to_check.password_hash, password):
+            if user_to_check.verify_password(password):
                 login_user(user_to_check)
                 return True
         else:
             return False
         
     @login_required
-    def add_user_to_db(self, username, password):
-        """Adds new user to database
-        
+    def add_user(self):
+        """Adds new user to database                          $$$$$$        $$$$$$
+
         """
-        
-        user_to_check = Users.query.filter_by(username=username).first()
-        if user_to_check != None:
-            if self.validate(password):
-                user = Users(username=username, password=generate_password_hash(password))
-                db.session.add(user)
-                db.session.commit()
+        if request.method == 'POST' and 'username' in request.form and 'password' in request.form and 'password_2' in request.form:
+            if request.form['password'] == request.form['password_2']:
+                user_to_check = Users.query.filter_by(username=request.form['username']).first()
+                if user_to_check == None:
+                    if self.validate(request.form['password']):
+                        user = Users(username=request.form['username'], password=generate_password_hash(request.form['password']))
+                        try:
+                            db.session.add(user)
+                            db.session.commit()
+                            flash("User added successfully!")
+                        except:
+                            flash("User add failed")
+                else:
+                    flash("User already exists!")
+        return render_template("add_user.html")
 
     @login_required
     def rename(self):
@@ -227,10 +250,9 @@ class Interface(FlaskView):
         
         """
         
-        uid = session["_user_id"]
         if request.method == "POST" :
             if request.form["new_name"] != "":
-                to_update = Users.query.get(uid)
+                to_update = Users.query.get(session["_user_id"])
                 to_update.username = request.form["new_name"]
                 try:
                     db.session.commit()
@@ -238,22 +260,21 @@ class Interface(FlaskView):
                 except:
                     logging.error("Username update failed")
                     flash("Username update failed")
-        return render_template("update.html", user=Users.query.get(uid), which="user")
+        return render_template("update.html", user=Users.query.get(session["_user_id"]), which="user")
     
     @login_required
     def update_pass(self):
-        """Validate and update password
+        """Updates password
         
         """
         
-        uid = session["_user_id"]
         if request.method == "POST":
             if request.form["new_pass"] != "" and request.form["new_pass_2"] != "":
                 if request.form["new_pass"] == request.form["new_pass_2"]:
                     if self.validate(request.form["new_pass"]):
                         to_update = Users.query.filter_by(id=session["_user_id"]).first()
                         if to_update != None:
-                            to_update = Users.query.get(uid)
+                            to_update = Users.query.get(session["_user_id"])
                             to_update.password_hash = generate_password_hash(request.form["new_pass"])
                             try:
                                 db.session.commit()
@@ -262,30 +283,33 @@ class Interface(FlaskView):
                                 logging.error("Password update failed")
                                 flash("Password update failed")
                     else:
-                        flash("Password is not valid!")
+                        flash("""Password is not valid!
+                                Must be longer than 10 characters,
+                                contain numbers, and special,
+                                lower, and upper case characters.""")
                 else:
                     flash("Passwords do not match!")
             else:
                 flash("You must confirm your password!")
-        return render_template("update.html", user=Users.query.get(uid), which="pass")
+        return render_template("update.html", user=Users.query.get(session["_user_id"]), which="pass")
 
     def validate(self, new_pass):
-        """Validate password
+        """Validates password and returns boolean
         
         """
         
         special = "!@#$%^&*?_-"
-        cap, low, num, spec = False, False, False, False
+        upp, low, num, spec = False, False, False, False
         for l in new_pass:
             if l.isupper():
-                cap = True
+                upp = True
             elif l.islower():
                 low = True
             elif l.isdigit():
                 num = True
             elif l in special:
                 spec = True
-        if len(new_pass) > 9 and cap and low and num and spec:
+        if len(new_pass) > 10 and upp and low and num and spec:
             return True
         else:
             return False

@@ -4,7 +4,7 @@ import threading
 
 class Schedules():
     """
-    A class used to control a solenoid
+    A class used to set a schedule
 
     ...
 
@@ -51,6 +51,7 @@ class Schedules():
     def pin(self):
         """Get or set the GPIO pin number. Setting the pin will configure the 
         GPIO pin as an output automatically
+        
         """
         
         return self._pin

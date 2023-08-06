@@ -2,8 +2,8 @@
 
 {% block content %}
     <div class="settings">
-        <a class="btn btn-dark back-button" href="{{ url_for('Interface:settings') }}">Back</a><br><br>
         <h1 class="inline">{% block title %} Settings {% endblock %}</h1>
+        <a class="btn btn-dark back-button" href="{{ url_for('Interface:settings') }}">Back</a><br><br><br>
 
         {% for msg in get_flashed_messages() %}
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
