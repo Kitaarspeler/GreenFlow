@@ -15,13 +15,13 @@ from werkzeug.security import generate_password_hash, check_password_hash
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "akl;wejr,q2bjk35jh2wv35tugyaiu"
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://greenflowuser:fasc1st-$hoot-c4rbine-WARINESS@localhost/greenflow"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = 'Interface:login'
+login_manager.login_view = "Interface:login"
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -64,11 +64,11 @@ class Users(db.Model, UserMixin):
     def password(self, password):
         self.password_hash = generate_password_hash(password)
 
-    def verify_password(self, password, pw_to_check):
+    def verify_password(self, password):
         """Checks given password against password hash from database
         
         """
-        return check_password_hash(pw_to_check, password)
+        return check_password_hash(self.password_hash, password)
 
     def __repr__(self):
         """Returns f string giving username for identification
@@ -148,12 +148,9 @@ class Interface(FlaskView):
         if not user_to_add:
             self.add_to_db("admin", "admin", True)
         if request.method == "POST" and "username" in request.form and "password" in request.form:
-            username = request.form['username']
-            password = request.form['password']
-            #if self.is_authenticated(username, password):
             user = Users.query.filter_by(username=request.form["username"]).first()
             if user:
-                if check_password_hash(user.password_hash, request.form["password"]):
+                if self.is_authenticated(user, request.form["password"]):
                     login_user(user)
                     return redirect(url_for("Interface:index"))
                 else:
@@ -204,16 +201,13 @@ class Interface(FlaskView):
             flash("Name update failed")
         return redirect(url_for("Interface:index"))
     
-    def is_authenticated(self, username, password):
+    def is_authenticated(self, user, password):
         """Confirms if username and password are correct, and returns boolean
         
         """
         
-        user_to_check = Users.query.filter_by(username=username).first()
-        if user_to_check != None:
-            if user_to_check.verify_password(password, user_to_check.password_hash):
-                login_user(user_to_check)
-                return True
+        if user.verify_password(password):
+            return True
         else:
             return False
         
@@ -223,11 +217,11 @@ class Interface(FlaskView):
 
         """
 
-        if request.method == 'POST' and 'username' in request.form and 'password' in request.form and 'password_2' in request.form:
-            if request.form['password'] == request.form['password_2']:
-                user_to_check = Users.query.filter_by(username=request.form['username']).first()
+        if request.method == "POST" and "username" in request.form and "password" in request.form and "password_2" in request.form:
+            if request.form["password"] == request.form["password_2"]:
+                user_to_check = Users.query.filter_by(username=request.form["username"]).first()
                 if user_to_check == None:
-                    if self.validate(request.form['password']):
+                    if self.validate(request.form["password"]):
                         try: 
                             _ = request.form["is_admin"]
                             is_admin = True
@@ -340,8 +334,8 @@ class Interface(FlaskView):
 
 
 Interface._initilization()
-Interface.register(app, route_base='/')
-logging.basicConfig(level=logging.DEBUG, filename='app.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+Interface.register(app, route_base="/")
+logging.basicConfig(level=logging.DEBUG, filename="app.log", format="%(asctime)s - %(message)s", datefmt="%d-%b-%y %H:%M:%S")
 
 
 def main():
