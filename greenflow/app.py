@@ -9,6 +9,7 @@ from flask_migrate import Migrate
 from flask_classful import FlaskView, route
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, LoginManager, login_required, login_user, logout_user, current_user
+from flask_principal import Principal, Permission, RoleNeed, Identity, AnonymousIdentity, identity_changed
 from werkzeug.security import generate_password_hash, check_password_hash
 
 
@@ -16,8 +17,10 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = "akl;wejr,q2bjk35jh2wv35tugyaiu"
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://greenflowuser:fasc1st-$hoot-c4rbine-WARINESS@localhost/greenflow"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+principals = Principal(app)         # *** MAKE ADMIN PERMISSIONS WORK *** #
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -140,8 +143,9 @@ class Interface(FlaskView):
 
     default_methods = ["GET", "POST"]
     def login(self):
-        """
+        """Performs checks and logs user in
         
+        Also adds admin/admin user if no users found in database
         """
         
         user_to_add = Users.query.all()
@@ -200,16 +204,6 @@ class Interface(FlaskView):
             logging.error("Solenoid name update failed")
             flash("Name update failed")
         return redirect(url_for("Interface:index"))
-    
-    def is_authenticated(self, user, password):
-        """Confirms if username and password are correct, and returns boolean
-        
-        """
-        
-        if user.verify_password(password):
-            return True
-        else:
-            return False
         
     @login_required
     def add_user(self):
@@ -231,19 +225,6 @@ class Interface(FlaskView):
                 else:
                     flash("User already exists!")
         return render_template("add_user.html")
-    
-    def add_to_db(self, username, password, is_admin):
-        """Adds new user to database
-
-        """
-
-        user = Users(username=username, password=password, is_admin=is_admin)
-        try:
-            db.session.add(user)
-            db.session.commit()
-            flash("User added successfully!")
-        except:
-            flash("User add failed")
 
     @login_required
     def rename(self):
@@ -310,6 +291,29 @@ class Interface(FlaskView):
             else:
                 flash("You must confirm your password!")
         return render_template("update.html", user=Users.query.get(session["_user_id"]), which="pass")
+    
+    def is_authenticated(self, user, password):
+        """Confirms if username and password are correct, and returns boolean
+        
+        """
+        
+        if user.verify_password(password):
+            return True
+        else:
+            return False
+    
+    def add_to_db(self, username, password, is_admin):
+        """Adds new user to database
+
+        """
+
+        user = Users(username=username, password=password, is_admin=is_admin)
+        try:
+            db.session.add(user)
+            db.session.commit()
+            flash("User added successfully!")
+        except:
+            flash("User add failed")
 
     def validate(self, new_pass):
         """Validates password and returns boolean

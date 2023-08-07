@@ -1193,3 +1193,27 @@
 07-Aug-23 10:11:56 -  * Debugger PIN: 235-195-140
 07-Aug-23 10:12:36 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
 07-Aug-23 10:12:37 -  * Restarting with stat
+07-Aug-23 10:35:42 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+07-Aug-23 10:35:42 -  * Restarting with stat
+07-Aug-23 10:35:45 -  * Debugger is active!
+07-Aug-23 10:35:45 -  * Debugger PIN: 235-195-140
+07-Aug-23 10:35:47 - 192.168.1.1 - - [07/Aug/2023 10:35:47] "[32mGET /logout/ HTTP/1.1[0m" 302 -
+07-Aug-23 10:35:47 - 192.168.1.1 - - [07/Aug/2023 10:35:47] "GET /login/ HTTP/1.1" 200 -
+07-Aug-23 10:35:47 - 192.168.1.1 - - [07/Aug/2023 10:35:47] "GET /static/style.css HTTP/1.1" 200 -
+07-Aug-23 10:35:52 - 192.168.1.1 - - [07/Aug/2023 10:35:52] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+07-Aug-23 10:35:52 - 192.168.1.1 - - [07/Aug/2023 10:35:52] "GET / HTTP/1.1" 200 -
+07-Aug-23 10:35:52 - 192.168.1.1 - - [07/Aug/2023 10:35:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+07-Aug-23 10:35:56 - 192.168.1.1 - - [07/Aug/2023 10:35:56] "GET /settings/ HTTP/1.1" 200 -
+07-Aug-23 10:35:56 - 192.168.1.1 - - [07/Aug/2023 10:35:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+07-Aug-23 10:35:59 - 192.168.1.1 - - [07/Aug/2023 10:35:59] "GET /add_user/ HTTP/1.1" 200 -
+07-Aug-23 10:36:00 - 192.168.1.1 - - [07/Aug/2023 10:36:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+07-Aug-23 10:36:02 - 192.168.1.1 - - [07/Aug/2023 10:36:02] "GET /settings/ HTTP/1.1" 200 -
+07-Aug-23 10:36:02 - 192.168.1.1 - - [07/Aug/2023 10:36:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+07-Aug-23 15:46:37 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+07-Aug-23 15:46:37 -  * Restarting with stat
