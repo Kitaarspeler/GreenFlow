@@ -9,7 +9,7 @@ from flask_migrate import Migrate
 from flask_classful import FlaskView, route
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, LoginManager, login_required, login_user, logout_user, current_user
-from flask_principal import Principal, Permission, RoleNeed, Identity, AnonymousIdentity, identity_changed
+from flask_principal import Principal, Permission, RoleNeed, UserNeed, identity_loaded, Identity, AnonymousIdentity, identity_changed
 from werkzeug.security import generate_password_hash, check_password_hash
 
 
@@ -21,6 +21,27 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 principals = Principal(app)         # *** MAKE ADMIN PERMISSIONS WORK *** #
+
+admin_permission = Permission(RoleNeed("admin"))
+
+@identity_loaded.connect_via(app)
+def on_identity_loaded(sender, identity):
+    # Set the identity user object
+    identity.user = current_user
+
+    # Add the UserNeed to the identity
+    if hasattr(current_user, 'id'):
+        identity.provides.add(UserNeed(current_user.id))
+
+    if hasattr(current_user, "is_admin"):
+        if current_user.is_admin:
+            identity.provides.add(RoleNeed("admin"))
+
+@app.errorhandler(403)
+def page_not_found(e):
+    session['redirected_from'] = request.url
+    flash("You do not have permission to view that page!")
+    return redirect(url_for('Interface:index'))
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -142,27 +163,6 @@ class Interface(FlaskView):
             GPIO.setup(i+1, GPIO.OUT)
 
     default_methods = ["GET", "POST"]
-    def login(self):
-        """Performs checks and logs user in
-        
-        Also adds admin/admin user if no users found in database
-        """
-        
-        user_to_add = Users.query.all()
-        if not user_to_add:
-            self.add_to_db("admin", "admin", True)
-        if request.method == "POST" and "username" in request.form and "password" in request.form:
-            user = Users.query.filter_by(username=request.form["username"]).first()
-            if user:
-                if self.is_authenticated(user, request.form["password"]):
-                    login_user(user)
-                    return redirect(url_for("Interface:index"))
-                else:
-                    flash("Username or password is incorrect!")
-                    return render_template("login.html")
-        else:
-            return render_template("login.html")
-
     @login_required
     def index(self):
         return render_template("index.html", solenoids=Solenoids.query.all())
@@ -177,15 +177,41 @@ class Interface(FlaskView):
 
     @login_required
     def settings(self):
-        return render_template("settings.html", solenoids=Solenoids.query.all())
+        return render_template("settings.html", solenoids=Solenoids.query.all(), user=current_user)
+    
+    def login(self):
+        """Performs checks and logs user in
+        
+        Also adds admin/admin user if no users found in database
+        """
+        
+        user_to_add = Users.query.all()
+        if not user_to_add:
+            self.add_to_db("admin", "admin", True)
+        if request.method == "POST" and "username" in request.form and "password" in request.form:
+            user = Users.query.filter_by(username=request.form["username"]).first()
+            if user and self.is_authenticated(user, request.form["password"]):
+                login_user(user)
+                identity_changed.send(app, identity=Identity(user.id))
+                return redirect(url_for("Interface:index"))
+            else:
+                flash("Username or password is incorrect!")
+                return render_template("login.html")
+        return render_template("login.html")
     
     @login_required
     def logout(self):
         """
         
         """
-        
-        logout_user()
+        if current_user.is_authenticated:
+            logout_user()
+            # Remove session keys set by Flask-Principal
+            for key in ('identity.name', 'identity.auth_type'):
+                session.pop(key, None)
+
+            # Tell Flask-Principal the user is anonymous
+            identity_changed.send(app, identity=AnonymousIdentity())
         return redirect(url_for("Interface:login"))
     
     @login_required
@@ -206,6 +232,7 @@ class Interface(FlaskView):
         return redirect(url_for("Interface:index"))
         
     @login_required
+    @admin_permission.require(http_exception=403)
     def add_user(self):
         """Collects user info and send to database
 
@@ -302,6 +329,7 @@ class Interface(FlaskView):
         else:
             return False
     
+    @login_required
     def add_to_db(self, username, password, is_admin):
         """Adds new user to database
 
