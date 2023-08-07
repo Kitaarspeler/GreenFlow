@@ -7,7 +7,7 @@ RPi Garden Watering Automation System
 * Interface [Flask]
 * Schedules (not yet implemented)
 
-### TO DO
+## TO DO
 * Add admin permissions
 * Enter current password to change user details (plus fresh cookie validation?)
 * Set up initial set up page to get solenoids and info
