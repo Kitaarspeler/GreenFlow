@@ -18,27 +18,29 @@ app.config["SECRET_KEY"] = "akl;wejr,q2bjk35jh2wv35tugyaiu"
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://greenflowuser:fasc1st-$hoot-c4rbine-WARINESS@localhost/greenflow"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
+# Users and Solenoids databases
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
-principals = Principal(app)         # *** MAKE ADMIN PERMISSIONS WORK *** #
 
+# Admin access
+principals = Principal(app)
 admin_permission = Permission(RoleNeed("admin"))
 
 @identity_loaded.connect_via(app)
 def on_identity_loaded(sender, identity):
-    # Set the identity user object
     identity.user = current_user
-
-    # Add the UserNeed to the identity
     if hasattr(current_user, 'id'):
         identity.provides.add(UserNeed(current_user.id))
-
     if hasattr(current_user, "is_admin"):
         if current_user.is_admin:
             identity.provides.add(RoleNeed("admin"))
 
 @app.errorhandler(403)
-def page_not_found(e):
+def page_forbidden(e):
+    """Redirects to index and gives error when page not accessible by current user
+    
+    """
+    
     session['redirected_from'] = request.url
     flash("You do not have permission to view that page!")
     return redirect(url_for('Interface:index'))
@@ -50,7 +52,6 @@ login_manager.login_view = "Interface:login"
 @login_manager.user_loader
 def load_user(user_id):
     return Users.query.get(int(user_id))
-
 
 
 class Users(db.Model, UserMixin):
@@ -188,16 +189,19 @@ class Interface(FlaskView):
         user_to_add = Users.query.all()
         if not user_to_add:
             self.add_to_db("admin", "admin", True)
-        if request.method == "POST" and "username" in request.form and "password" in request.form:
-            user = Users.query.filter_by(username=request.form["username"]).first()
-            if user and self.is_authenticated(user, request.form["password"]):
-                login_user(user)
-                identity_changed.send(app, identity=Identity(user.id))
-                return redirect(url_for("Interface:index"))
-            else:
-                flash("Username or password is incorrect!")
-                return render_template("login.html")
-        return render_template("login.html")
+        if not current_user.is_authenticated:
+            if request.method == "POST" and "username" in request.form and "password" in request.form:
+                user = Users.query.filter_by(username=request.form["username"]).first()
+                if user and self.is_authenticated(user, request.form["password"]):
+                    login_user(user)
+                    identity_changed.send(app, identity=Identity(user.id))
+                    return redirect(url_for("Interface:index"))
+                else:
+                    flash("Username or password is incorrect!")
+                    return render_template("login.html")
+            return render_template("login.html")
+        else:
+            return redirect(url_for("Interface:index"))
     
     @login_required
     def logout(self):
