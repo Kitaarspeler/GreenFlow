@@ -205,16 +205,13 @@ class Interface(FlaskView):
     
     @login_required
     def logout(self):
-        """
+        """Logs out user, and removes authentication
         
         """
         if current_user.is_authenticated:
             logout_user()
-            # Remove session keys set by Flask-Principal
             for key in ('identity.name', 'identity.auth_type'):
                 session.pop(key, None)
-
-            # Tell Flask-Principal the user is anonymous
             identity_changed.send(app, identity=AnonymousIdentity())
         return redirect(url_for("Interface:login"))
     
@@ -231,8 +228,9 @@ class Interface(FlaskView):
             db.session.commit()
             flash(f"{to_update.name} turned {'on' if to_update.state else 'off'}")
         except:
-            logging.error("Solenoid name update failed")
-            flash("Name update failed")
+            logging.error("Solenoid toggle failed")
+            flash(f"Hose failed to turn {'on' if to_update.state else 'off'}")
+            to_update.toggle_state()        # Is this necessary?
         return redirect(url_for("Interface:index"))
         
     @login_required

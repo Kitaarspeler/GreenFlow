@@ -1984,3 +1984,13 @@
 08-Aug-23 16:27:52 - 192.168.1.1 - - [08/Aug/2023 16:27:52] "GET / HTTP/1.1" 200 -
 08-Aug-23 16:27:52 - 192.168.1.1 - - [08/Aug/2023 16:27:52] "GET /static/style.css HTTP/1.1" 200 -
 08-Aug-23 16:27:52 - 192.168.1.1 - - [08/Aug/2023 16:27:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+08-Aug-23 16:30:29 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+08-Aug-23 16:30:30 -  * Restarting with stat
+08-Aug-23 16:30:33 -  * Debugger is active!
+08-Aug-23 16:30:33 -  * Debugger PIN: 326-939-833
+08-Aug-23 16:30:40 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+08-Aug-23 16:30:40 -  * Restarting with stat
+08-Aug-23 16:30:44 -  * Debugger is active!
+08-Aug-23 16:30:44 -  * Debugger PIN: 326-939-833
+08-Aug-23 16:30:45 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+08-Aug-23 16:30:46 -  * Restarting with stat
