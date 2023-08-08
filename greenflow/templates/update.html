@@ -3,7 +3,7 @@
 {% block content %}
     <div class="settings">
         <h1 class="inline">{% block title %} Settings {% endblock %}</h1>
-        <a class="btn btn-dark back-button" href="{{ url_for('Interface:settings') }}">Back</a><br><br><br>
+        <a class="btn btn-dark back-button" href="{{ url_for('settings') }}">Back</a><br><br><br>
 
         {% for msg in get_flashed_messages() %}
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -17,7 +17,7 @@
         <p class="container-dark">Updating user: {{ user.username }}</p><br>
         <div class="update-users">
             {% if which == "user" %}
-            <form action="{{ url_for('Interface:update_user') }}" method="post">
+            <form action="{{ url_for('update_user') }}" method="post">
                 <div class="container-dark">
                     <p class="">Update username:</p>
                     <input type="text" name="new_name" id="new_name"><br><br>
@@ -26,7 +26,7 @@
             </form>
             {% endif %}
             {% if which == "pass" %}
-            <form action="{{ url_for('Interface:update_pass') }}" method="post">
+            <form action="{{ url_for('update_pass') }}" method="post">
                 <div class="container-dark">
                     <p class="">Update password:</p>
                     <input type="password" name="new_pass" id="new_pass"><br>

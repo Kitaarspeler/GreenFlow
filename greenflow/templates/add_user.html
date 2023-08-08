@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1>{% block title %} Settings {% endblock %}</h1>
-    <a class="btn btn-dark back-button" href="{{ url_for('Interface:settings') }}">Back</a><br><br><br>
+    <a class="btn btn-dark back-button" href="{{ url_for('settings') }}">Back</a><br><br><br>
     
     {% for msg in get_flashed_messages() %}
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -13,7 +13,7 @@
         </div>
     {% endfor %}
     <div class="login">
-        <form action="{{ url_for('Interface:add_user') }}" method="post">
+        <form action="{{ url_for('add_user') }}" method="post">
             <i>Admin:</i>
             <input type="checkbox" name="is_admin" id="is_admin"><br>
             <i>Username: </i>
