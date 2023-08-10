@@ -17,6 +17,7 @@
         <a class="btn btn-dark" href="{{ url_for('update_pass') }}">Change password</a><br><br>
         {% if user.is_admin %}
         <a class="btn btn-dark" href="{{ url_for('add_user') }}">Add new user</a><br><br>
+        <a class="btn btn-dark" href="{{ url_for('del_user') }}">Delete user</a><br><br>
         {% endif %}
     </div>
 {% endblock %}

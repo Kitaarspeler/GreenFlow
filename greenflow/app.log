@@ -186,3 +186,196 @@
 09-Aug-23 11:48:24 -  * Restarting with stat
 09-Aug-23 11:48:27 -  * Debugger is active!
 09-Aug-23 11:48:27 -  * Debugger PIN: 658-577-653
+09-Aug-23 11:53:02 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 11:53:03 -  * Restarting with stat
+09-Aug-23 11:53:13 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+09-Aug-23 11:53:13 -  * Restarting with stat
+09-Aug-23 11:53:16 -  * Debugger is active!
+09-Aug-23 11:53:17 -  * Debugger PIN: 658-577-653
+09-Aug-23 11:53:27 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 11:53:27 -  * Restarting with stat
+09-Aug-23 11:53:30 -  * Debugger is active!
+09-Aug-23 11:53:30 -  * Debugger PIN: 658-577-653
+09-Aug-23 11:53:39 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 11:53:40 -  * Restarting with stat
+09-Aug-23 11:53:51 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+09-Aug-23 11:53:51 -  * Restarting with stat
+09-Aug-23 11:53:54 -  * Debugger is active!
+09-Aug-23 11:53:54 -  * Debugger PIN: 658-577-653
+09-Aug-23 11:55:35 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 11:55:36 -  * Restarting with stat
+09-Aug-23 11:55:39 -  * Debugger is active!
+09-Aug-23 11:55:39 -  * Debugger PIN: 658-577-653
+09-Aug-23 11:55:43 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 11:55:43 -  * Restarting with stat
+09-Aug-23 11:55:46 -  * Debugger is active!
+09-Aug-23 11:55:46 -  * Debugger PIN: 658-577-653
+09-Aug-23 11:56:33 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 11:56:33 -  * Restarting with stat
+09-Aug-23 11:56:37 -  * Debugger is active!
+09-Aug-23 11:56:37 -  * Debugger PIN: 658-577-653
+09-Aug-23 11:56:39 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 11:56:39 -  * Restarting with stat
+09-Aug-23 11:56:43 -  * Debugger is active!
+09-Aug-23 11:56:43 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:00:07 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:00:07 -  * Restarting with stat
+09-Aug-23 12:00:10 -  * Debugger is active!
+09-Aug-23 12:00:10 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:00:19 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:00:20 -  * Restarting with stat
+09-Aug-23 12:00:25 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+09-Aug-23 12:00:25 -  * Restarting with stat
+09-Aug-23 12:00:28 -  * Debugger is active!
+09-Aug-23 12:00:28 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:00:30 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:00:30 -  * Restarting with stat
+09-Aug-23 12:00:33 -  * Debugger is active!
+09-Aug-23 12:00:33 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:00:40 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:00:41 -  * Restarting with stat
+09-Aug-23 12:00:44 -  * Debugger is active!
+09-Aug-23 12:00:44 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:00:44 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:00:45 -  * Restarting with stat
+09-Aug-23 12:00:49 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+09-Aug-23 12:00:49 -  * Restarting with stat
+09-Aug-23 12:00:52 -  * Debugger is active!
+09-Aug-23 12:00:52 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:00:59 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:01:00 -  * Restarting with stat
+09-Aug-23 12:01:03 -  * Debugger is active!
+09-Aug-23 12:01:03 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:01:07 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:01:08 -  * Restarting with stat
+09-Aug-23 12:01:11 -  * Debugger is active!
+09-Aug-23 12:01:11 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:01:18 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:01:19 -  * Restarting with stat
+09-Aug-23 12:01:22 -  * Debugger is active!
+09-Aug-23 12:01:22 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:01:40 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:01:40 -  * Restarting with stat
+09-Aug-23 12:01:43 -  * Debugger is active!
+09-Aug-23 12:01:43 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:01:48 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:01:48 -  * Restarting with stat
+09-Aug-23 12:03:19 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.201:5000 (Press CTRL+C to quit)
+09-Aug-23 12:03:19 -  * Restarting with stat
+09-Aug-23 12:03:22 -  * Debugger is active!
+09-Aug-23 12:03:22 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:03:30 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:03:30 -  * Restarting with stat
+09-Aug-23 12:03:33 -  * Debugger is active!
+09-Aug-23 12:03:33 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:03:36 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:03:36 -  * Restarting with stat
+09-Aug-23 12:03:39 -  * Debugger is active!
+09-Aug-23 12:03:39 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:03:41 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+09-Aug-23 12:03:41 -  * Restarting with stat
+09-Aug-23 12:03:44 -  * Debugger is active!
+09-Aug-23 12:03:44 -  * Debugger PIN: 658-577-653
+09-Aug-23 12:03:46 - 10.1.1.11 - - [09/Aug/2023 12:03:46] "GET /settings/ HTTP/1.1" 200 -
+09-Aug-23 12:03:46 - 10.1.1.11 - - [09/Aug/2023 12:03:46] "GET /static/style.css HTTP/1.1" 200 -
+09-Aug-23 12:03:46 - 10.1.1.11 - - [09/Aug/2023 12:03:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:20:10 - 192.168.1.1 - - [10/Aug/2023 18:20:10] "GET /settings/ HTTP/1.1" 200 -
+10-Aug-23 18:20:10 - 192.168.1.1 - - [10/Aug/2023 18:20:10] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:20:10 - 192.168.1.1 - - [10/Aug/2023 18:20:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:20:13 - 192.168.1.1 - - [10/Aug/2023 18:20:13] "GET /settings/ HTTP/1.1" 200 -
+10-Aug-23 18:20:13 - 192.168.1.1 - - [10/Aug/2023 18:20:13] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:20:14 - 192.168.1.1 - - [10/Aug/2023 18:20:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:20:24 - 192.168.1.1 - - [10/Aug/2023 18:20:24] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:20:24 - 192.168.1.1 - - [10/Aug/2023 18:20:24] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:20:24 - 192.168.1.1 - - [10/Aug/2023 18:20:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:21:53 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+10-Aug-23 18:21:53 -  * Restarting with stat
+10-Aug-23 18:21:56 -  * Debugger is active!
+10-Aug-23 18:21:56 -  * Debugger PIN: 658-577-653
+10-Aug-23 18:22:00 - 192.168.1.1 - - [10/Aug/2023 18:22:00] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:22:00 - 192.168.1.1 - - [10/Aug/2023 18:22:00] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:22:00 - 192.168.1.1 - - [10/Aug/2023 18:22:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:22:11 - 192.168.1.1 - - [10/Aug/2023 18:22:11] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:22:11 - 192.168.1.1 - - [10/Aug/2023 18:22:11] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:22:11 - 192.168.1.1 - - [10/Aug/2023 18:22:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:22:14 - 192.168.1.1 - - [10/Aug/2023 18:22:14] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:22:14 - 192.168.1.1 - - [10/Aug/2023 18:22:14] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:22:14 - 192.168.1.1 - - [10/Aug/2023 18:22:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:22:18 - 192.168.1.1 - - [10/Aug/2023 18:22:18] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:22:18 - 192.168.1.1 - - [10/Aug/2023 18:22:18] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:22:18 - 192.168.1.1 - - [10/Aug/2023 18:22:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:22:24 - 192.168.1.1 - - [10/Aug/2023 18:22:24] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:22:24 - 192.168.1.1 - - [10/Aug/2023 18:22:24] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:22:24 - 192.168.1.1 - - [10/Aug/2023 18:22:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:22:27 - 192.168.1.1 - - [10/Aug/2023 18:22:27] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:22:27 - 192.168.1.1 - - [10/Aug/2023 18:22:27] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:22:27 - 192.168.1.1 - - [10/Aug/2023 18:22:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:22:38 - 192.168.1.1 - - [10/Aug/2023 18:22:38] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:22:38 - 192.168.1.1 - - [10/Aug/2023 18:22:38] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:22:38 - 192.168.1.1 - - [10/Aug/2023 18:22:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:22:50 - 192.168.1.1 - - [10/Aug/2023 18:22:50] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:22:50 - 192.168.1.1 - - [10/Aug/2023 18:22:50] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:22:50 - 192.168.1.1 - - [10/Aug/2023 18:22:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:22:53 - 192.168.1.1 - - [10/Aug/2023 18:22:53] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:22:53 - 192.168.1.1 - - [10/Aug/2023 18:22:53] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:22:53 - 192.168.1.1 - - [10/Aug/2023 18:22:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:22:57 - 192.168.1.1 - - [10/Aug/2023 18:22:57] "GET /settings/ HTTP/1.1" 200 -
+10-Aug-23 18:22:57 - 192.168.1.1 - - [10/Aug/2023 18:22:57] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:22:57 - 192.168.1.1 - - [10/Aug/2023 18:22:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:22:58 - 192.168.1.1 - - [10/Aug/2023 18:22:58] "GET /add_user/ HTTP/1.1" 200 -
+10-Aug-23 18:22:58 - 192.168.1.1 - - [10/Aug/2023 18:22:58] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:22:58 - 192.168.1.1 - - [10/Aug/2023 18:22:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:23:01 - 192.168.1.1 - - [10/Aug/2023 18:23:01] "GET /settings/ HTTP/1.1" 200 -
+10-Aug-23 18:23:01 - 192.168.1.1 - - [10/Aug/2023 18:23:01] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:23:01 - 192.168.1.1 - - [10/Aug/2023 18:23:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:23:02 - 192.168.1.1 - - [10/Aug/2023 18:23:02] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:23:02 - 192.168.1.1 - - [10/Aug/2023 18:23:02] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:23:02 - 192.168.1.1 - - [10/Aug/2023 18:23:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:23:10 - 192.168.1.1 - - [10/Aug/2023 18:23:10] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:23:10 - 192.168.1.1 - - [10/Aug/2023 18:23:10] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:23:10 - 192.168.1.1 - - [10/Aug/2023 18:23:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:23:32 - 192.168.1.1 - - [10/Aug/2023 18:23:32] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:23:32 - 192.168.1.1 - - [10/Aug/2023 18:23:32] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:23:33 - 192.168.1.1 - - [10/Aug/2023 18:23:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:23:47 - 192.168.1.1 - - [10/Aug/2023 18:23:47] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:23:47 - 192.168.1.1 - - [10/Aug/2023 18:23:47] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:23:47 - 192.168.1.1 - - [10/Aug/2023 18:23:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:23:52 - 192.168.1.1 - - [10/Aug/2023 18:23:52] "POST /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:23:53 - 192.168.1.1 - - [10/Aug/2023 18:23:53] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:23:53 - 192.168.1.1 - - [10/Aug/2023 18:23:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:24:15 - 192.168.1.1 - - [10/Aug/2023 18:24:15] "GET /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:24:15 - 192.168.1.1 - - [10/Aug/2023 18:24:15] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:24:15 - 192.168.1.1 - - [10/Aug/2023 18:24:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:24:18 - 192.168.1.1 - - [10/Aug/2023 18:24:18] "POST /del_user/ HTTP/1.1" 200 -
+10-Aug-23 18:24:18 - 192.168.1.1 - - [10/Aug/2023 18:24:18] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:24:18 - 192.168.1.1 - - [10/Aug/2023 18:24:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:24:28 - 192.168.1.1 - - [10/Aug/2023 18:24:28] "[32mGET /logout/ HTTP/1.1[0m" 302 -
+10-Aug-23 18:24:28 - 192.168.1.1 - - [10/Aug/2023 18:24:28] "GET /login/ HTTP/1.1" 200 -
+10-Aug-23 18:24:28 - 192.168.1.1 - - [10/Aug/2023 18:24:28] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:24:28 - 192.168.1.1 - - [10/Aug/2023 18:24:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:24:35 - 192.168.1.1 - - [10/Aug/2023 18:24:35] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+10-Aug-23 18:24:35 - 192.168.1.1 - - [10/Aug/2023 18:24:35] "GET / HTTP/1.1" 200 -
+10-Aug-23 18:24:35 - 192.168.1.1 - - [10/Aug/2023 18:24:35] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:24:35 - 192.168.1.1 - - [10/Aug/2023 18:24:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:24:37 - 192.168.1.1 - - [10/Aug/2023 18:24:37] "GET /settings/ HTTP/1.1" 200 -
+10-Aug-23 18:24:37 - 192.168.1.1 - - [10/Aug/2023 18:24:37] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:24:37 - 192.168.1.1 - - [10/Aug/2023 18:24:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+10-Aug-23 18:24:40 - 192.168.1.1 - - [10/Aug/2023 18:24:40] "[32mGET /logout/ HTTP/1.1[0m" 302 -
+10-Aug-23 18:24:40 - 192.168.1.1 - - [10/Aug/2023 18:24:40] "GET /login/ HTTP/1.1" 200 -
+10-Aug-23 18:24:40 - 192.168.1.1 - - [10/Aug/2023 18:24:40] "GET /static/style.css HTTP/1.1" 200 -
+10-Aug-23 18:24:40 - 192.168.1.1 - - [10/Aug/2023 18:24:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

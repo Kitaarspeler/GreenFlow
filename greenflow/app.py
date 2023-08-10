@@ -235,6 +235,24 @@ def add_user():
                 flash("User already exists!")
     return render_template("add_user.html")
 
+@app.route("/del_user/", methods=["GET", "POST"])
+@login_required
+@admin_permission.require(http_exception=403)
+def del_user():
+    """Collects user info and deletes from database
+
+    """
+
+    if request.method == "POST" and "username" in request.form:
+        to_delete = Users.query.get(request.form["username"])
+        try:
+            db.session.delete(to_delete)
+            db.session.commit()
+            flash("User deleted successfully")
+        except:
+            flash("User delete failed")
+    return render_template("del_user.html", users=Users.query.all())
+
 @app.route("/rename/", methods=["GET", "POST"])
 @login_required
 def rename():
