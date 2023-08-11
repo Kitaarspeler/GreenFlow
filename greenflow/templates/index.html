@@ -15,7 +15,7 @@
     {% for solenoid in solenoids %}
         <div class="col-sm container-dark">
             <p>{{ solenoid.name }} is {{ "on" if solenoid.state else "off" }}</p>
-            <a class="btn btn-primary" href="/toggle_solenoid/{{ solenoid.id }}">{{ "Turn off" if solenoid.state else "Turn on" }}</a><br><br>
+            <a class="btn btn-primary" href="{{ url_for('toggle_solenoid', id=solenoid.id) }}">{{ "Turn off" if solenoid.state else "Turn on for an hour" }}</a><br><br>
         </div>
     {% endfor %}
     </div>

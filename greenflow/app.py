@@ -2,7 +2,6 @@
 
 import sys
 import logging
-import mysql.connector
 import RPi.GPIO as GPIO
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from flask_migrate import Migrate
@@ -36,7 +35,7 @@ def on_identity_loaded(sender, identity):
 
 @app.errorhandler(403)
 def page_forbidden(e):
-    """Redirects to index and gives error when page not accessible by current user
+    """Redirects to index and gives permissions error when page not accessible by current user
     
     """
     
@@ -194,8 +193,8 @@ def logout():
         identity_changed.send(app, identity=AnonymousIdentity())
     return redirect(url_for("login"))
 
-@app.route("/toggle_solenoid/<int:id>")
 @login_required
+@app.route("/toggle_solenoid/<int:id>/")
 def toggle_solenoid(id):
     """Toggle solenoid state and update GPIO pin
     
@@ -203,6 +202,10 @@ def toggle_solenoid(id):
 
     to_update = Solenoids.query.get_or_404(id)
     to_update.toggle_state()
+    if to_update.toggle_state == True:
+        print(True)
+    else:
+        print(False)
     try:
         db.session.commit()
         flash(f"{to_update.name} turned {'on' if to_update.state else 'off'}")
