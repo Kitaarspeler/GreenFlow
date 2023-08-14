@@ -10,12 +10,7 @@ def run_continuously(interval=1):
     """Continuously run, while executing pending jobs at each
     elapsed time interval.
     @return cease_continuous_run: threading. Event which can
-    be set to cease continuous run. Please note that it is
-    *intended behavior that run_continuously() does not run
-    missed jobs*. For example, if you've registered a job that
-    should run every minute and you set a continuous run
-    interval of one hour then your job won't be run 60 times
-    at each interval but only once.
+    be set to cease continuous run. 
     """
     cease_continuous_run = threading.Event()
 
@@ -25,25 +20,27 @@ def run_continuously(interval=1):
             while not cease_continuous_run.is_set():
                 schedule.run_pending()
                 time.sleep(interval)
-
+                
     continuous_thread = ScheduleThread()
     continuous_thread.start()
     return cease_continuous_run
 
 
-def background_job():
-    print(datetime.now().isoformat())
+def background_job(id):
+    print(f"{id}: {datetime.now().isoformat()}")
 
+count = 1
 
 try:
-    schedule.every().second.do(background_job)
+    schedule.every().second.do(background_job, count)
 
     # Start the background thread
     stop_run_continuously = run_continuously()
 
     while True:
-        if input("Test: ") == "y":
-            schedule.every().second.do(background_job) 
+        if input("") == "y":
+            count += 1
+            schedule.every().second.do(background_job, count) 
 
     # Do some other things...
     print("Printing...")

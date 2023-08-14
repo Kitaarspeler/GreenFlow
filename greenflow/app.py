@@ -2,6 +2,9 @@
 
 import sys
 import logging
+import schedule
+import threading
+import time
 import RPi.GPIO as GPIO
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from flask_migrate import Migrate
@@ -35,7 +38,8 @@ def on_identity_loaded(sender, identity):
 
 @app.errorhandler(403)
 def page_forbidden(e):
-    """Redirects to index and gives permissions error when page not accessible by current user
+    """Redirects to index and gives permissions error when page not accessible 
+    by current user
     
     """
     
@@ -50,6 +54,30 @@ login_manager.login_view = "login"
 @login_manager.user_loader
 def load_user(user_id):
     return Users.query.get(int(user_id))
+
+
+def run_continuously(interval=1):
+    """Continuously run, while executing pending jobs at each elapsed time 
+    interval
+
+    """
+    
+    cease_continuous_run = threading.Event()
+
+    class ScheduleThread(threading.Thread):
+        @classmethod
+        def run(cls):
+            while not cease_continuous_run.is_set():
+                schedule.run_pending()
+                time.sleep(interval)
+
+    try:
+        continuous_thread = ScheduleThread()
+        continuous_thread.start()
+    except KeyboardInterrupt:
+        cease_continuous_run.set()
+        sys.exit()
+    return cease_continuous_run
 
 
 class Users(db.Model, UserMixin):
@@ -101,7 +129,6 @@ class Users(db.Model, UserMixin):
         return f"User: {self.username}"
 
 
-
 class Solenoids(db.Model):
     """A solenoid capable of turning off and on, with a GPIO pin and a name
     
@@ -116,6 +143,14 @@ class Solenoids(db.Model):
         whether the solenoid is on or off (True or False)
     name
         identifier given by the user
+
+    Methods
+    -------
+
+    toggle_state
+        Switches state attribute and sets GPIO pin output
+    turn_off
+        Sets state attribute to False and sets GPIO pin output
     """
 
     id = db.Column(db.Integer, primary_key=True)
@@ -134,27 +169,40 @@ class Solenoids(db.Model):
         self.state = not self.state
         GPIO.output(self.pin, self.state)
 
+    def turn_off(self):
+        """Sets state attribute to False and sets GPIO pin output
+        
+        """
 
+        self.state = False
+        GPIO.output(self.pin, self.state)
+
+
+##### Flask routes #####
 
 @app.route("/")
 @login_required
 def index():
     return render_template("index.html", solenoids=Solenoids.query.all())
 
+
 @app.route("/water")
 @login_required
 def water():
     return render_template("water.html")
 
+
 @app.route("/schedule/")
 @login_required
-def schedule():
+def schedules():
     return render_template("schedule.html", solenoids=Solenoids.query.all())
+
 
 @app.route("/settings/")
 @login_required
 def settings():
     return render_template("settings.html", solenoids=Solenoids.query.all(), user=current_user)
+
 
 @app.route("/login/", methods=["GET", "POST"])
 def login():
@@ -180,6 +228,7 @@ def login():
     else:
         return redirect(url_for("index"))
 
+
 @app.route("/logout/")
 @login_required
 def logout():
@@ -193,8 +242,9 @@ def logout():
         identity_changed.send(app, identity=AnonymousIdentity())
     return redirect(url_for("login"))
 
-@login_required
+
 @app.route("/toggle_solenoid/<int:id>/")
+@login_required
 def toggle_solenoid(id):
     """Toggle solenoid state and update GPIO pin
     
@@ -202,10 +252,8 @@ def toggle_solenoid(id):
 
     to_update = Solenoids.query.get_or_404(id)
     to_update.toggle_state()
-    if to_update.toggle_state == True:
-        print(True)
-    else:
-        print(False)
+    if to_update.toggle_state == False:
+        schedule.every().minute.do(turn_off_after_hour, id)
     try:
         db.session.commit()
         flash(f"{to_update.name} turned {'on' if to_update.state else 'off'}")
@@ -214,6 +262,7 @@ def toggle_solenoid(id):
         flash(f"Hose failed to turn {'on' if to_update.state else 'off'}")
         to_update.toggle_state()        # Is this necessary?
     return redirect(url_for("index"))
+
 
 @app.route("/add_user/", methods=["GET", "POST"])
 @login_required
@@ -238,6 +287,7 @@ def add_user():
                 flash("User already exists!")
     return render_template("add_user.html")
 
+
 @app.route("/del_user/", methods=["GET", "POST"])
 @login_required
 @admin_permission.require(http_exception=403)
@@ -255,6 +305,7 @@ def del_user():
         except:
             flash("User delete failed")
     return render_template("del_user.html", users=Users.query.all())
+
 
 @app.route("/rename/", methods=["GET", "POST"])
 @login_required
@@ -274,6 +325,7 @@ def rename():
             flash("Name update failed")
     return render_template("rename.html", solenoids=Solenoids.query.all())
 
+
 @app.route("/update_user/", methods=["GET", "POST"])
 @login_required
 def update_user():
@@ -292,6 +344,7 @@ def update_user():
                 logging.error("Username update failed")
                 flash("Username update failed")
     return render_template("update.html", user=Users.query.get(session["_user_id"]), which="user")
+
 
 @app.route("/update_pass/", methods=["GET", "POST"])
 @login_required
@@ -325,6 +378,9 @@ def update_pass():
             flash("You must confirm your password!")
     return render_template("update.html", user=Users.query.get(session["_user_id"]), which="pass")
 
+
+##### Flask functions #####
+
 def is_authenticated(user, password):
     """Confirms if username and password are correct, and returns boolean
     
@@ -334,6 +390,7 @@ def is_authenticated(user, password):
         return True
     else:
         return False
+
 
 def add_to_db(username, password, is_admin):
     """Adds new user to database
@@ -347,6 +404,7 @@ def add_to_db(username, password, is_admin):
         flash("User added successfully!")
     except:
         flash("User add failed")
+
 
 def validate(new_pass):
     """Validates password and returns boolean
@@ -369,17 +427,25 @@ def validate(new_pass):
     else:
         return False
 
-'''
-Interface._initilization()
-Interface.register(app, route_base="/")
-'''
-logging.basicConfig(level=logging.DEBUG, filename="app.log", format="%(asctime)s - %(message)s", datefmt="%d-%b-%y %H:%M:%S")
+
+def turn_off_after_hour(id):
+    to_turn_off = Solenoids.query.get_or_404(id)
+    to_turn_off.turn_off()
+    print("turned off via schedule")
+    try:
+        db.session.commit()
+    except:
+        print("turn off failed")
+        logging.error("Solenoid toggle failed")
+    return schedule.CancelJob
 
 
 def main():
     print("Flask Web server (re)starting")
     GPIO.setmode(GPIO.BCM)
     GPIO.setwarnings(False)
+    stop_run_continuously = run_continuously()  # Starts background thread for solenoid schedules
+    logging.basicConfig(level=logging.DEBUG, filename="app.log", format="%(asctime)s - %(message)s", datefmt="%d-%b-%y %H:%M:%S")   # Sets logging config
 
     for i in range(1, 5):       # Sets up solenoids
         solenoid = Solenoids.query.filter_by(pin=i+1).first()
@@ -389,14 +455,16 @@ def main():
             db.session.commit()
         solenoid = Solenoids.query.filter_by(pin=i+1).first()
         GPIO.setup(i+1, GPIO.OUT)
+
     try:
-        app.run(
+        app.run(                    # Starts flask server
             debug = True,
             host = "0.0.0.0",
             port = 5000,
             )
-    except (KeyboardInterrupt,EOFError):
+    except (KeyboardInterrupt, EOFError):
         GPIO.cleanup()
+        stop_run_continuously.set()
         logging.info("Program ended by user")
         print("Program ended by user")
         sys.exit()
