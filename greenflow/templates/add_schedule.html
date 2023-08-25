@@ -2,6 +2,7 @@
 
 {% block content %}
     <h1>{% block title %} Schedules {% endblock %}</h1>
+    <a class="btn btn-dark back-button" href="{{ url_for('schedules') }}">Back</a><br><br><br>
     
     {% for msg in get_flashed_messages() %}
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -11,8 +12,6 @@
             </button>
         </div>
     {% endfor %}
-
-    <!-- SET DROPDOWN FOR SOLENOID TO CHANGE, WITH ONE BOX TO PUT NAME IN -->
 
     <div class="schedule container-dark">
         <div class="drop-down">
@@ -26,16 +25,25 @@
         <div class="drop-down">
             <p class="drop-title">Every:</p>
             <div class="inline-row">
+                <input type="number" name="rate" placeholder="0" id="rate_num">
                 <select name="how_often" id="how_often">
-                    <option value="hour">Hour</option>
-                    <option value="xhours">X Hours</option>
-                    <option value="day">Day</option>
-                    <option value="xdays">X Days</option>
-                    <option value="week">Week</option>
+                    <option value="xhours">Hour(s)</option>
+                    <option value="xdays">Day(s)</option>
+                    <option value="week">Week(s)</option>
                 </select>
             </div>
+            <p>OR</p>
             <div class="inline-row">
-                <input type="number" name="rate" placeholder="0" id="rate_num">
+                <select name="what_day" id="what_day">
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                </select>
+                <input class="wide-time" type="time" name="what_time" id="what_time">
             </div>
         </div>
         <div class="drop-down">

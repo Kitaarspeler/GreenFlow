@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Schedules {% endblock %}</h1>
+    
+    {% for msg in get_flashed_messages() %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{ msg }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    {% endfor %}
+
+    <div class="schedule container-dark">
+        {% for schedule in schedules %}
+            <p>{{ schedule }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="schedule container-dark">
+        <div class="buttons">
+            <a class="btn btn-dark" href="{{ url_for('add_schedule') }}">Add schedule</a><br><br>
+        </div>
+    </div>
+{% endblock %}

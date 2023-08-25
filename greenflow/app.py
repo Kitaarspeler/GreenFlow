@@ -86,13 +86,13 @@ class Users(db.Model, UserMixin):
     Attributes
     ----------
 
-    id
+    id : int
         identifier for each user
-    username
+    username : str
         username of user
-    password_hash
+    password_hash : str
         encrypted password for the user
-    is_admin
+    is_admin : bool
         whether the user is an admin
 
     Methods
@@ -135,13 +135,13 @@ class Solenoids(db.Model):
     Attributes
     ----------
 
-    id
+    id : int
         identifier for each solenoid
-    pin
+    pin : int
         GPIO pin to interact with the solenoid
-    state
+    state : bool
         whether the solenoid is on or off (True or False)
-    name
+    name : str
         identifier given by the user
 
     Methods
@@ -178,6 +178,31 @@ class Solenoids(db.Model):
         GPIO.output(self.pin, self.state)
 
 
+class Schedules(db.Model):
+    """A schedule for a given solenoid at a given time
+    
+    Attributes
+    ----------
+
+    id : int
+        identifier for each schedule
+    solenoid : int
+        which solenoid the schedule is set for
+    how_often : int
+        how often the schedule will run (e.g. "day", or "3 days", or "wednesday")
+    how_long : str
+        how long the schedule will run for (in minutes)
+    """
+
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    solenoid = db.Column(db.Integer, nullable=False)
+    how_often = db.Column(db.String(25), nullable=False)
+    how_long = db.Column(db.Integer, nullable=False)
+
+    def __repr__(self):
+        return f"Schedule on {self.solenoid}, running every {self.how_often} for {self.how_long}"
+
+
 ##### Flask routes #####
 
 @app.route("/")
@@ -186,16 +211,16 @@ def index():
     return render_template("index.html", solenoids=Solenoids.query.all())
 
 
-@app.route("/water")
+@app.route("/water/")
 @login_required
 def water():
     return render_template("water.html")
 
 
-@app.route("/schedule/")
+@app.route("/schedules/")
 @login_required
 def schedules():
-    return render_template("schedule.html", solenoids=Solenoids.query.all())
+    return render_template("schedules.html", solenoids=Solenoids.query.all())#, schedules=Schedules.query.all())
 
 
 @app.route("/settings/")
@@ -250,18 +275,25 @@ def toggle_solenoid(id):
     
     """
 
+    print("toggle")
     to_update = Solenoids.query.get_or_404(id)
     to_update.toggle_state()
-    if to_update.toggle_state == False:
+    if to_update.state == True:
         schedule.every().minute.do(turn_off_after_hour, id)
+        print("turn off set on schedule")
     try:
         db.session.commit()
         flash(f"{to_update.name} turned {'on' if to_update.state else 'off'}")
     except:
         logging.error("Solenoid toggle failed")
         flash(f"Hose failed to turn {'on' if to_update.state else 'off'}")
-        to_update.toggle_state()        # Is this necessary?
     return redirect(url_for("index"))
+
+
+@app.route("/add_schedule/")
+@login_required
+def add_schedule():
+    return render_template("add_schedule.html", solenoids=Solenoids.query.all())
 
 
 @app.route("/add_user/", methods=["GET", "POST"])
@@ -463,6 +495,7 @@ def main():
             port = 5000,
             )
     except (KeyboardInterrupt, EOFError):
+        print("test")
         GPIO.cleanup()
         stop_run_continuously.set()
         logging.info("Program ended by user")

@@ -13,9 +13,13 @@
     {% endfor %}
     <div class="row">
     {% for solenoid in solenoids %}
-        <div class="col-sm container-dark">
-            <p>{{ solenoid.name }} is {{ "on" if solenoid.state else "off" }}</p>
-            <a class="btn btn-primary" href="{{ url_for('toggle_solenoid', id=solenoid.id) }}">{{ "Turn off" if solenoid.state else "Turn on for an hour" }}</a><br><br>
+        <div class="col-sm container-dark inline-row">
+            <p>{{ solenoid.name }} is {{ "on until" if solenoid.state else "off" }}</p>
+            <a class="btn btn-primary" href="{{ url_for('toggle_solenoid', id=solenoid.id) }}">{{ "Turn off" if solenoid.state else "Turn on for" }}</a><br><br>
+            {% if not solenoid.state %}
+            <input type="number" name="length" placeholder="20" id="length">
+            <p>minutes</p>
+            {% endif %}
         </div>
     {% endfor %}
     </div>

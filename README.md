@@ -8,8 +8,11 @@ RPi Garden Watering Automation System
 * Schedules (not yet implemented)
 
 ## To Do
-* 
+* Check weather patterns
+    * If no precipitation forecast:
+        * Water at best time (google it)
+        * Length of time related to heat of day
+* Give index watering option of specific time to water for
+* Set up schedule database
 * Enter current password to change user details (plus fresh cookie validation?)
 * Set up initial set up page to get solenoids and info
-* Can't turn on solenoid with no timer, needs to have timer set so doesn't run indefinitely
-* Schedule page
