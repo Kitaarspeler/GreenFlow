@@ -113,3 +113,353 @@
 16-Aug-23 19:18:43 - 10.1.1.11 - - [16/Aug/2023 19:18:43] "GET /static/style.css HTTP/1.1" 200 -
 16-Aug-23 19:19:22 - Running job Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})
 16-Aug-23 19:19:22 - Cancelling job "Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})"
+25-Aug-23 14:18:31 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 14:18:31 -  * Restarting with stat
+25-Aug-23 14:18:34 -  * Debugger is active!
+25-Aug-23 14:18:34 -  * Debugger PIN: 701-476-777
+25-Aug-23 14:18:34 - 10.11.12.2 - - [25/Aug/2023 14:18:34] "GET /add_schedule/ HTTP/1.1" 200 -
+25-Aug-23 14:18:35 - 10.11.12.2 - - [25/Aug/2023 14:18:35] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:18:36 - 10.11.12.2 - - [25/Aug/2023 14:18:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:18:43 - 10.11.12.2 - - [25/Aug/2023 14:18:43] "GET /schedules/ HTTP/1.1" 200 -
+25-Aug-23 14:18:43 - 10.11.12.2 - - [25/Aug/2023 14:18:43] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:18:43 - 10.11.12.2 - - [25/Aug/2023 14:18:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:19:11 - 10.11.12.2 - - [25/Aug/2023 14:19:11] "GET /schedules/ HTTP/1.1" 200 -
+25-Aug-23 14:19:11 - 10.11.12.2 - - [25/Aug/2023 14:19:11] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:19:11 - 10.11.12.2 - - [25/Aug/2023 14:19:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:19:13 - 10.11.12.2 - - [25/Aug/2023 14:19:13] "GET /schedules/ HTTP/1.1" 200 -
+25-Aug-23 14:19:13 - 10.11.12.2 - - [25/Aug/2023 14:19:13] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:19:13 - 10.11.12.2 - - [25/Aug/2023 14:19:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:19:23 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 14:19:23 -  * Restarting with stat
+25-Aug-23 14:19:26 -  * Debugger is active!
+25-Aug-23 14:19:26 -  * Debugger PIN: 701-476-777
+25-Aug-23 14:19:26 - 10.11.12.2 - - [25/Aug/2023 14:19:26] "GET /schedules/ HTTP/1.1" 200 -
+25-Aug-23 14:19:27 - 10.11.12.2 - - [25/Aug/2023 14:19:27] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:19:27 - 10.11.12.2 - - [25/Aug/2023 14:19:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:19:40 - 10.11.12.2 - - [25/Aug/2023 14:19:40] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:19:40 - 10.11.12.2 - - [25/Aug/2023 14:19:40] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:19:40 - 10.11.12.2 - - [25/Aug/2023 14:19:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:20:52 - 10.11.12.2 - - [25/Aug/2023 14:20:52] "[32mGET / HTTP/1.1[0m" 302 -
+25-Aug-23 14:20:53 - 10.11.12.2 - - [25/Aug/2023 14:20:53] "GET /login/?next=%2F HTTP/1.1" 200 -
+25-Aug-23 14:20:53 - 10.11.12.2 - - [25/Aug/2023 14:20:53] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:20:54 - 10.11.12.2 - - [25/Aug/2023 14:20:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:21:02 - 10.11.12.2 - - [25/Aug/2023 14:21:02] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+25-Aug-23 14:21:03 - 10.11.12.2 - - [25/Aug/2023 14:21:03] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:21:03 - 10.11.12.2 - - [25/Aug/2023 14:21:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+25-Aug-23 14:21:42 - 10.11.12.2 - - [25/Aug/2023 14:21:42] "[32mGET /settings HTTP/1.1[0m" 308 -
+25-Aug-23 14:21:42 - 10.11.12.2 - - [25/Aug/2023 14:21:42] "GET /settings/ HTTP/1.1" 200 -
+25-Aug-23 14:21:42 - 10.11.12.2 - - [25/Aug/2023 14:21:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+25-Aug-23 14:22:03 - 10.11.12.2 - - [25/Aug/2023 14:22:03] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:22:03 - 10.11.12.2 - - [25/Aug/2023 14:22:03] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:22:03 - 10.11.12.2 - - [25/Aug/2023 14:22:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:22:05 - 10.11.12.2 - - [25/Aug/2023 14:22:05] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:22:05 - 10.11.12.2 - - [25/Aug/2023 14:22:05] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:22:05 - 10.11.12.2 - - [25/Aug/2023 14:22:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:22:39 - 10.11.12.2 - - [25/Aug/2023 14:22:39] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:22:39 - 10.11.12.2 - - [25/Aug/2023 14:22:39] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:22:39 - 10.11.12.2 - - [25/Aug/2023 14:22:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:22:42 - 10.11.12.2 - - [25/Aug/2023 14:22:42] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:22:42 - 10.11.12.2 - - [25/Aug/2023 14:22:42] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:22:42 - 10.11.12.2 - - [25/Aug/2023 14:22:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:23:16 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 14:23:16 -  * Restarting with stat
+25-Aug-23 14:23:19 -  * Debugger is active!
+25-Aug-23 14:23:19 -  * Debugger PIN: 701-476-777
+25-Aug-23 14:23:19 - 10.11.12.2 - - [25/Aug/2023 14:23:19] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:23:19 - 10.11.12.2 - - [25/Aug/2023 14:23:19] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:23:20 - 10.11.12.2 - - [25/Aug/2023 14:23:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:24:19 - 10.11.12.2 - - [25/Aug/2023 14:24:19] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:24:19 - 10.11.12.2 - - [25/Aug/2023 14:24:19] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:24:19 - 10.11.12.2 - - [25/Aug/2023 14:24:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:24:22 - 10.11.12.2 - - [25/Aug/2023 14:24:22] "GET /settings/ HTTP/1.1" 200 -
+25-Aug-23 14:24:22 - 10.11.12.2 - - [25/Aug/2023 14:24:22] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:25:33 - 10.11.12.2 - - [25/Aug/2023 14:25:33] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:25:33 - 10.11.12.2 - - [25/Aug/2023 14:25:33] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:25:33 - 10.11.12.2 - - [25/Aug/2023 14:25:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:25:37 - 10.11.12.2 - - [25/Aug/2023 14:25:37] "GET /settings/ HTTP/1.1" 200 -
+25-Aug-23 14:25:37 - 10.11.12.2 - - [25/Aug/2023 14:25:37] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:27:25 - 10.11.12.2 - - [25/Aug/2023 14:27:25] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:27:25 - 10.11.12.2 - - [25/Aug/2023 14:27:25] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:27:26 - 10.11.12.2 - - [25/Aug/2023 14:27:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:27:29 - 10.11.12.2 - - [25/Aug/2023 14:27:29] "[32mGET /settings HTTP/1.1[0m" 308 -
+25-Aug-23 14:27:30 - 10.11.12.2 - - [25/Aug/2023 14:27:30] "GET /settings/ HTTP/1.1" 200 -
+25-Aug-23 14:27:30 - 10.11.12.2 - - [25/Aug/2023 14:27:30] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:27:30 - 10.11.12.2 - - [25/Aug/2023 14:27:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:27:32 - 10.11.12.2 - - [25/Aug/2023 14:27:32] "[32mGET /schedules HTTP/1.1[0m" 308 -
+25-Aug-23 14:27:33 - 10.11.12.2 - - [25/Aug/2023 14:27:33] "GET /schedules/ HTTP/1.1" 200 -
+25-Aug-23 14:27:33 - 10.11.12.2 - - [25/Aug/2023 14:27:33] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:27:33 - 10.11.12.2 - - [25/Aug/2023 14:27:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:27:36 - 10.11.12.2 - - [25/Aug/2023 14:27:36] "GET /add_schedule/ HTTP/1.1" 200 -
+25-Aug-23 14:27:36 - 10.11.12.2 - - [25/Aug/2023 14:27:36] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:27:36 - 10.11.12.2 - - [25/Aug/2023 14:27:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:27:40 - 10.11.12.2 - - [25/Aug/2023 14:27:40] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:27:40 - 10.11.12.2 - - [25/Aug/2023 14:27:40] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:27:40 - 10.11.12.2 - - [25/Aug/2023 14:27:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:28:02 - 10.11.12.2 - - [25/Aug/2023 14:28:02] "[32mGET /logout HTTP/1.1[0m" 308 -
+25-Aug-23 14:28:02 - 10.11.12.2 - - [25/Aug/2023 14:28:02] "[32mGET /logout/ HTTP/1.1[0m" 302 -
+25-Aug-23 14:28:02 - 10.11.12.2 - - [25/Aug/2023 14:28:02] "GET /login/ HTTP/1.1" 200 -
+25-Aug-23 14:28:02 - 10.11.12.2 - - [25/Aug/2023 14:28:02] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:28:02 - 10.11.12.2 - - [25/Aug/2023 14:28:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:28:11 - 10.11.12.2 - - [25/Aug/2023 14:28:11] "GET /login/ HTTP/1.1" 200 -
+25-Aug-23 14:28:11 - 10.11.12.2 - - [25/Aug/2023 14:28:11] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:28:11 - 10.11.12.2 - - [25/Aug/2023 14:28:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:28:13 - 10.11.12.2 - - [25/Aug/2023 14:28:13] "GET /login/ HTTP/1.1" 200 -
+25-Aug-23 14:28:13 - 10.11.12.2 - - [25/Aug/2023 14:28:13] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:28:13 - 10.11.12.2 - - [25/Aug/2023 14:28:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:28:16 - 10.11.12.2 - - [25/Aug/2023 14:28:16] "GET /login/ HTTP/1.1" 200 -
+25-Aug-23 14:28:16 - 10.11.12.2 - - [25/Aug/2023 14:28:16] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:28:17 - 10.11.12.2 - - [25/Aug/2023 14:28:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:28:33 - 10.11.12.2 - - [25/Aug/2023 14:28:33] "GET /login/ HTTP/1.1" 200 -
+25-Aug-23 14:28:33 - 10.11.12.2 - - [25/Aug/2023 14:28:33] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:28:33 - 10.11.12.2 - - [25/Aug/2023 14:28:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:28:36 - 10.11.12.2 - - [25/Aug/2023 14:28:36] "GET /login/ HTTP/1.1" 200 -
+25-Aug-23 14:28:36 - 10.11.12.2 - - [25/Aug/2023 14:28:36] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:28:36 - 10.11.12.2 - - [25/Aug/2023 14:28:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:30:11 - 10.11.12.2 - - [25/Aug/2023 14:30:11] "GET /login/ HTTP/1.1" 200 -
+25-Aug-23 14:30:12 - 10.11.12.2 - - [25/Aug/2023 14:30:12] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:30:12 - 10.11.12.2 - - [25/Aug/2023 14:30:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:30:24 - 10.11.12.2 - - [25/Aug/2023 14:30:24] "GET /login/ HTTP/1.1" 200 -
+25-Aug-23 14:30:24 - 10.11.12.2 - - [25/Aug/2023 14:30:24] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:30:25 - 10.11.12.2 - - [25/Aug/2023 14:30:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:30:30 - 10.11.12.2 - - [25/Aug/2023 14:30:30] "[32mPOST /login/ HTTP/1.1[0m" 302 -
+25-Aug-23 14:30:30 - 10.11.12.2 - - [25/Aug/2023 14:30:30] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:30:30 - 10.11.12.2 - - [25/Aug/2023 14:30:30] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:30:30 - 10.11.12.2 - - [25/Aug/2023 14:30:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:30:43 - 10.11.12.2 - - [25/Aug/2023 14:30:43] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:30:43 - 10.11.12.2 - - [25/Aug/2023 14:30:43] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:30:43 - 10.11.12.2 - - [25/Aug/2023 14:30:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:31:34 - 10.11.12.2 - - [25/Aug/2023 14:31:34] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:31:34 - 10.11.12.2 - - [25/Aug/2023 14:31:34] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:31:34 - 10.11.12.2 - - [25/Aug/2023 14:31:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:31:38 - 10.11.12.2 - - [25/Aug/2023 14:31:38] "[32mGET /schedules HTTP/1.1[0m" 308 -
+25-Aug-23 14:31:38 - 10.11.12.2 - - [25/Aug/2023 14:31:38] "GET /schedules/ HTTP/1.1" 200 -
+25-Aug-23 14:31:38 - 10.11.12.2 - - [25/Aug/2023 14:31:38] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:31:38 - 10.11.12.2 - - [25/Aug/2023 14:31:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:31:41 - 10.11.12.2 - - [25/Aug/2023 14:31:41] "[32mGET /settings HTTP/1.1[0m" 308 -
+25-Aug-23 14:31:42 - 10.11.12.2 - - [25/Aug/2023 14:31:42] "GET /settings/ HTTP/1.1" 200 -
+25-Aug-23 14:31:42 - 10.11.12.2 - - [25/Aug/2023 14:31:42] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:31:42 - 10.11.12.2 - - [25/Aug/2023 14:31:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:31:52 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+25-Aug-23 14:31:56 - 10.11.12.2 - - [25/Aug/2023 14:31:56] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:31:56 - 10.11.12.2 - - [25/Aug/2023 14:31:56] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:31:56 - 10.11.12.2 - - [25/Aug/2023 14:31:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:31:57 - 10.11.12.2 - - [25/Aug/2023 14:31:57] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+25-Aug-23 14:31:58 - 10.11.12.2 - - [25/Aug/2023 14:31:58] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:31:58 - 10.11.12.2 - - [25/Aug/2023 14:31:58] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:31:58 - 10.11.12.2 - - [25/Aug/2023 14:31:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:32:57 - Running job Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})
+25-Aug-23 14:32:57 - Cancelling job "Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})"
+25-Aug-23 14:33:36 - 10.11.12.2 - - [25/Aug/2023 14:33:36] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:33:36 - 10.11.12.2 - - [25/Aug/2023 14:33:36] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:33:36 - 10.11.12.2 - - [25/Aug/2023 14:33:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:35:37 - 10.11.12.2 - - [25/Aug/2023 14:35:37] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+25-Aug-23 14:35:37 - 10.11.12.2 - - [25/Aug/2023 14:35:37] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:35:37 - 10.11.12.2 - - [25/Aug/2023 14:35:37] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:35:37 - 10.11.12.2 - - [25/Aug/2023 14:35:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:35:45 - 10.11.12.2 - - [25/Aug/2023 14:35:45] "[32mGET /toggle_solenoid/1/ HTTP/1.1[0m" 302 -
+25-Aug-23 14:35:45 - 10.11.12.2 - - [25/Aug/2023 14:35:45] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:35:45 - 10.11.12.2 - - [25/Aug/2023 14:35:45] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:35:45 - 10.11.12.2 - - [25/Aug/2023 14:35:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:36:38 - Running job Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})
+25-Aug-23 14:36:38 - Cancelling job "Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})"
+25-Aug-23 14:36:49 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 14:36:49 -  * Restarting with stat
+25-Aug-23 14:36:52 -  * Debugger is active!
+25-Aug-23 14:36:52 -  * Debugger PIN: 701-476-777
+25-Aug-23 14:36:53 - 10.11.12.2 - - [25/Aug/2023 14:36:53] "[33mGET /toggle_solenoid/1/ HTTP/1.1[0m" 404 -
+25-Aug-23 14:36:54 - 10.11.12.2 - - [25/Aug/2023 14:36:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:37:04 - 10.11.12.2 - - [25/Aug/2023 14:37:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:37:32 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 14:37:32 -  * Restarting with stat
+25-Aug-23 14:37:35 -  * Debugger is active!
+25-Aug-23 14:37:35 -  * Debugger PIN: 701-476-777
+25-Aug-23 14:37:36 - 10.11.12.2 - - [25/Aug/2023 14:37:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+25-Aug-23 14:37:36 - 10.11.12.2 - - [25/Aug/2023 14:37:36] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+25-Aug-23 14:37:36 - 10.11.12.2 - - [25/Aug/2023 14:37:36] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+25-Aug-23 14:37:36 - 10.11.12.2 - - [25/Aug/2023 14:37:36] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+25-Aug-23 14:39:55 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 14:39:55 -  * Restarting with stat
+25-Aug-23 14:39:58 -  * Debugger is active!
+25-Aug-23 14:39:58 -  * Debugger PIN: 701-476-777
+25-Aug-23 14:39:58 - 10.11.12.2 - - [25/Aug/2023 14:39:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+25-Aug-23 14:39:59 - 10.11.12.2 - - [25/Aug/2023 14:39:59] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+25-Aug-23 14:39:59 - 10.11.12.2 - - [25/Aug/2023 14:39:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+25-Aug-23 14:39:59 - 10.11.12.2 - - [25/Aug/2023 14:39:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+25-Aug-23 14:40:31 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+25-Aug-23 14:40:46 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 14:40:46 -  * Restarting with stat
+25-Aug-23 14:40:49 -  * Debugger is active!
+25-Aug-23 14:40:49 -  * Debugger PIN: 701-476-777
+25-Aug-23 14:40:50 - 10.11.12.2 - - [25/Aug/2023 14:40:50] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:40:50 - 10.11.12.2 - - [25/Aug/2023 14:40:50] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:40:50 - 10.11.12.2 - - [25/Aug/2023 14:40:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:40:52 - 10.11.12.2 - - [25/Aug/2023 14:40:52] "[35m[1mGET /toggle_solenoid/1 HTTP/1.1[0m" 500 -
+25-Aug-23 14:40:52 - 10.11.12.2 - - [25/Aug/2023 14:40:52] "GET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+25-Aug-23 14:40:52 - 10.11.12.2 - - [25/Aug/2023 14:40:52] "GET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+25-Aug-23 14:40:52 - 10.11.12.2 - - [25/Aug/2023 14:40:52] "GET /toggle_solenoid/1?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+25-Aug-23 14:41:06 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+25-Aug-23 14:41:13 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 14:41:13 -  * Restarting with stat
+25-Aug-23 14:41:16 -  * Debugger is active!
+25-Aug-23 14:41:16 -  * Debugger PIN: 701-476-777
+25-Aug-23 14:41:17 - 10.11.12.2 - - [25/Aug/2023 14:41:17] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:41:17 - 10.11.12.2 - - [25/Aug/2023 14:41:17] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:41:17 - 10.11.12.2 - - [25/Aug/2023 14:41:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:41:21 - 10.11.12.2 - - [25/Aug/2023 14:41:21] "[32mGET /toggle_solenoid/1 HTTP/1.1[0m" 302 -
+25-Aug-23 14:41:21 - 10.11.12.2 - - [25/Aug/2023 14:41:21] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:41:21 - 10.11.12.2 - - [25/Aug/2023 14:41:21] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:41:21 - 10.11.12.2 - - [25/Aug/2023 14:41:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:42:22 - Running job Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})
+25-Aug-23 14:42:22 - Cancelling job "Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})"
+25-Aug-23 14:47:57 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+25-Aug-23 14:48:00 - 10.11.12.2 - - [25/Aug/2023 14:48:00] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:48:01 - 10.11.12.2 - - [25/Aug/2023 14:48:01] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:48:01 - 10.11.12.2 - - [25/Aug/2023 14:48:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:48:55 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 14:48:55 -  * Restarting with stat
+25-Aug-23 14:48:58 -  * Debugger is active!
+25-Aug-23 14:48:58 -  * Debugger PIN: 701-476-777
+25-Aug-23 14:49:01 - 10.11.12.2 - - [25/Aug/2023 14:49:01] "[32mGET /toggle_solenoid/1 HTTP/1.1[0m" 302 -
+25-Aug-23 14:49:01 - 10.11.12.2 - - [25/Aug/2023 14:49:01] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:49:01 - 10.11.12.2 - - [25/Aug/2023 14:49:01] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:49:01 - 10.11.12.2 - - [25/Aug/2023 14:49:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:49:07 - 10.11.12.2 - - [25/Aug/2023 14:49:07] "[32mGET /toggle_solenoid/1 HTTP/1.1[0m" 302 -
+25-Aug-23 14:49:07 - 10.11.12.2 - - [25/Aug/2023 14:49:07] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:49:07 - 10.11.12.2 - - [25/Aug/2023 14:49:07] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:49:08 - 10.11.12.2 - - [25/Aug/2023 14:49:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:50:01 - Running job Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})
+25-Aug-23 14:50:01 - Cancelling job "Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})"
+25-Aug-23 14:50:05 - 10.11.12.2 - - [25/Aug/2023 14:50:05] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:50:05 - 10.11.12.2 - - [25/Aug/2023 14:50:05] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:50:06 - 10.11.12.2 - - [25/Aug/2023 14:50:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:50:07 - 10.11.12.2 - - [25/Aug/2023 14:50:07] "[32mGET /toggle_solenoid/1 HTTP/1.1[0m" 302 -
+25-Aug-23 14:50:08 - 10.11.12.2 - - [25/Aug/2023 14:50:08] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:50:08 - 10.11.12.2 - - [25/Aug/2023 14:50:08] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:50:08 - 10.11.12.2 - - [25/Aug/2023 14:50:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:50:09 - 10.11.12.2 - - [25/Aug/2023 14:50:09] "[32mGET /toggle_solenoid/1 HTTP/1.1[0m" 302 -
+25-Aug-23 14:50:09 - 10.11.12.2 - - [25/Aug/2023 14:50:09] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:50:10 - 10.11.12.2 - - [25/Aug/2023 14:50:10] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:50:10 - 10.11.12.2 - - [25/Aug/2023 14:50:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:50:11 - 10.11.12.2 - - [25/Aug/2023 14:50:11] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:50:11 - 10.11.12.2 - - [25/Aug/2023 14:50:11] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:50:11 - 10.11.12.2 - - [25/Aug/2023 14:50:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:50:13 - 10.11.12.2 - - [25/Aug/2023 14:50:13] "[32mGET /toggle_solenoid/2 HTTP/1.1[0m" 302 -
+25-Aug-23 14:50:13 - 10.11.12.2 - - [25/Aug/2023 14:50:13] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:50:13 - 10.11.12.2 - - [25/Aug/2023 14:50:13] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:50:13 - 10.11.12.2 - - [25/Aug/2023 14:50:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 14:50:21 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+25-Aug-23 14:51:08 - Running job Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})
+25-Aug-23 14:51:08 - Cancelling job "Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(1,), kwargs={})"
+25-Aug-23 14:51:14 - Running job Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(2,), kwargs={})
+25-Aug-23 14:51:14 - Cancelling job "Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(2,), kwargs={})"
+25-Aug-23 14:51:30 - 10.11.12.2 - - [25/Aug/2023 14:51:30] "GET / HTTP/1.1" 200 -
+25-Aug-23 14:51:30 - 10.11.12.2 - - [25/Aug/2023 14:51:30] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 14:51:30 - 10.11.12.2 - - [25/Aug/2023 14:51:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:00:36 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 15:00:36 -  * Restarting with stat
+25-Aug-23 15:00:39 -  * Debugger is active!
+25-Aug-23 15:00:39 -  * Debugger PIN: 701-476-777
+25-Aug-23 15:00:39 - 10.11.12.2 - - [25/Aug/2023 15:00:39] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:00:39 - 10.11.12.2 - - [25/Aug/2023 15:00:39] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:00:40 - 10.11.12.2 - - [25/Aug/2023 15:00:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:00:55 - 10.11.12.2 - - [25/Aug/2023 15:00:55] "[32mGET /toggle_solenoid/2 HTTP/1.1[0m" 302 -
+25-Aug-23 15:00:55 - 10.11.12.2 - - [25/Aug/2023 15:00:55] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:00:56 - 10.11.12.2 - - [25/Aug/2023 15:00:56] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:00:56 - 10.11.12.2 - - [25/Aug/2023 15:00:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:00:58 - 10.11.12.2 - - [25/Aug/2023 15:00:58] "[32mGET /toggle_solenoid/2 HTTP/1.1[0m" 302 -
+25-Aug-23 15:00:58 - 10.11.12.2 - - [25/Aug/2023 15:00:58] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:00:58 - 10.11.12.2 - - [25/Aug/2023 15:00:58] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:00:58 - 10.11.12.2 - - [25/Aug/2023 15:00:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:01:50 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+25-Aug-23 15:01:58 - Running job Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(2,), kwargs={})
+25-Aug-23 15:01:58 - Cancelling job "Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(2,), kwargs={})"
+25-Aug-23 15:02:33 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 15:02:33 -  * Restarting with stat
+25-Aug-23 15:02:36 -  * Debugger is active!
+25-Aug-23 15:02:36 -  * Debugger PIN: 701-476-777
+25-Aug-23 15:02:37 - 10.11.12.2 - - [25/Aug/2023 15:02:37] "[32mGET /toggle_solenoid/2 HTTP/1.1[0m" 302 -
+25-Aug-23 15:02:37 - 10.11.12.2 - - [25/Aug/2023 15:02:37] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:02:37 - 10.11.12.2 - - [25/Aug/2023 15:02:37] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:02:37 - 10.11.12.2 - - [25/Aug/2023 15:02:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:02:40 - 10.11.12.2 - - [25/Aug/2023 15:02:40] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:02:40 - 10.11.12.2 - - [25/Aug/2023 15:02:40] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:02:41 - 10.11.12.2 - - [25/Aug/2023 15:02:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:03:37 - Running job Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(2,), kwargs={})
+25-Aug-23 15:03:37 - Cancelling job "Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(2,), kwargs={})"
+25-Aug-23 15:03:39 - 10.11.12.2 - - [25/Aug/2023 15:03:39] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:03:40 - 10.11.12.2 - - [25/Aug/2023 15:03:40] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:03:40 - 10.11.12.2 - - [25/Aug/2023 15:03:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:03:44 - 10.11.12.2 - - [25/Aug/2023 15:03:44] "[32mGET /toggle_solenoid/2 HTTP/1.1[0m" 302 -
+25-Aug-23 15:03:44 - 10.11.12.2 - - [25/Aug/2023 15:03:44] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:03:45 - 10.11.12.2 - - [25/Aug/2023 15:03:45] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:03:45 - 10.11.12.2 - - [25/Aug/2023 15:03:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:03:47 - 10.11.12.2 - - [25/Aug/2023 15:03:47] "[32mGET /toggle_solenoid/2 HTTP/1.1[0m" 302 -
+25-Aug-23 15:03:47 - 10.11.12.2 - - [25/Aug/2023 15:03:47] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:03:47 - 10.11.12.2 - - [25/Aug/2023 15:03:47] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:03:47 - 10.11.12.2 - - [25/Aug/2023 15:03:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:03:57 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+25-Aug-23 15:04:45 - Running job Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(2,), kwargs={})
+25-Aug-23 15:04:45 - Cancelling job "Job(interval=1, unit=minutes, do=turn_off_after_hour, args=(2,), kwargs={})"
+25-Aug-23 15:18:46 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 15:18:46 -  * Restarting with stat
+25-Aug-23 15:18:49 -  * Debugger is active!
+25-Aug-23 15:18:49 -  * Debugger PIN: 701-476-777
+25-Aug-23 15:18:49 - 10.11.12.2 - - [25/Aug/2023 15:18:49] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:18:50 - 10.11.12.2 - - [25/Aug/2023 15:18:50] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:18:51 - 10.11.12.2 - - [25/Aug/2023 15:18:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:18:53 - 10.11.12.2 - - [25/Aug/2023 15:18:53] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:18:53 - 10.11.12.2 - - [25/Aug/2023 15:18:53] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:18:53 - 10.11.12.2 - - [25/Aug/2023 15:18:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:19:26 -  * Detected change in '/home/server/GreenFlow/greenflow/app.py', reloading
+25-Aug-23 15:19:50 -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.16.16.16:5000 (Press CTRL+C to quit)
+25-Aug-23 15:19:50 -  * Restarting with stat
+25-Aug-23 15:19:53 -  * Debugger is active!
+25-Aug-23 15:19:53 -  * Debugger PIN: 701-476-777
+25-Aug-23 15:19:53 - 10.11.12.2 - - [25/Aug/2023 15:19:53] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:19:53 - 10.11.12.2 - - [25/Aug/2023 15:19:53] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:19:54 - 10.11.12.2 - - [25/Aug/2023 15:19:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:19:56 - 10.11.12.2 - - [25/Aug/2023 15:19:56] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:19:56 - 10.11.12.2 - - [25/Aug/2023 15:19:56] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:19:57 - 10.11.12.2 - - [25/Aug/2023 15:19:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+25-Aug-23 15:20:00 - 10.11.12.2 - - [25/Aug/2023 15:20:00] "GET / HTTP/1.1" 200 -
+25-Aug-23 15:20:00 - 10.11.12.2 - - [25/Aug/2023 15:20:00] "GET /static/style.css HTTP/1.1" 200 -
+25-Aug-23 15:20:00 - 10.11.12.2 - - [25/Aug/2023 15:20:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

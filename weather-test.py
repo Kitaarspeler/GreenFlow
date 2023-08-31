@@ -23,6 +23,7 @@ def tz_diff(home, away, on=None):
 
     return diff
 
+
 def get_weather(user_api, lat, lon, time_from):
     """Gets and returns JSON with given info from Metocean API 
     
@@ -64,11 +65,8 @@ nztime = datetime.now(pytz.timezone(nztimezone))
 
 difference = tz_diff(uktimezone, nztimezone)
 
-
 resp = get_weather(user_api, lat, lon, time_now)
 
-
-# print just values of wave height:
 temps = resp.json()['variables']['air.temperature.at-2m']['data']
 rain = resp.json()['variables']['precipitation.rate']['data']       # mm per hour
 cloud = resp.json()['variables']['cloud.cover']['data']

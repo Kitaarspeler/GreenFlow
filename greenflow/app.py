@@ -12,6 +12,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, LoginManager, login_required, login_user, logout_user, current_user
 from flask_principal import Principal, Permission, RoleNeed, UserNeed, identity_loaded, Identity, AnonymousIdentity, identity_changed
 from werkzeug.security import generate_password_hash, check_password_hash
+from datetime import datetime
 
 
 app = Flask(__name__)
@@ -198,6 +199,7 @@ class Schedules(db.Model):
     solenoid = db.Column(db.Integer, nullable=False)
     how_often = db.Column(db.String(25), nullable=False)
     how_long = db.Column(db.Integer, nullable=False)
+    date_set = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):
         return f"Schedule on {self.solenoid}, running every {self.how_often} for {self.how_long}"
@@ -205,9 +207,11 @@ class Schedules(db.Model):
 
 ##### Flask routes #####
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 @login_required
 def index():
+    if request.method == "POST":
+        toggle_solenoid(request.form["id"], request.form["length"])
     return render_template("index.html", solenoids=Solenoids.query.all())
 
 
@@ -268,9 +272,8 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/toggle_solenoid/<int:id>/")
 @login_required
-def toggle_solenoid(id):
+def toggle_solenoid(id, how_long=1):
     """Toggle solenoid state and update GPIO pin
     
     """
@@ -278,15 +281,15 @@ def toggle_solenoid(id):
     print("toggle")
     to_update = Solenoids.query.get_or_404(id)
     to_update.toggle_state()
-    if to_update.state == True:
-        schedule.every().minute.do(turn_off_after_hour, id)
-        print("turn off set on schedule")
     try:
         db.session.commit()
         flash(f"{to_update.name} turned {'on' if to_update.state else 'off'}")
     except:
         logging.error("Solenoid toggle failed")
         flash(f"Hose failed to turn {'on' if to_update.state else 'off'}")
+    if to_update.state == True:
+        schedule.every(how_long).minutes.do(turn_off_after_hour, id)
+        print(f"turn off set for {how_long} minute(s)")
     return redirect(url_for("index"))
 
 
@@ -462,13 +465,14 @@ def validate(new_pass):
 
 def turn_off_after_hour(id):
     to_turn_off = Solenoids.query.get_or_404(id)
-    to_turn_off.turn_off()
-    print("turned off via schedule")
-    try:
-        db.session.commit()
-    except:
-        print("turn off failed")
-        logging.error("Solenoid toggle failed")
+    if to_turn_off.state == True:
+        to_turn_off.turn_off()
+        print("turned off via schedule")
+        try:
+            db.session.commit()
+        except:
+            print("turn off failed")
+            logging.error("Solenoid toggle failed")
     return schedule.CancelJob
 
 

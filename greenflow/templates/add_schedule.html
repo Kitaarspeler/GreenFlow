@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1>{% block title %} Schedules {% endblock %}</h1>
-    <a class="btn btn-dark back-button" href="{{ url_for('schedules') }}">Back</a><br><br><br>
+    <a class="btn btn-secondary back-button" href="{{ url_for('schedules') }}">Back</a><br><br><br>
     
     {% for msg in get_flashed_messages() %}
         <div class="alert alert-warning alert-dismissible fade show" role="alert">

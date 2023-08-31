@@ -1,12 +1,8 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-}
-
-/* Navigation Menu Bar */
-.navbar {
-    background-color: #666;
-    color: #ffffff;
+    background-color: #333;
+    color: #a0a0a0;
 }
 
 .navbar-brand {
@@ -27,7 +23,8 @@ body {
     margin-top: 60px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: #343434;
+    color: #a0a0a0;
     text-align: center;
 }
 
@@ -36,6 +33,7 @@ body {
     border: 1px solid #7a7a7a;
     border-radius: 5px;
     background-color: #a0a0a0;
+    color: #333;
     text-align: center;
 }
 
